@@ -27,7 +27,10 @@
   - (miejsce na pytania)
       
 - Adrian Rybaczuk  
-  - (miejsce na pytania)
+  - Jaka jest grupa docelowa użytkowników końcowych poszczególnych procesów biznesowych?
+  - Jaki jest szacowany ruch / obciążenie dla poszczególnych procesów biznesowych?
+  - Jaki jest cel / zastosowanie istnienia docelowych składników systemu w odniesieniu do procesów biznesowych?
+  - Jaki jest przeznaczony budżet na projekt?
     
 - Marta Stankevich  
   - (miejsce na pytania)
