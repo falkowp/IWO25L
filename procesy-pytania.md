@@ -4,7 +4,9 @@
   - Jakie są ograniczenia środowiskowe i techniczne?
     
 - Bartosz Cylwik  
-  - (miejsce na pytania)
+  - Jak system poradzi sobie z konfliktem interesów w dostępie do danych, np. gdy niektóre dane mogą podlegać ograniczeniom prawnym, mimo że są teoretycznie otwarte?
+  - Jak system poradzi sobie z sytuacją, w której źródła danych dostarczają sprzeczne informacje, a brak jest jednoznacznego mechanizmu weryfikacji prawdziwości danych?
+  - Jakie konkretne kroki będą podjęte, aby zagwarantować, że system pozostanie aktualny przez następne 5-10 lat, uwzględniając zmieniające się technologie, formaty danych i regulacje prawne?
     
 - Jan Gębal  
   - W jaki sposób system powinien obsługiwać sytuacje awaryjne, takie jak przerwy w dostępie do źródeł danych lub błędne aktualizacje?
