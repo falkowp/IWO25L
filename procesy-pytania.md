@@ -44,4 +44,6 @@
   - (miejsce na pytania)
     
 - Jakub Wypych  
-  - (miejsce na pytania)  
+  - Jakie są wymagania dotyczące bezpieczeństwa danych w systemie, szczególnie w kontekście ochrony prywatności użytkowników?
+  - Jakie integracje z istniejącymi systemami są wymagane, aby zapewnić płynność działania całego rozwiązania?
+  - Jakie są wymagania dotyczące skalowalności systemu, aby zapewnić jego działanie w przypadku zwiększonego obciążenia w przyszłości? 
