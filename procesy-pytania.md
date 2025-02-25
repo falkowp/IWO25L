@@ -10,7 +10,10 @@
   - (miejsce na pytania)
     
 - Wojciech Grot  
-  - (miejsce na pytania)
+  - Jakie role użytkowników powinny istnieć w systemie? (np. administrator, edytor, użytkownik publiczny)
+  - Czy dane są już w określonych formatach, czy trzeba je konwertować przed wczytaniem/publikacją?
+  - Czy uwagi i oceny od użytkowników są widoczne dla wszystkich, czy tylko dla administratorów
+  - Czy powinny istnieć powiadomienia o problemach z danymi (np. brak nowych aktualizacji)?
     
 - Marcin Komza  
   - (miejsce na pytania)
