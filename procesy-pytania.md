@@ -1,3 +1,1 @@
-- Jakie problemy biznesowe ma rozwiązać system?
-- Jakie są główne cechy i funkcje systemu?
-- Jakie są ograniczenia środowiskowe i techniczne?
+## Pytania
