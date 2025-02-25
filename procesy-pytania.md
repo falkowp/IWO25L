@@ -27,7 +27,9 @@
   - (miejsce na pytania)
      
 - Michał Janaszewski  
-  - (miejsce na pytania)
+  - Czy system ma zapewniać wersjonowanie danych, aby śledzić ich zmiany w czasie?
+  - Jakie zdarzenia powinny wywoływać aktualizację danych w systemie?
+  - Jakie działania należy podjąć w przypadku wykrycia niezgodnych lub błędnych danych?
       
 - Adrian Rybaczuk  
   - Jaka jest grupa docelowa użytkowników końcowych poszczególnych procesów biznesowych?
