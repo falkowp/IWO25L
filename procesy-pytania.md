@@ -7,7 +7,9 @@
   - (miejsce na pytania)
     
 - Jan Gębal  
-  - (miejsce na pytania)
+  - W jaki sposób system powinien obsługiwać sytuacje awaryjne, takie jak przerwy w dostępie do źródeł danych lub błędne aktualizacje?
+  - Jakie kryteria jakościowe powinny zostać spełnione, aby zapewnić intuicyjne i efektywne wprowadzanie, przeglądanie, filtrowanie oraz wyszukiwanie zbiorów danych i ich dystrybucji?
+  - W jaki sposób system będzie zarządzał archiwizacją i przechowywaniem danych?
     
 - Wojciech Grot  
   - Jakie role użytkowników powinny istnieć w systemie? (np. administrator, edytor, użytkownik publiczny)
