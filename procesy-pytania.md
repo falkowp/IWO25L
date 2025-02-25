@@ -41,7 +41,10 @@
   - (miejsce na pytania)
      
 - Mateusz Tyl  
-  - (miejsce na pytania)
+  - Jak będzie zapewniana spójność danych między różnymi źródłami?
+  - Jakie będą kryteria usuwania zbiorów danych z systemu?
+  - Jakie formaty plików powinny być obsługiwane?
+
     
 - Jakub Wypych  
   - Jakie są wymagania dotyczące bezpieczeństwa danych w systemie, szczególnie w kontekście ochrony prywatności użytkowników?
