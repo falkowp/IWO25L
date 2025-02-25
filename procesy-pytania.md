@@ -20,7 +20,9 @@
   - Czy powinny istnieć powiadomienia o problemach z danymi (np. brak nowych aktualizacji)?
     
 - Marcin Komza  
-  - (miejsce na pytania)
+  - Czy system będzie dawał możliwość subskrypcji danych, aby użytkownik mógł otrzymywać informację o ich aktualizacji?
+  - Czy system będzie dawał możliwość wyświetlenia wykresu utworzonego ze zbioru danych?
+  - Czy aplikacja mobilna i webowa dostarczają te same funkcjonalności? np. istnieją takie czynności które można wykonać tylko w aplikacji webowej
     
 - Kamil Mądrzyk  
   - (miejsce na pytania)
