@@ -28,7 +28,10 @@
   - (miejsce na pytania)
     
 - Artem Omelchenko  
-  - (miejsce na pytania)   
+  - Jak system będzie zapewniał śledzenie pochodzenia danych w przypadku, gdy dane są agregowane z wielu źródeł (np. pliki, API, urządzenia pomiarowe), aby umożliwić weryfikację ich wiarygodności?
+  - W jaki sposób system będzie wspierać wielojęzyczność metadanych (np. opisy zbiorów danych w języku polskim i angielskim), aby umożliwić zgodność z europejskimi repozytoriami danych?
+  - Jak system będzie zarządzał priorytetyzacją aktualizacji danych w czasie rzeczywistym, gdy niektóre zbiory danych wymagają natychmiastowego udostępnienia, a inne mogą być aktualizowane rzadziej?
+    
 - Maciej Przybylski  
   - (miejsce na pytania)
      
