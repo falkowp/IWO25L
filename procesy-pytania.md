@@ -47,7 +47,9 @@
   - Jaki jest przeznaczony budżet na projekt?
     
 - Marta Stankevich  
-  - (miejsce na pytania)
+  - Jakie typy źródeł danych może obsługiwać system (pliki, systemy zewnętrzne, urządzenia pomiarowe itp.)?
+  - W jaki sposób system będzie umożliwiał użytkownikom zgłaszanie uwag i poprawek do danych, oraz jak te uwagi będą weryfikowane i implementowane w systemie?
+  - W jaki sposób system będzie monitorował jakość danych (aktualność, dokładność, kompletność)?
      
 - Mateusz Tyl  
   - Jak będzie zapewniana spójność danych między różnymi źródłami?
