@@ -25,7 +25,9 @@
   - Czy aplikacja mobilna i webowa dostarczają te same funkcjonalności? np. istnieją takie czynności które można wykonać tylko w aplikacji webowej
     
 - Kamil Mądrzyk  
-  - (miejsce na pytania)
+  - W jakich formatach system powinien umożliwiać eksport danych?
+  - Czy system ma mieć możliwość dostosowania wyświetlania danych? np. sortowanie i filtrowanie
+  - Jakie powinny być opcje wyszukiwania w systemie?
     
 - Artem Omelchenko  
   - Jak system będzie zapewniał śledzenie pochodzenia danych w przypadku, gdy dane są agregowane z wielu źródeł (np. pliki, API, urządzenia pomiarowe), aby umożliwić weryfikację ich wiarygodności?
