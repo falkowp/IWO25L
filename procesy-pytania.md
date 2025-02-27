@@ -35,7 +35,9 @@
   - Jak system będzie zarządzał priorytetyzacją aktualizacji danych w czasie rzeczywistym, gdy niektóre zbiory danych wymagają natychmiastowego udostępnienia, a inne mogą być aktualizowane rzadziej?
     
 - Maciej Przybylski  
-  - (miejsce na pytania)
+  - Jakie są oczekiwania odnośnie czasu wdrażania nowych funkcjonalności?
+  - Jakie mechanizmy importu danych masowych powinien obsługiwać system?
+  - Czy istnieją wymagania dotyczące raportowania i analizy wykorzystania systemu?
      
 - Michał Janaszewski  
   - Czy system ma zapewniać wersjonowanie danych, aby śledzić ich zmiany w czasie?
