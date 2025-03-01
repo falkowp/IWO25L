@@ -1,0 +1,190 @@
+# Sekcja 1: Pytania i Odpowiedzi
+
+## 1. Cele i wymagania biznesowe
+
+**Pytanie 1:**  
+*Jakie problemy biznesowe ma rozwiązać system?*  
+**Odpowiedź:**  
+System ma umożliwić otwarty dostęp do publicznych informacji o źródłach danych. Jego zadaniem jest zebranie i ujednolicenie informacji dotyczących m.in. lokalizacji, charakterystyki i specyfiki źródeł, aby mieszkańcy oraz inne podmioty mogły łatwo uzyskać potrzebne informacje, a zewnętrzni użytkownicy – zarówno programiści, jak i osoby udostępniające informacje o własnych źródłach – mogli je wykorzystać zgodnie z obowiązującymi normami i standardami.
+
+**Pytanie 2:**  
+*Jaki jest cel i zastosowanie poszczególnych składników systemu w odniesieniu do procesów biznesowych?*  
+**Odpowiedź:**  
+- **Interfejs użytkownika (UI):** Umożliwia bezpośredni dostęp do informacji o źródłach oraz ich edycję przez upoważnionych pracowników.  
+- **API:** Zapewnia automatyczny dostęp do informacji, co ułatwia integrację z systemami zewnętrznymi i umożliwia programistom pobieranie danych w ustandaryzowanej formie.
+
+**Pytanie 3:**  
+*Jaka jest grupa docelowa użytkowników i jakie są ich główne potrzeby?*  
+**Odpowiedź:**  
+- **Programiści:** korzystający z API.  
+- **Pracownicy administracji:** rejestrujący i wprowadzający informacje o źródłach danych.  
+- **Administratorzy i kierownictwo:** zarządzający systemem.  
+- **Mieszkańcy:** korzystający z publicznie udostępnianych informacji.  
+- **Użytkownicy zewnętrzni:** obejmujący zarówno podmioty korzystające z danych, jak i osoby udostępniające informacje o własnych źródłach.
+
+## 2. Funkcjonalności systemu
+
+**Pytanie 4:**  
+*Jakie są główne cechy i funkcje systemu?*  
+**Odpowiedź:**  
+System ma umożliwiać rejestrację, aktualizację i zarządzanie informacjami o źródłach danych, przy czym kluczowym wymogiem jest zgodność informacji z obowiązującymi standardami oraz możliwość ich dalszego wykorzystania przez uprawnione podmioty.
+
+**Pytanie 5:**  
+*Jakie role użytkowników powinny istnieć i jakie będą ich uprawnienia?*  
+**Odpowiedź:**  
+- **Pracownicy systemu:** odpowiedzialni za wprowadzanie i edycję informacji o źródłach danych.  
+- **Użytkownicy zewnętrzni:** nie tylko korzystający z danych, ale także udostępniający informacje o własnych źródłach (np. właściciele instytucji czy firm lokalnych).  
+- **Mieszkańcy:** mający dostęp do publicznie udostępnianych informacji.  
+Uprawnienia do edycji lub dodawania nowych informacji mają wyłącznie osoby upoważnione.
+
+**Pytanie 6:**  
+*Czy system powinien oferować subskrypcję oraz powiadomienia o zmianach lub problemach z danymi?*  
+**Odpowiedź:**  
+System powinien umożliwić subskrypcję oraz powiadomienia – informując użytkowników o zmianach w źródłach danych, awariach lub aktualizacjach, aby użytkownicy mieli bieżący wgląd w stan informacji.
+
+**Pytanie 7:**  
+*Czy aplikacja mobilna i webowa powinny dostarczać te same funkcjonalności?*  
+**Odpowiedź:**  
+Obie platformy powinny być dostosowane do specyfiki użytkowania – wersja mobilna może być zoptymalizowana pod kątem szybkiego dostępu do kluczowych informacji, natomiast wersja webowa może oferować pełniejszy zakres funkcji zarządzania i raportowania.
+
+**Pytanie 8:**  
+*Jakie powinny być opcje wyszukiwania i dostosowywania wyświetlania danych (sortowanie, filtrowanie)?*  
+**Odpowiedź:**  
+System powinien umożliwiać zaawansowane wyszukiwanie oraz filtrowanie informacji o źródłach, co ułatwi użytkownikom odnalezienie interesujących ich danych.
+
+## 3. Obsługa i zarządzanie danymi
+
+**Pytanie 9:**  
+*Jakie typy źródeł danych może obsługiwać system?*  
+**Odpowiedź:**  
+System przechowuje informacje na temat źródeł danych (np. pliki, systemy zewnętrzne, urządzenia pomiarowe), a nie same dane. Istotne jest, aby informacje te były zgodne z obowiązującymi standardami oraz normami krajowymi i unijnymi.
+
+**Pytanie 10:**  
+*Czy dane są już w określonych formatach, czy wymagają konwersji przed publikacją?*  
+**Odpowiedź:**  
+Informacje o źródłach mogą pochodzić z różnych formatów. Konieczne jest wdrożenie procedur konwersji i standaryzacji, które zapewnią zgodność z przyjętymi normami.
+
+**Pytanie 11:**  
+*Jakie mechanizmy importu danych masowych powinien obsługiwać system?*  
+**Odpowiedź:**  
+Obecnie dane są wprowadzane ręcznie przez pracowników. Należy opracować mechanizmy umożliwiające masowy import informacji, z automatyczną weryfikacją źródła danych oraz zgodności udostępnianych przez nie informacji ze standardami i normami.
+
+**Pytanie 12:**  
+*Jak system będzie zarządzał archiwizacją, przechowywaniem oraz usuwaniem danych?*  
+**Odpowiedź:**  
+Aktualnie zadania te wykonują administratorzy manualnie. W przyszłości warto opracować procesy automatyzujące archiwizację, przechowywanie oraz usuwanie informacji o źródłach danych, aby usprawnić operacje i zmniejszyć ryzyko błędów.
+
+## 4. Jakość i spójność danych
+
+**Pytanie 13:**  
+*Jak system będzie monitorował jakość danych (aktualność, dokładność, kompletność) oraz rozwiązywał problem sprzecznych informacji?*  
+**Odpowiedź:**  
+W obecnym systemie weryfikacja danych odbywa się ręcznie przez pracowników w trakcie wprowadzania informacji. W przyszłości warto wdrożyć automatyczne mechanizmy monitoringu, które będą kontrolować zgodność informacji z obowiązującymi normami oraz generować alerty w przypadku wykrycia niespójności.
+
+**Pytanie 14:**  
+*Jak zapewnić spójność danych między różnymi źródłami?*  
+**Odpowiedź:**  
+Ponieważ system przechowuje wyłącznie informacje o źródłach danych, spójność dotyczy poprawności wprowadzanych informacji. Obecna manualna weryfikacja powinna zostać uzupełniona o zautomatyzowane procedury.
+
+**Pytanie 15:**  
+*Jak system będzie zarządzał priorytetyzacją aktualizacji danych w czasie rzeczywistym?*  
+**Odpowiedź:**  
+System powinien umożliwiać ustalanie priorytetów aktualizacji, definiując, które źródła wymagają częstszej kontroli oraz szybszej reakcji w przypadku awarii lub niespójności.
+
+## 5. Zarządzanie użytkownikami i interakcje
+
+**Pytanie 16:**  
+*W jaki sposób użytkownicy będą mogli zgłaszać uwagi i poprawki do danych? Jak te zgłoszenia będą weryfikowane i wdrażane?*  
+**Odpowiedź:**  
+Obecnie zgłoszenia dotyczące niespójności czy problemów z informacjami o źródłach danych trafiają mailowo lub telefonicznie. W przyszłości warto wdrożyć system elektronicznego zgłaszania, który umożliwi rejestrację, automatyczną weryfikację (w miarę możliwości) oraz śledzenie postępów prac nad poprawkami.
+
+**Pytanie 17:**  
+*W jaki sposób system będzie wspierał wielojęzyczność metadanych?*  
+**Odpowiedź:**  
+Obecnie system przewiduje jedynie język polski. W miarę rozwoju warto rozważyć wdrożenie modułu automatycznej translacji, który pozwoli na prezentowanie informacji o źródłach danych w innych językach, choć wprowadzanie danych przez pracowników pozostanie w języku polskim.
+
+## 6. Bezpieczeństwo i dostęp do danych
+
+**Pytanie 18:**  
+*Jakie są wymagania dotyczące bezpieczeństwa danych w systemie, szczególnie w kontekście ochrony prywatności użytkowników?*  
+**Odpowiedź:**  
+Dane udostępniane przez system są publiczne, co oznacza, że ich dostęp jest otwarty. Ochrona danych osobowych dotyczy jedynie użytkowników systemu (edytorów, administratorów itp.) i odbywa się zgodnie z obowiązującymi procedurami bezpieczeństwa.
+
+**Pytanie 19:**  
+*Jak system poradzi sobie z konfliktem interesów w dostępie do danych, np. gdy część danych podlega ograniczeniom prawnym?*  
+**Odpowiedź:**  
+Nasz system nie zawiera danych, które wymagałyby ograniczenia dostępu ze względu na przepisy – wszystkie informacje o źródłach danych są udostępniane publicznie, a kwestie ograniczeń regulowane są przez obowiązujące dyrektywy i przepisy.
+
+## 7. Wydajność i skalowalność
+
+**Pytanie 20:**  
+*Jakie są wymagania dotyczące skalowalności oraz ograniczenia techniczne systemu?*  
+**Odpowiedź:**  
+Choć obecnie nie określono szczegółowych wymagań, system musi być elastyczny i skalowalny, aby sprostać rosnącej liczbie rejestrowanych źródeł informacji oraz potencjalnie zwiększonej liczbie użytkowników korzystających z otwartych danych.
+
+## 8. Zarządzanie awariami i błędami
+
+**Pytanie 21:**  
+*W jaki sposób system powinien obsługiwać sytuacje awaryjne, takie jak przerwy w dostępie do źródeł danych lub błędne aktualizacje?*  
+**Odpowiedź:**  
+Obecnie wszelkie incydenty zgłaszane są manualnie. W przyszłości konieczne będzie opracowanie procedur awaryjnych – obejmujących automatyczne powiadomienia, backupy i procedury reagowania – aby szybko identyfikować problemy oraz minimalizować ryzyko długotrwałych zakłóceń.
+
+## 9. Analiza i raportowanie
+
+**Pytanie 22:**  
+*Czy istnieją wymagania dotyczące raportowania i analizy wykorzystania systemu?*  
+**Odpowiedź:**  
+Aktualnie procesy raportowania są wykonywane manualnie przez administratorów. Wdrożenie automatycznych mechanizmów raportowania, zgodnych z normami unijnymi i krajowymi, pozwoli na lepsze monitorowanie stanu systemu i dostosowanie działań do wymagań instytucjonalnych.
+
+## 10. Weryfikacja danych
+
+**Pytanie 23:**  
+*Czy system weryfikuje dane przy ich wprowadzaniu i czy kontrola odbywa się regularnie?*  
+**Odpowiedź:**  
+Weryfikacja odbywa się ręcznie przez pracowników w trakcie wprowadzania informacji. Brakuje systematycznych, automatycznych kontroli – stąd potrzeba wdrożenia rozwiązań, które będą okresowo sprawdzać poprawność i zgodność wprowadzonych danych ze zdefiniowanymi standardami.
+
+**Pytanie 24:**  
+*Czy sposób dostępu do danych będzie kategoryzowany w zależności od rodzaju informacji?*  
+**Odpowiedź:**  
+Dostęp do informacji o źródłach danych jest otwarty i nie wymaga specjalnych uprawnień. Specjalne uprawnienia są natomiast wymagane jedynie w przypadku edycji lub dodawania nowych informacji, co zostało już wcześniej opisane.
+
+# Sekcja 2: Procesy biznesowe – Analiza obecnego systemu oraz nowe usprawnienia
+
+## I. Obecne procesy biznesowe w systemie
+
+- **Rejestracja i wprowadzanie danych źródłowych**  
+  Pracownicy ręcznie wprowadzają informacje o źródłach danych do systemu.
+
+- **Manualna weryfikacja danych**  
+  Dane są sprawdzane „na oko” przez pracowników, bez użycia zautomatyzowanych narzędzi weryfikujących zgodność z normami.
+
+- **Zgłaszanie niezgodności i problemów**  
+  Użytkownicy (mieszkańcy, odbiorcy danych) zgłaszają błędy, niespójności lub brak danych telefonicznie.
+
+- **Manualne zarządzanie backupem, archiwizacją i raportowaniem**  
+  Administratorzy systemu ręcznie wykonują zadania związane z tworzeniem kopii zapasowych, archiwizacją danych oraz generowaniem raportów.
+
+- **Brak automatycznej integracji z systemami zewnętrznymi**  
+  Obecny system nie wspiera automatycznej synchronizacji czy wymiany informacji z platformami takimi jak CKAN lub innymi systemami zewnętrznymi.
+
+## II. Procesy wymagające poprawy
+- **Wprowadzanie danych**
+  Wdrożenie systemu pozwajacego dodanie danych poprzez jednostke samorządu w tym z odpowiednim podziałem na role (pracownik, kierownik, administrator), oraz udostepnie mozliwosci dodania danych osobom zewnetrzym po wczesniejszej weryfikacji
+
+- **Automatyzacja weryfikacji danych**  
+  Wdrożenie modułów automatycznej walidacji, które będą sprawdzały zgodność zródeł danych z obowiązującymi normami.
+
+- **Mechanizmy masowego importu i konwersji danych**  
+  (TUTAJ TRZEBA BYLO BY DOPRACOWAC ODPOWIEDZ W ZWIAZKU Z TYM ZE MY PRZECHOWYWUJEMY ZRODLA I JAKO TAKO MASOWO ZRODEL NIE DA SIE WPROAWADZAC BO NIE DO KONCA MA TO SENS)
+
+- **Dynamiczne monitorowanie i aktualizacja danych**  
+  Wprowadzenie automatycznego monitorowania zródeł danych i ich zgodnosci z normami oraz udostepnienie tej informacji razem z informacja o zrodle
+
+- **Automatyzacja backupu i raportowania**  
+  Implementacja automatycznych mechanizmów tworzenia kopii zapasowych oraz generowania raportów, gdzie raporty powinny byc zgodne z wymaganiami instacji wyzszych (kontrolujacych).
+
+- **Usprawnienie systemu zgłaszania i śledzenia błędów**  
+  Wdrożenie elektronicznego systemu rejestracji zgłoszeń, umożliwiającego monitorowanie statusu zgłoszeń i szybką reakcję.
+
+- **Integracja z systemami zewnętrznymi**  
+  Wdrożenie automatycznej integracji z platformami krajowymi i europejskimi (m.in. CKAN) oraz udostępnienie interfejsów API.
