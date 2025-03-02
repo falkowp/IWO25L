@@ -10,7 +10,7 @@ System ma umożliwić otwarty dostęp do publicznych informacji o źródłach da
 **Pytanie 2:**  
 *Jaki jest cel i zastosowanie poszczególnych składników systemu w odniesieniu do procesów biznesowych?*  
 **Odpowiedź:**  
-- **Interfejs użytkownika (UI):** Umożliwia bezpośredni dostęp do informacji o źródłach oraz ich edycję przez upoważnionych pracowników.  
+- **Interfejs użytkownika (UI):** Umożliwia bezpośredni dostęp do informacji o źródłach (np: przy pomocy telefonu możliwość zobaczenia liczby osób w kolejce u doktora). oraz ich edycję przez upoważnionych pracowników.
 - **API:** Zapewnia automatyczny dostęp do informacji, co ułatwia integrację z systemami zewnętrznymi i umożliwia programistom pobieranie danych w ustandaryzowanej formie.
 
 **Pytanie 3:**  
@@ -18,7 +18,7 @@ System ma umożliwić otwarty dostęp do publicznych informacji o źródłach da
 **Odpowiedź:**  
 - **Programiści:** korzystający z API.  
 - **Pracownicy administracji:** rejestrujący i wprowadzający informacje o źródłach danych.  
-- **Administratorzy i kierownictwo:** zarządzający systemem.  
+- **Administratorzy i kierownictwo:** zarządzający systemem (backupowanie, bezpieczenstow danych itd).  
 - **Mieszkańcy:** korzystający z publicznie udostępnianych informacji.  
 - **Użytkownicy zewnętrzni:** obejmujący zarówno podmioty korzystające z danych, jak i osoby udostępniające informacje o własnych źródłach.
 
@@ -28,11 +28,12 @@ System ma umożliwić otwarty dostęp do publicznych informacji o źródłach da
 *Jakie są główne cechy i funkcje systemu?*  
 **Odpowiedź:**  
 System ma umożliwiać rejestrację, aktualizację i zarządzanie informacjami o źródłach danych, przy czym kluczowym wymogiem jest zgodność informacji z obowiązującymi standardami oraz możliwość ich dalszego wykorzystania przez uprawnione podmioty.
+Z tymi danymi można rozbudowywać inne system, np. platoframa do sprawdzenia jak autobusy jezda po miescie itd.
 
 **Pytanie 5:**  
 *Jakie role użytkowników powinny istnieć i jakie będą ich uprawnienia?*  
 **Odpowiedź:**  
-- **Pracownicy systemu:** odpowiedzialni za wprowadzanie i edycję informacji o źródłach danych.  
+- **Pracownicy systemu:**  odpowiedzialni za obsluga system, wprowadzanie i edycję informacji o źródłach danych.  
 - **Użytkownicy zewnętrzni:** nie tylko korzystający z danych, ale także udostępniający informacje o własnych źródłach (np. właściciele instytucji czy firm lokalnych).  
 - **Mieszkańcy:** mający dostęp do publicznie udostępnianych informacji.  
 Uprawnienia do edycji lub dodawania nowych informacji mają wyłącznie osoby upoważnione.
@@ -45,7 +46,7 @@ System powinien umożliwić subskrypcję oraz powiadomienia – informując uży
 **Pytanie 7:**  
 *Czy aplikacja mobilna i webowa powinny dostarczać te same funkcjonalności?*  
 **Odpowiedź:**  
-Obie platformy powinny być dostosowane do specyfiki użytkowania – wersja mobilna może być zoptymalizowana pod kątem szybkiego dostępu do kluczowych informacji, natomiast wersja webowa może oferować pełniejszy zakres funkcji zarządzania i raportowania.
+Obie platformy powinny być dostosowane do specyfiki użytkowania – wersja mobilna może być zoptymalizowana pod kątem szybkiego dostępu do kluczowych informacji, głownie dla procosów z obsluga mieskzanców, natomiast wersja webowa może oferować pełniejszy zakres funkcji zarządzania i raportowania, gdzie funckjonalność jest bardziej wykonana pod pracowników urzędu.
 
 **Pytanie 8:**  
 *Jakie powinny być opcje wyszukiwania i dostosowywania wyświetlania danych (sortowanie, filtrowanie)?*  
@@ -57,7 +58,7 @@ System powinien umożliwiać zaawansowane wyszukiwanie oraz filtrowanie informac
 **Pytanie 9:**  
 *Jakie typy źródeł danych może obsługiwać system?*  
 **Odpowiedź:**  
-System przechowuje informacje na temat źródeł danych (np. pliki, systemy zewnętrzne, urządzenia pomiarowe), a nie same dane. Istotne jest, aby informacje te były zgodne z obowiązującymi standardami oraz normami krajowymi i unijnymi.
+System przechowuje informacje na temat źródeł danych (np. pliki, systemy zewnętrzne, urządzenia pomiarowe), a nie same dane. Dane mogą byc zarówno dynamiczne, np. wyniki ankiet, albo statyczne jak godzina otwaracai urzędu. Istotne jest, aby informacje te były zgodne z obowiązującymi standardami oraz normami krajowymi i unijnymi.
 
 **Pytanie 10:**  
 *Czy dane są już w określonych formatach, czy wymagają konwersji przed publikacją?*  
@@ -84,7 +85,7 @@ W obecnym systemie weryfikacja danych odbywa się ręcznie przez pracowników w 
 **Pytanie 14:**  
 *Jak zapewnić spójność danych między różnymi źródłami?*  
 **Odpowiedź:**  
-Ponieważ system przechowuje wyłącznie informacje o źródłach danych, spójność dotyczy poprawności wprowadzanych informacji. Obecna manualna weryfikacja powinna zostać uzupełniona o zautomatyzowane procedury.
+Ponieważ system przechowuje wyłącznie informacje o źródłach danych, spójność dotyczy poprawności wprowadzanych informacji przy ich rejestracji / aktualizacji.System zakłada ze dane sa dostarczone, ale nie zakłada ich poprawności. Obecna manualna weryfikacja powinna zostać uzupełniona o zautomatyzowane procedury.
 
 **Pytanie 15:**  
 *Jak system będzie zarządzał priorytetyzacją aktualizacji danych w czasie rzeczywistym?*  
@@ -96,7 +97,7 @@ System powinien umożliwiać ustalanie priorytetów aktualizacji, definiując, k
 **Pytanie 16:**  
 *W jaki sposób użytkownicy będą mogli zgłaszać uwagi i poprawki do danych? Jak te zgłoszenia będą weryfikowane i wdrażane?*  
 **Odpowiedź:**  
-Obecnie zgłoszenia dotyczące niespójności czy problemów z informacjami o źródłach danych trafiają mailowo lub telefonicznie. W przyszłości warto wdrożyć system elektronicznego zgłaszania, który umożliwi rejestrację, automatyczną weryfikację (w miarę możliwości) oraz śledzenie postępów prac nad poprawkami.
+Obecnie zgłoszenia dotyczące niespójności czy problemów z informacjami o źródłach danych trafiają mailowo lub telefonicznie. W przyszłości warto wdrożyć system elektronicznego zgłaszania, który umożliwi rejestrację, automatyczną weryfikację (w miarę możliwości) oraz śledzenie postępów prac nad poprawkami. Można by było również wprowadzic Ai do werytikowania czy nie dane nie sa jakimś spammingiem.
 
 **Pytanie 17:**  
 *W jaki sposób system będzie wspierał wielojęzyczność metadanych?*  
@@ -188,3 +189,18 @@ Dostęp do informacji o źródłach danych jest otwarty i nie wymaga specjalnych
 
 - **Integracja z systemami zewnętrznymi**  
   Wdrożenie automatycznej integracji z platformami krajowymi i europejskimi (m.in. CKAN) oraz udostępnienie interfejsów API.
+
+## III. Dla kogo ten system?
+
+- **Programiści:**
+- **Pracownicy administracji:**
+- **Administratorzy i kierownictwo:**
+- **Mieszkańcy:**
+- **Użytkownicy zewnętrzni:**
+
+## IV. Zweryfikowanie problemów które procesy opisuj
+- Powinna być funkcjonalnośc, aby mieszkańcy albo firma wewnetrzna oceniala czy system zbiór danych jest przydatny.
+- Nie ma procesu dla usunięcia konta. np, dla systemu, której działalnosć jest zakonczona, lub zfałszfowana a została wczesniej zarejestrowana
+- Wprowadzenie identyfikowania systemu z systemem weryfikującym który np. sprawdza czy taka działalność jest zarejestrowana
+- Możliwość pobierania informacji ustatystycznionych i ich raportowania
+- Zarządzanie uprawnieniami w systemie
