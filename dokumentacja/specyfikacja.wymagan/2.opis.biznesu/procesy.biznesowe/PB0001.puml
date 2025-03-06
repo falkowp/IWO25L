@@ -1,0 +1,17 @@
+@startuml
+title BPMN: Wprowadzanie danych do systemu przez pracownika
+
+|Pracownik|
+start
+:Otrzymanie informacji o nowym źródle;
+:Dokonanie porównania danych\nze źródła z normami "na oko";
+if (Czy źródło jest akceptowalne?) then (TAK)
+  :Wprowadzenie do systemu\nmetadanych źródła;
+  note right: (nazwa, opis, URL, etc.)
+  :System zapisuje metadane;
+else (NIE)
+  :Oznaczenie źródła jako nieprawidłowe;
+endif
+:Koniec procesu;
+stop
+@enduml

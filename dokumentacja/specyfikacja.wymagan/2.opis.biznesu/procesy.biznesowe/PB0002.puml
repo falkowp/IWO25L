@@ -1,0 +1,20 @@
+@startuml
+title BPMN: Zgłaszanie niezgodności i problemów
+
+|#lightblue|Użytkownik|
+start
+:Identyfikacja błędu, niespójności lub braku danych;
+:Kontakt telefoniczny z obsługą;
+|#palegreen|Obsługa|
+:Odebranie zgłoszenia;
+:Zapisanie zgłoszenia w systemie;
+:Weryfikacja zgłoszenia;
+if (Czy zgłoszenie jest zasadne?) then (TAK)
+:Przekazanie zgłoszenia do odpowiedniego działu;
+:Monitorowanie statusu zgłoszenia;
+else (NIE)
+:Poinformowanie użytkownika o odrzuceniu zgłoszenia;
+endif
+:Zamknięcie zgłoszenia;
+stop
+@enduml
