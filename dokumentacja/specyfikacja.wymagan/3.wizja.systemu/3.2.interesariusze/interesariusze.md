@@ -10,3 +10,5 @@
 :[Pracownik jednostki samorządowej](interesariusze/pracownik_jednostki_samorzadowej.md)
 
 :[Administrator](interesariusze/administrator.md)
+
+![Interesariusze](interesariusze.png)
