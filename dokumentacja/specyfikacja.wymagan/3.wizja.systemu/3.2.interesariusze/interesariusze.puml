@@ -1,0 +1,10 @@
+@startuml
+
+:Mieszkaniec:
+:Lokalny przedsiębiorca:
+:Twórca aplikacji:
+:Deweloper:
+:Pracownik jednostki samorządowej:
+:Administrator:
+
+@enduml
