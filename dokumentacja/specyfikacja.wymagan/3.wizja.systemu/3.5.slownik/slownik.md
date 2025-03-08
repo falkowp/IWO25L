@@ -1,0 +1,6 @@
+- [Administrator](slownik/administrator.md)
+- [Deweloper](slownik/deweloper.md)
+- [Lokalny przediębiorca](slownik/lokalny_przedsiebiorca.md)
+- [Mieszkaniec](slownik/mieszkaniec.md)
+- [Twórca aplikacji](slownik/tworca_aplikacji.md)
+- [Pracownik jednostki samorządowej](slownik/pracownik_jednostki_sazmorzadowej.md)
