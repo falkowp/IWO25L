@@ -6,3 +6,4 @@ Platforma open source do zarządzania danymi, wykorzystywana do publikowania i u
 
 ##### Przykłady użycia
 
+- [CF0008](../../3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF008.md)

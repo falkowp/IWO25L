@@ -6,5 +6,5 @@ Proces zakładania konta w systemie, obejmujący weryfikację tożsamości zakł
 
 ##### Przykłady użycia
 
-
+- [CF0011](../../3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0011.md)
 
