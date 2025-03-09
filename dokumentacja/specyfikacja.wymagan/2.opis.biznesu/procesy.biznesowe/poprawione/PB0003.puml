@@ -1,0 +1,25 @@
+@startuml
+title BPMN: Zautomatyzowane generowanie raportu z systemu
+
+|#lightyellow|Kierownictwo|
+start
+:Wybór szablonu raportu i ustawienie parametrów;
+|#lightblue|System|
+:Automatyczne pobranie danych z systemu;
+:Przetworzenie danych i wygenerowanie raportu;
+:Powiadomienie kierownictwa o gotowym raporcie;
+|#lightyellow|Kierownictwo|
+:Przegląd i zatwierdzenie raportu;
+if (Czy raport wymaga poprawek?) then (TAK)
+|#lightblue|System|
+:Otrzymanie uwag i automatyczna korekta;
+:Wygenerowanie poprawionej wersji raportu;
+:Powiadomienie kierownictwa;
+endif
+|#lightyellow|Kierownictwo|
+:Zatwierdzenie raportu;
+|#lightblue|System|
+:Zapisanie raportu w systemie;
+:Automatyczna wysyłka raportu do interesariuszy;
+stop
+@enduml

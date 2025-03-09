@@ -1,0 +1,24 @@
+@startuml
+title BPMN: Zautomatyzowane zgłaszanie niezgodności i problemów
+
+|#lightblue|Użytkownik|
+start
+:Identyfikacja błędu, niespójności lub braku danych;
+:Wypełnienie formularza zgłoszeniowego w systemie;
+|#lightgreen|System|
+:Automatyczna klasyfikacja problemu;
+:Przekazanie zgłoszenia do odpowiedniego działu;
+:Powiadomienie odpowiedniego zespołu;
+|#palegreen|Obsługa|
+:Analiza zgłoszenia;
+if (Czy zgłoszenie wymaga interwencji?) then (TAK)
+:Podjęcie odpowiednich działań;
+:Monitorowanie statusu zgłoszenia;
+else (NIE)
+|#lightgreen|System|
+:Automatyczna odpowiedź do użytkownika;
+endif
+:Aktualizacja statusu zgłoszenia;
+:Powiadomienie użytkownika o rozwiązaniu problemu;
+stop
+@enduml

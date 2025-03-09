@@ -1,0 +1,24 @@
+@startuml
+title BPMN: Przeprowadzanie automatycznej kontroli poprawności źródła danych
+
+|#lightblue|System|
+start
+:Odebranie metadanych źródła danych;
+:Przeprowadzenie kontroli zgodności ze standardami;
+if (Czy źródło spełnia wymagania?) then (TAK)
+:Zapisanie statusu jako poprawne;
+else (NIE)
+:Zapisanie statusu jako niepoprawne;
+:Generowanie powiadomienia o błędach;
+endif
+:Powiadomienie pracownika administracji;
+|#palegreen|Pracownik administracji|
+:Analiza zgłoszonego problemu;
+if (Czy dane mogą zostać poprawione?) then (TAK)
+:Korekta danych;
+:Zaktualizowanie w systemie;
+else (NIE)
+:Poinformowanie użytkownika o błędach;
+endif
+stop
+@enduml
