@@ -35,3 +35,5 @@
 :[CF0017 - Wersja na telefon dla użytkowników, na komputer dla pracowników](cechy.funkcjonalne/CF0017.md)
 
 :[CF0018 - Dostępność wielu wersji językowych](cechy.funkcjonalne/CF0018.md)
+
+![Cechy funkcjonalne](cechy.funkcjonalne.png)
