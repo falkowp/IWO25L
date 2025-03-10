@@ -1,0 +1,18 @@
+@startuml
+title BPMN: Aktualizacja przestarzalych metadanych
+
+|Administrator|
+start
+:Otrzymanie zgłoszenia o przestarzałych metadanych;
+:Weryfikacja otrzymanych danych źródła;
+if (Czy dane są faktycznie przestarzałe?) then (TAK)
+  :Przygotowanie planu aktualizacji;
+  :Wprowadzenie nowych wartości w rekordzie;
+  :Weryfikacja zgodności danych z aktualnymi definicjami;
+  :Potwierdzenie aktualizacji w bazie danych;
+else (NIE)
+  :Dokumentacja decyzji o braku modyfikacji;
+endif
+:Powiadomienie o zakończeniu procesu;
+stop
+@enduml

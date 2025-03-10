@@ -1,0 +1,21 @@
+@startuml
+title BPMN: Sprawdzenie źródła danych
+
+|Inspektor|
+start
+:Otrzymanie zestawu aktualnych metadanych źródła;
+:Przeprowadzenie wstępnej analizy danych;
+:Porównanie danych ze zdefiniowanymi normami i wymaganiami;
+if (Czy metadane są zgodne z normami?) then (TAK)
+  :Sporządzenie raportu o poprawności;
+else (NIE)
+  :Identyfikacja niezgodności i sporządzenie listy błędów;
+  :Opracowanie propozycji poprawek;
+endif
+:Przekazanie raportu do działu kontroli jakości;
+|Dział Kontroli Jakości|
+:Weryfikacja raportu;
+:Potwierdzenie lub przekazanie do dalszych analiz;
+:Powiadomienie o wynikach analizy;
+stop
+@enduml
