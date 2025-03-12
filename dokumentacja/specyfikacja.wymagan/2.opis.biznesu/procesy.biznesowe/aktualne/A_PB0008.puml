@@ -1,20 +1,18 @@
 @startuml
-title BPMN: Wyszukanie istniejącego źródła danych
+title BPMN: Proces backupowania danych z systemu przez administratora
 
-|Użytkownik|
+|Administrator|
 start
-:Wprowadzenie kryteriów wyszukiwania (np. nazwa źródła);
-:Przyjęcie zapytania i weryfikacja autoryzacji;
-:Wyszukanie metadanych pasujących do kryteriów;
-:Filtrowanie wyników wg zdefiniowanych parametrów;
-if (Wyniki znalezione?) then (TAK)
-  :Wyświetlenie listy pasujących wyników;
-  :Możliwość przeglądania szczegółowych informacji o każdym źródle;
-else (NIE)
-  :Wyświetlenie informacji o braku wyników;
-endif
-:Analiza otrzymanych wyników;
-:Wybór szczegółowego rekordu do dalszej analizy;
-:Zakończenie procesu;
+:Otrzymanie informacji o potrzebie wykonania backupu danych;
+:Rozpoczęcie procesu backupu;
+note right: Wybór danych, konfiguracja parametrów backupu;
+:System wykonuje backup danych;
+while (Czy backup jest poprawny?) is (NIE)
+  :Podjęcie działań naprawczych;
+  :Ponowienie próby wykonania backupu;
+  :System wykonuje backup danych;
+endwhile
+:Zapisanie informacji o wykonanym backupie;
+:Koniec procesu;
 stop
 @enduml

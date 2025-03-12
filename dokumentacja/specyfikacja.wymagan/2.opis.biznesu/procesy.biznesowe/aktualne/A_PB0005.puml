@@ -1,18 +1,20 @@
 @startuml
-title BPMN: Aktualizacja przestarzalych metadanych
+title BPMN: Wyszukanie istniejącego źródła danych
 
-|Administrator|
+|Użytkownik|
 start
-:Otrzymanie zgłoszenia o przestarzałych metadanych;
-:Weryfikacja otrzymanych danych źródła;
-if (Czy dane są faktycznie przestarzałe?) then (TAK)
-  :Przygotowanie planu aktualizacji;
-  :Wprowadzenie nowych wartości w rekordzie;
-  :Weryfikacja zgodności danych z aktualnymi definicjami;
-  :Potwierdzenie aktualizacji w bazie danych;
+:Wprowadzenie kryteriów wyszukiwania (np. nazwa źródła);
+:Przyjęcie zapytania i weryfikacja autoryzacji;
+:Wyszukanie metadanych pasujących do kryteriów;
+:Filtrowanie wyników wg zdefiniowanych parametrów;
+if (Wyniki znalezione?) then (TAK)
+  :Wyświetlenie listy pasujących wyników;
+  :Możliwość przeglądania szczegółowych informacji o każdym źródle;
 else (NIE)
-  :Dokumentacja decyzji o braku modyfikacji;
+  :Wyświetlenie informacji o braku wyników;
 endif
-:Powiadomienie o zakończeniu procesu;
+:Analiza otrzymanych wyników;
+:Wybór szczegółowego rekordu do dalszej analizy;
+:Zakończenie procesu;
 stop
 @enduml

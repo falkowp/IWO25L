@@ -1,29 +1,18 @@
 @startuml
-title BPMN: Generowanie raportu z systemu na podstawie wskazań kierownictwa
+title BPMN: Listowanie istniejących źródeł danych
 
-|Kierownictwo|
+|Użytkownik|
 start
-:Przekazanie wytycznych dotyczących raportu\n(administratorowi);
-|Administrator|
-:Otrzymanie wytycznych od kierownictwa;
-:Zalogowanie do systemu raportowego;
-:Wprowadzenie parametrów raportu\n(zgodnie z wytycznymi);
-:System przetwarza dane i generuje raport;
-:Przekazanie raportu do kierownictwa;
-|Kierownictwo|
-:Sprawdzenie raportu przez kierownictwo;
-while (Czy raport jest poprawny?) is (NIE)
-  :Odesłanie raportu do poprawy\n(administratorowi);
-  |Administrator|
-  :Wprowadzenie poprawek do raportu\nlub korekta parametrów;
-  :System przetwarza dane i generuje raport;
-  :Przekazanie raportu do kierownictwa;
-  |Kierownictwo|
-endwhile
-:Zatwierdzenie raportu przez kierownictwo;
-|Administrator|
-:Zapisanie raportu w systemie\nlub eksport do pliku;
-:Przekazanie gotowego raportu do kierownictwa;
-:Koniec procesu;
+:Złożenie zapytania o listę źródeł danych;
+:Autoryzacja zapytania;
+:Wyszukanie dostępnych rekordów metadanych źródeł;
+:Sortowanie rekordów według kryteriów (data, status, nazwa);
+note right: Opcjonalne filtrowanie wg wybranych parametrów
+:Generowanie szczegółowego raportu listy źródeł;
+:Przeglądanie otrzymanego raportu;
+:Wybór opcji filtrowania lub sortowania dodatkowych wyników;
+:Aktualizacja wyników wyszukiwania;
+:Prezentacja ostatecznej listy źródeł;
+:Zakończenie procesu;
 stop
 @enduml
