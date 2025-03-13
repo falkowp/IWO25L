@@ -1,0 +1,18 @@
+@startuml
+title BPMN: Proces backupowania danych z systemu przez administratora
+
+|Administrator|
+start
+:Otrzymanie informacji o potrzebie wykonania backupu danych;
+:Rozpoczęcie procesu backupu;
+note right: Wybór danych, konfiguracja parametrów backupu;
+:System wykonuje backup danych;
+while (Czy backup jest poprawny?) is (NIE)
+  :Podjęcie działań naprawczych;
+  :Ponowienie próby wykonania backupu;
+  :System wykonuje backup danych;
+endwhile
+:Zapisanie informacji o wykonanym backupie;
+:Koniec procesu;
+stop
+@enduml

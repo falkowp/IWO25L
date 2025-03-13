@@ -1,0 +1,17 @@
+@startuml
+title BPMN: Dostęp do wprowadzania nowych źródeł danych przez organizacje zewnętrzne
+
+|#lightblue|Organizacja|
+start
+:Wysłanie wniosku o dostęp;
+|#palegreen|System|
+:Weryfikacja wniosku;
+|#palegreen|Administrator|
+if (Czy organizacja jest uprawniona?) then (TAK)
+:Tworzenie konta z odpowiednimi uprawnieniami;
+else (NIE)
+:Odrzucenie wniosku;
+:Poinformowanie organizacji;
+endif
+stop
+@enduml

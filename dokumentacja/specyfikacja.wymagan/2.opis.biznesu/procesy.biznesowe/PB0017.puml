@@ -1,0 +1,19 @@
+@startuml
+title BPMN: Zapewnienie stabilności dostępu do danych
+
+|#palegreen|System|
+start
+:Monitorowanie dostępności systemu;
+if (Czy system działa poprawnie?) then (TAK)
+:Brak akcji;
+else (NIE)
+:Uruchomienie procedury automatycznego odtwarzania;
+:Powiadomienie administratorów;
+|#palegreen|Administrator|
+:Analiza problemu;
+if (Czy wymaga interwencji?) then (TAK)
+:Podjęcie działań naprawczych;
+endif
+endif
+stop
+@enduml

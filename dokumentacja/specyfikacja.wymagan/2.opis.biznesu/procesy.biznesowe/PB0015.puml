@@ -1,0 +1,18 @@
+@startuml
+title BPMN: Możliwość oceny jakości źródła danych
+
+|#lightblue|Użytkownik|
+start
+:Wybór źródła danych;
+:Ocena źródła (np. w skali 1-5);
+|#palegreen|System|
+:Zapisanie oceny w bazie;
+:Aktualizacja średniej oceny;
+:Powiadomienie administratora o niskiej jakości źródła;
+|#palegreen|Administrator|
+if (Czy źródło wymaga interwencji?) then (TAK)
+:Analiza źródła;
+:Podjęcie działań naprawczych;
+endif
+stop
+@enduml

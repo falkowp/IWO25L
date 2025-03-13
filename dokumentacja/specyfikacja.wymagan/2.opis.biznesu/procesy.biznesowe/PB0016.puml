@@ -1,0 +1,18 @@
+@startuml
+title BPMN: Weryfikacja organizacji zewnętrznej
+
+|#lightblue|Organizacja|
+start
+:Przesłanie danych rejestracyjnych;
+|#palegreen|System|
+:Analiza i weryfikacja danych;
+if (Czy dane są poprawne?) then (TAK)
+|#palegreen|Administrator|
+:Akceptacja organizacji;
+:Utworzenie konta;
+else (NIE)
+:Odrzucenie wniosku;
+:Poinformowanie organizacji;
+endif
+stop
+@enduml

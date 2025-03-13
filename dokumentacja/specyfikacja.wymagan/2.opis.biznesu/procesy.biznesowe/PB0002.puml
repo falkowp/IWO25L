@@ -1,20 +1,18 @@
 @startuml
-title BPMN: Zgłaszanie niezgodności i problemów
+title BPMN: Aktualizacja przestarzalych metadanych
 
-|#lightblue|Użytkownik|
+|Administrator|
 start
-:Identyfikacja błędu, niespójności lub braku danych;
-:Kontakt telefoniczny z obsługą;
-|#palegreen|Obsługa|
-:Odebranie zgłoszenia;
-:Zapisanie zgłoszenia w systemie;
-:Weryfikacja zgłoszenia;
-if (Czy zgłoszenie jest zasadne?) then (TAK)
-:Przekazanie zgłoszenia do odpowiedniego działu;
-:Monitorowanie statusu zgłoszenia;
+:Otrzymanie zgłoszenia o przestarzałych metadanych;
+:Weryfikacja otrzymanych danych źródła;
+if (Czy dane są faktycznie przestarzałe?) then (TAK)
+  :Przygotowanie planu aktualizacji;
+  :Wprowadzenie nowych wartości w rekordzie;
+  :Weryfikacja zgodności danych z aktualnymi definicjami;
+  :Potwierdzenie aktualizacji w bazie danych;
 else (NIE)
-:Poinformowanie użytkownika o odrzuceniu zgłoszenia;
+  :Dokumentacja decyzji o braku modyfikacji;
 endif
-:Zamknięcie zgłoszenia;
+:Powiadomienie o zakończeniu procesu;
 stop
 @enduml

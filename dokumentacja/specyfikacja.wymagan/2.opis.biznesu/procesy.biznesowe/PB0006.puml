@@ -1,0 +1,29 @@
+@startuml
+title BPMN: Generowanie raportu z systemu na podstawie wskazań kierownictwa
+
+|Kierownictwo|
+start
+:Przekazanie wytycznych dotyczących raportu\n(administratorowi);
+|Administrator|
+:Otrzymanie wytycznych od kierownictwa;
+:Zalogowanie do systemu raportowego;
+:Wprowadzenie parametrów raportu\n(zgodnie z wytycznymi);
+:System przetwarza dane i generuje raport;
+:Przekazanie raportu do kierownictwa;
+|Kierownictwo|
+:Sprawdzenie raportu przez kierownictwo;
+while (Czy raport jest poprawny?) is (NIE)
+  :Odesłanie raportu do poprawy\n(administratorowi);
+  |Administrator|
+  :Wprowadzenie poprawek do raportu\nlub korekta parametrów;
+  :System przetwarza dane i generuje raport;
+  :Przekazanie raportu do kierownictwa;
+  |Kierownictwo|
+endwhile
+:Zatwierdzenie raportu przez kierownictwo;
+|Administrator|
+:Zapisanie raportu w systemie\nlub eksport do pliku;
+:Przekazanie gotowego raportu do kierownictwa;
+:Koniec procesu;
+stop
+@enduml
