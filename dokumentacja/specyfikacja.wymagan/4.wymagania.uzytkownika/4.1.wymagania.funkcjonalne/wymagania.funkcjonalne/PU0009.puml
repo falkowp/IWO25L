@@ -1,0 +1,7 @@
+@startuml
+actor Użytkownik
+
+Użytkownik -- (Obsługa w trybie offline)
+Użytkownik -- (Wizualizacja danych)
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+actor Administrator
+
+Administrator -- (Diagnostyka stanu systemu)
+Administrator -- (Monitorowanie stanu systemu)
+Administrator -- (Naprawa/przywrócenie systemu po awarii)
+Administrator -- (Rejestrowanie działań użytkownika)
+Administrator -- (Monitorowanie prób logowania użytkownika)
+
+@enduml

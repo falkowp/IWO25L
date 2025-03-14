@@ -1,0 +1,20 @@
+@startuml
+actor Użytkownik
+actor Administrator
+
+Użytkownik -- (Weryfikowanie metadanych)
+Użytkownik -- (Wyświetlenie metadanych)
+Użytkownik -- (Rejestracja informacji o źródłach danych)
+Użytkownik -- (Aktualizacja informacji o źródłach danych)
+Użytkownik -- (Pobieranie listy źródeł danych)
+Użytkownik -- (Wyszukanie źródła danych)
+Użytkownik -- (Dodanie źródła danych)
+Użytkownik -- (Połączenie do źródła)
+Użytkownik -- (Agregacja danych)
+Użytkownik -- (Zmiana języka danych)
+
+Administrator -- (Akceptacja źródła danych)
+Administrator -- (Odrzucenie źródła danych)
+Administrator -- (Archiwizacja źródeł danych)
+
+@enduml
