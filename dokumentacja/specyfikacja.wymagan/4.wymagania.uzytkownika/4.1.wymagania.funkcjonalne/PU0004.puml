@@ -1,0 +1,15 @@
+@startuml Operacje na danych
+
+actor "Użytkownik" as User
+
+usecase "Wyświetlenie listy źródeł" as UC1
+usecase "Wyszukanie źródła danych" as UC2
+usecase "Wyświetlenie informacji o źródle danych" as UC3
+usecase "Zwizualizowanie danych na mapie" as UC4
+
+User -- UC1
+UC1 <-- UC2 : extend 
+UC2 <-- UC3 : extend 
+UC3 <-- UC4 : extend
+
+@enduml
