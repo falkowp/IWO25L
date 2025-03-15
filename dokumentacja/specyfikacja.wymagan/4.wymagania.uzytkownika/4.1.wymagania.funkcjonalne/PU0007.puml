@@ -1,8 +1,0 @@
-@startuml
-actor Użytkownik
-
-Użytkownik -- (Przydzielenie ocen)
-Użytkownik -- (Ocena jakości źródła danych)
-Użytkownik -- (Przegląd ocen jakości przez użytkownika)
-
-@enduml

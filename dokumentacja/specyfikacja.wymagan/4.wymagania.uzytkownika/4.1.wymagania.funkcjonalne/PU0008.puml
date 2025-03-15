@@ -1,7 +1,0 @@
-@startuml
-actor Użytkownik
-
-Użytkownik -- (Pobranie danych przez API)
-Użytkownik -- (Pobieranie dokumentacji technicznej)
-
-@enduml
