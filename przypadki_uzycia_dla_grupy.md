@@ -117,11 +117,20 @@ Marcin Komza:
 
 Marta Stankievich:
 *    **Weryfikacja organizacji chcącej dodawać źródła**: Administrator **sprawdza organizację**, zanim ta uzyska możliwość dodawania nowych źródeł danych.\
-    [(CF0011) Automatyzacja rejestracji firm](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0011.md)
+     [(CF0011) Automatyzacja rejestracji firm](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0011.md)
+     - Jakie kryteria są brane pod uwagę podczas weryfikacji organizacji zewnętrznej chcącej dodawać źródła metadanych do systemu? (np. formalne, prawne, dotyczące reputacji)
+     - Czy proces weryfikacji organizacji jest w pełni automatyczny, czy wymaga również manualnej weryfikacji przez administratora? Jeśli tak, jakie elementy podlegają weryfikacji manualnej?
+     - W jaki sposób system powiadamia administratora o nowej organizacji oczekującej na weryfikację
+     - Czy system rejestruje historię weryfikacji organizacji? (datę zgłoszenia, administratora weryfikującego, status weryfikacji, ewentualne uwagi)
 *   **Weryfikacja konkretnego źródła danych z organizacji**: Administrator **może przeprowadzić kontrolę konkretnego źródła danych**, aby zapewnić jego zgodność z wymaganiami systemu.\
-[(CF0012) Dostęp do formularza rejestracji sprawdzającego dane w KRS](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0012.md)
+    [(CF0012) Dostęp do formularza rejestracji sprawdzającego dane w KRS](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0012.md)
+    - Jakie parametry i standardy są weryfikowane podczas kontroli konkretnego źródła danych? (np. format danych, metadane, aktualność)
+    - Jakie działania może podjąć administrator w systemie w zależności od wyniku weryfikacji źródła danych (oprócz zaakceptowania i odrzucenia))?
+    - Czy w przypadku negatywnego wyniku weryfikacji źródła danych, system umożliwia organizacji poprawę danych i ponowne zgłoszenie do weryfikacji?
 *   **Wyświetlenie listy źródeł**: Użytkownik **może przeglądać dostępne źródła danych**.\
-[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - Jakie informacje o źródłach danych są prezentowane użytkownikowi na liście dostępnych źródeł?
+    - Czy dostęp do listy źródeł jest ograniczony w zależności od roli użytkownika (np. mieszkańcy widzą inne źródła niż pracownicy administracji)
 
 Mateusz Tyl:
 *   **Wyszukanie źródła danych**: Użytkownik **może wyszukiwać konkretne źródła danych**, rozszerzając funkcjonalność przeglądania listy źródeł.\
