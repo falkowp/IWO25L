@@ -33,13 +33,22 @@ Jakub Wypych:
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
 
 Jan Gębal: 
-*    **Wyszukanie źródła danych**: Administrator **może przeszukiwać istniejące źródła danych**.\
+*   **Wyszukanie źródła danych**: Administrator **może przeszukiwać istniejące źródła danych**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - Jakie kryteria wyszukiwania będą dostępne dla administratora? (np. nazwa, typ, status, data utworzenia)
+    - Czy dostęp do wyszukiwania powinien być ograniczony w zależności od ról użytkowników?
+    - Jakie informacje o znalezionych źródłach danych będą wyświetlane w wynikach wyszukiwania?
 *   **Archiwizacja źródeł danych**: Administrator **może oznaczyć źródło jako archiwalne**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - Jakie są konsekwencje oznaczenia źródła jako archiwalne? (np. blokada edycji, brak widoczności w wyszukiwarce)
+    - Czy możliwe jest cofnięcie archiwizacji?
+    - Czy użytkownicy nadal będą mieli dostęp do archiwalnych źródeł?
 *   **Zlecenie automatycznej kontroli poprawności źródła danych**: Administrator **może zlecić systemowi sprawdzenie poprawności źródła**.\
     [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
-
+    - Jakie aspekty źródła danych są sprawdzane w ramach automatycznej kontroli? (np. kompletność, poprawność formatów, dostępność)
+    - Czy administrator może konfigurować zakres weryfikacji?
+    - Jak system powiadamia administratora o wynikach kontroli?
+    - Czy istnieje możliwość ręcznej korekty po wykryciu błędów?
 Kamil Mądrzyk:
 *    **Usunięcie źródła danych**: Administrator **może usunąć wybrane źródło danych**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
