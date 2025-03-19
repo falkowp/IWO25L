@@ -134,12 +134,22 @@ Michał Janaszewski:
 [(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
 
 Mikołaj Pątkowski:
-**Wyświetlenie informacji o zgłoszeniu**: Administrator **może zobaczyć szczegóły konkretnego zgłoszenia użytkownika**.\
-[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
-*   **Odrzucenie zgłoszenia użytkownika**: Administrator **może odrzucić zgłoszenie, jeśli uzna je za nieistotne**.\
-[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
-*   **Przyjęcie zgłoszenia użytkownika**: Administrator **może zaakceptować zgłoszenie i podjąć działania naprawcze**.\
-[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+Mikołaj Pątkowski:
+- **Wyświetlenie informacji o zgłoszeniu**: Administrator **może zobaczyć szczegóły konkretnego zgłoszenia użytkownika**.  
+    [(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+    - Jakie informacje powinny być widoczne w szczegółach zgłoszenia? (np. data zgłoszenia, opis problemu, status, dane użytkownika)
+    - W jaki sposób administrator powinien móc filtrować lub wyszukiwać zgłoszenia? (np. po numerze zgłoszenia, dacie, statusie)
+    - Czy administrator powinien mieć możliwość eksportu danych o zgłoszeniu do pliku? (np. PDF, CSV)
+- **Odrzucenie zgłoszenia użytkownika**: Administrator **może odrzucić zgłoszenie, jeśli uzna je za nieistotne**.  
+    [(CF0013) Zgłaszanie problemów](../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+    - Jakie powody odrzucenia zgłoszenia powinien móc wybrać administrator? (np. lista predefiniowanych powodów, możliwość wpisania własnego uzasadnienia)
+    - Czy użytkownik, którego zgłoszenie zostało odrzucone, powinien otrzymać powiadomienie? (np. powód odrzucenia, data)
+    - Czy odrzucone zgłoszenie powinno być archiwizowane? (np. na jak długo i w jaki sposób)
+- **Przyjęcie zgłoszenia użytkownika**: Administrator **może zaakceptować zgłoszenie i podjąć działania naprawcze**.  
+    [(CF0013) Zgłaszanie problemów](../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+    - Jakie kroki powinien podjąć administrator po zaakceptowaniu zgłoszenia? (np. przypisanie do działu, osoby odpowiedzialnej)
+    - Czy użytkownik powinien otrzymać powiadomienie o zaakceptowaniu zgłoszenia? (np. przewidywany czas rozwiązania problemu)
+    - Czy system powinien umożliwiać śledzenie postępów w realizacji zgłoszenia? (np. statusy: "w trakcie realizacji", "zakończone", "wstrzymane")
 
 Wojciech Grot:
 **Przegląd ocen jakości źródła danych**: Użytkownik **może sprawdzić ocenę jakości źródła danych**.\
