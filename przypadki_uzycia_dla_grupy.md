@@ -11,10 +11,23 @@ Adrian Rybaczuk:
 Artem Omelchenko:
 *   **Rejestracja w systemie**: Nowy użytkownik **może zarejestrować się w systemie**.\
     [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+    - Jakie informacje są wymagane podczas rejestracji użytkownika?
+    - Jak system weryfikuje poprawność danych wprowadzonych podczas rejestracji?
+    - Jakie są procedury w przypadku nieudanej rejestracji?
+    - Jakie powiadomienia otrzymuje użytkownik po zakończeniu procesu rejestracji?
 *   **Logowanie do systemu**: Użytkownik **może zalogować się do systemu**.\
     [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+    - Jakie metody uwierzytelniania są dostępne dla użytkowników (np. hasło, uwierzytelnianie dwuskładnikowe)?
+    - Co się dzieje, gdy użytkownik wprowadzi błędne dane logowania?
+    - Jak długo użytkownik może pozostać zalogowany w systemie bez aktywności?
+    - Jak system monitoruje i rejestruje próby logowania?
 *   **Nadanie hasła**: Administrator **przypisuje użytkownikowi nowe hasło**.\
     [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+    - Jakie są zasady dotyczące bezpieczeństwa haseł (np. minimalna długość, złożoność)?
+    - Jak system informuje użytkownika o nadaniu nowego hasła?
+    - Jaki jest **proces nadawania hasła**? Czy system generuje hasło automatycznie, czy administrator wprowadza je ręcznie?
+    - W jaki sposób nowe hasło jest przekazywane użytkownikowi?
+    - Jakie są kroki, które administrator musi podjąć, aby przypisać nowe hasło użytkownikowi?
 
 Bartek Cylwik:
 *    **Zmiana hasła**: Użytkownik **może zmienić swoje hasło**, co zwiększa bezpieczeństwo konta.\
