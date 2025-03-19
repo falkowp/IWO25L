@@ -30,7 +30,7 @@ Artem Omelchenko:
     - Jakie są kroki, które administrator musi podjąć, aby przypisać nowe hasło użytkownikowi?
 
 Bartek Cylwik:
-*    **Zmiana hasła**: Użytkownik **może zmienić swoje hasło**, co zwiększa bezpieczeństwo konta.\
+*   **Zmiana hasła**: Użytkownik **może zmienić swoje hasło**, co zwiększa bezpieczeństwo konta.\
     [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
     - Czy użytkownik musi podać swoje stare hasło przed zmianą na nowe?
     - Czy istnieją wymagania dotyczące złożoności nowego hasła (np. minimalna długość, duże litery, cyfry, znaki specjalne)?
