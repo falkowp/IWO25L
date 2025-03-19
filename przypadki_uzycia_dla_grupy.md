@@ -41,7 +41,7 @@ Usunięcie konta
     - Czy użytkownik otrzymuje potwierdzenie o usunięciu konta przed zakończeniem procesu?
     - Czy po usunięciu konta przechowywane są jakiekolwiek dane użytkownika (np. do celów archiwalnych lub zgodności z przepisami)?
     - Czy administrator może cofnąć decyzję o usunięciu konta w określonym czasie?
-*    **Wyświetlenie listy źródeł**: Administrator **może przeglądać listę dostępnych źródeł danych**.\
+*   **Wyświetlenie listy źródeł**: Administrator **może przeglądać listę dostępnych źródeł danych**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
     - Czy lista źródeł może być filtrowana według określonych kryteriów (np. typ źródła, data dodania)?
     - Czy administrator może sortować listę źródeł według różnych parametrów (np. nazwa, status, ostatnia aktualizacja)?
