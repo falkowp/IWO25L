@@ -74,11 +74,23 @@ Marta Stankievich:
 
 Mateusz Tyl:
 *   **Wyszukanie źródła danych**: Użytkownik **może wyszukiwać konkretne źródła danych**, rozszerzając funkcjonalność przeglądania listy źródeł.\
-[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md) \
+Jakie kryteria wyszukiwania będą dostępne dla użytkownika?
+Czy system powinien umożliwiać filtrowanie wyników (np. wg daty, typu źródła)?
+Jak prezentowane będą wyniki wyszukiwania (lista, tabela, dodatkowe metadane)?
+Czy wyszukiwanie ma uwzględniać jednocześnie różne słowa kluczowe?
 *   **Wyświetlenie informacji o źródle danych**: Użytkownik **może zobaczyć szczegółowe informacje na temat wybranego źródła**.\
-[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)\
+Jakie dokładnie informacje o źródle mają być prezentowane użytkownikowi?
+Czy dostępne będą odnośniki do powiązanych danych lub historii edycji?
+Czy poziom szczegółowości prezentowanych danych zależy od uprawnień użytkownika?
+W jaki sposób system powinien reagować na brak pewnych informacji (np. pola puste, dane nieaktualne)?
 *   **Zwizualizowanie danych na mapie**: Użytkownik **może zobaczyć dane przedstawione na mapie**, co umożliwia ich przestrzenną analizę.\
-[(CF0006) Wizualizacja danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0006.md)
+[(CF0006) Wizualizacja danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0006.md)\
+Jakie typy danych mają być wyświetlane na mapie (punkty, polygon, wartości)?
+Czy wizualizacja ma uwzględniać różne warstwy lub style wyświetlania (np. heatmapa)?
+Jakie interakcje z mapą są przewidywane (przybliżanie, zaznaczanie obszaru, kliknięcie w punkt)?
+Czy użytkownik może eksportować lub zapisywać zestaw wizualizowanych danych (np. zrzut ekranu, plik)?
 
 Michał Janaszewski: 
  **Wyświetlenie listy zgłoszeń użytkowników**: Administrator **może przeglądać zgłoszenia problemów przesłane przez użytkowników**.\
