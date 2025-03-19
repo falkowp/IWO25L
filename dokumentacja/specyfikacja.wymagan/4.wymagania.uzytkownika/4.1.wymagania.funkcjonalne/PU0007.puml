@@ -1,0 +1,20 @@
+@startuml Monitorowanie i zabezpieczenia systemu
+
+actor "Administrator" as Admin
+
+usecase "Wyświetlenie stanu systemu i serwerów" as UC1
+usecase "Tworzenie backupu systemu" as UC2
+usecase "Odtwarzanie danych z backupu" as UC3
+usecase "Wyświetlenie listy źródeł" as UC4
+usecase "Wyszukanie źródła danych" as UC5
+usecase "Wyświetlenie historii zmian dokonanych w metadanych i ich źródłach" as UC6
+
+Admin -- UC1
+Admin -- UC2
+UC2 <-- UC3 : extend
+
+Admin -- UC4
+UC4 <-- UC5 : extend
+UC5 <-- UC6 : extend
+
+@enduml

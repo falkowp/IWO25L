@@ -1,0 +1,25 @@
+@startuml Zarządzanie użytkownikami i dostępem
+
+actor "Administrator" as Admin
+actor "Użytkownik" as User
+
+usecase "Wyświetlenie listy użytkowników" as UC1
+usecase "Przypisanie uprawnień/roli użytkownikowi do źródła danych" as UC2
+usecase "Zmiana uprawnień" as UC3
+usecase "Rejestracja w systemie" as UC4
+usecase "Logowanie do systemu" as UC5
+usecase "Nadanie hasła" as UC6
+usecase "Zmiana hasła" as UC7
+usecase "Usunięcie konta" as UC8
+
+Admin -- UC1
+UC1 <-- UC2 : extend
+UC2 <-- UC3 : extend
+
+User -- UC4
+UC4 --> UC6 : include
+UC4 <-- UC5 : extend
+UC5 <-- UC7 : extend
+UC5 <-- UC8 : extend
+
+@enduml

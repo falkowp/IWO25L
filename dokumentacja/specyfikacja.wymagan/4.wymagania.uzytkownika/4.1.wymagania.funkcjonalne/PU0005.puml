@@ -1,0 +1,34 @@
+@startuml Zarządzanie błędami i jakością danych
+
+actor "Administrator" as Admin
+actor "Użytkownik" as User
+
+usecase "Wyświetlenie listy zgłoszeń użytkowników" as UC1
+usecase "Generowanie raportów o zgłoszeniach użytkowników" as UC2
+usecase "Wyświetlenie listy zarchiwizowanych raportów" as UC3
+usecase "Wyświetlenie informacji o zgłoszeniu" as UC4
+usecase "Odrzucenie zgłoszenia użytkownika" as UC5
+usecase "Przyjęcie zgłoszenia użytkownika" as UC6
+usecase "Wyświetlenie listy źródeł" as UC7
+usecase "Wyszukanie źródła danych" as UC8
+usecase "Wyświetlenie informacji o źródle danych" as UC9
+usecase "Przegląd ocen jakości źródła danych" as UC10
+usecase "Zgłaszanie błędów i problemów z metadanymi" as UC11
+usecase "Nadanie oceny jakości źródła metadanych" as UC12
+
+Admin -- UC1
+UC1 <-- UC2 : extend
+UC1 <-- UC3 : extend
+
+UC4 <-- UC5 : extend
+UC4 <-- UC6 : extend
+UC1 <-- UC4 : extend
+
+User -- UC7
+UC7 <-- UC8 : extend
+UC8 <-- UC9 : extend
+UC9 <-- UC10 : extend
+UC10 <-- UC11 : extend
+UC9 <-- UC12 : extend
+
+@enduml
