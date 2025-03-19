@@ -13,13 +13,13 @@ usecase "Zmiana hasła" as UC7
 usecase "Usunięcie konta" as UC8
 
 Admin -- UC1
+UC1 <-- UC6 : extend
 UC1 <-- UC2 : extend
 UC2 <-- UC3 : extend
+UC1 <-- UC8 : extend
 
 User -- UC4
-UC4 --> UC6 : include
-UC4 <-- UC5 : extend
-UC5 <-- UC7 : extend
-UC5 <-- UC8 : extend
+User -- UC5
+User -- UC7  
 
 @enduml
