@@ -3,10 +3,19 @@
 Adrian Rybaczuk:
 *   **Wyświetlenie listy użytkowników**: Administrator **może przeglądać listę użytkowników systemu**. Jest to kluczowy element zarządzania, umożliwiający monitorowanie aktywnych kont.\
     [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+    - A
+    - B
+    - C
 *   **Przypisanie uprawnień/roli użytkownikowi do źródła danych**: Administrator **może przypisywać użytkownikom role i uprawnienia do różnych zasobów**. Ten przypadek użycia rozszerza wyświetlenie listy użytkowników.\
     [(CF0005) Zarządzanie uprawnieniami](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0005.md)
+    - A
+    - B
+    - C
 *   **Zmiana uprawnień**: Administrator **może modyfikować istniejące uprawnienia użytkowników**. Jest to kluczowe dla zarządzania dostępem i zabezpieczeń systemu.\
     [(CF0005) Zarządzanie uprawnieniami](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0005.md)
+    - A
+    - B
+    - C
 
 Artem Omelchenko:
 *   **Rejestracja w systemie**: Nowy użytkownik **może zarejestrować się w systemie**.\
