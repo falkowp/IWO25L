@@ -49,6 +49,7 @@ Jan Gębal:
     - Czy administrator może konfigurować zakres weryfikacji?
     - Jak system powiadamia administratora o wynikach kontroli?
     - Czy istnieje możliwość ręcznej korekty po wykryciu błędów?
+    
 Kamil Mądrzyk:
 *    **Usunięcie źródła danych**: Administrator **może usunąć wybrane źródło danych**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
