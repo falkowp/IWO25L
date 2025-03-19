@@ -1,0 +1,105 @@
+# Przypadki użycia dla grupy
+
+Adrian Rybaczuk:
+*   **Wyświetlenie listy użytkowników**: Administrator **może przeglądać listę użytkowników systemu**. Jest to kluczowy element zarządzania, umożliwiający monitorowanie aktywnych kont.\
+    [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+*   **Przypisanie uprawnień/roli użytkownikowi do źródła danych**: Administrator **może przypisywać użytkownikom role i uprawnienia do różnych zasobów**. Ten przypadek użycia rozszerza wyświetlenie listy użytkowników.\
+    [(CF0005) Zarządzanie uprawnieniami](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0005.md)
+*   **Zmiana uprawnień**: Administrator **może modyfikować istniejące uprawnienia użytkowników**. Jest to kluczowe dla zarządzania dostępem i zabezpieczeń systemu.\
+    [(CF0005) Zarządzanie uprawnieniami](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0005.md)
+
+Artem Omelchenko:
+*   **Rejestracja w systemie**: Nowy użytkownik **może zarejestrować się w systemie**.\
+    [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+*   **Logowanie do systemu**: Użytkownik **może zalogować się do systemu**.\
+    [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+*   **Nadanie hasła**: Administrator **przypisuje użytkownikowi nowe hasło**.\
+    [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+
+Bartek Cylwik:
+*    **Zmiana hasła**: Użytkownik **może zmienić swoje hasło**, co zwiększa bezpieczeństwo konta.\
+    [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+*   **Usunięcie konta**: Administrator **może usunąć konto użytkownika**, co kończy jego dostęp do systemu.\
+    [(CF0010) Rejestracja działań użytkowników](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0010.md)
+*    **Wyświetlenie listy źródeł**: Administrator **może przeglądać listę dostępnych źródeł danych**.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+
+Jakub Wypych:
+*    **Eksport listy źródeł do pliku**: Administrator **może zapisać listę źródeł do pliku**, co pozwala na dalszą analizę.\
+    [(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
+*   **Rejestracja nowego źródła danych**: Administrator **może dodać nowe źródło danych**.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Dodanie nowego zestawu metadanych**: Po rejestracji źródła administrator **może dodać zestaw metadanych**.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+
+Jan Gębal: 
+*    **Wyszukanie źródła danych**: Administrator **może przeszukiwać istniejące źródła danych**.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Archiwizacja źródeł danych**: Administrator **może oznaczyć źródło jako archiwalne**.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Zlecenie automatycznej kontroli poprawności źródła danych**: Administrator **może zlecić systemowi sprawdzenie poprawności źródła**.\
+    [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
+
+Kamil Mądrzyk:
+*    **Usunięcie źródła danych**: Administrator **może usunąć wybrane źródło danych**.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Wyświetlenie informacji o źródle danych**: Administrator **może zobaczyć szczegółowe informacje o danym źródle**.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Pobranie szczegółowych informacji o źródle danych**: Możliwość uzyskania rozszerzonych informacji o danym źródle.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+
+Maciej Przybylski:
+*    **Edycja metadanych**: Administrator **może edytować metadane** przypisane do źródła danych.\
+    [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Zagregowanie metadanych**: Możliwość **scalenia i analizy metadanych** z różnych źródeł.\
+    [(CF0001) Agregacja danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0001.md)
+*   **Walidacja poprawności metadanych**: Sprawdzenie **czy metadane spełniają wymagane kryteria jakości**.\
+    [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
+
+Marcin Komza:
+*    **Sprawdzanie kompletności danych w źródle**: Weryfikacja, czy dane są **pełne i nie brakuje istotnych elementów**.\
+    [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
+*   **Identyfikacja nieaktualnych metadanych**: System **może wskazać metadane, które straciły aktualność**.\
+    [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
+*   **Weryfikacja zgodności źródła z systemem CKAN**: Sprawdzenie **czy dane są zgodne z platformą CKAN**.\
+    [(CF0008) Integracja z CKAN](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0008.md)
+
+Marta Stankievich:
+*    **Weryfikacja organizacji chcącej dodawać źródła**: Administrator **sprawdza organizację**, zanim ta uzyska możliwość dodawania nowych źródeł danych.\
+    [(CF0011) Automatyzacja rejestracji firm](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0011.md)
+*   **Weryfikacja konkretnego źródła danych z organizacji**: Administrator **może przeprowadzić kontrolę konkretnego źródła danych**, aby zapewnić jego zgodność z wymaganiami systemu.\
+[(CF0012) Dostęp do formularza rejestracji sprawdzającego dane w KRS](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0012.md)
+*   **Wyświetlenie listy źródeł**: Użytkownik **może przeglądać dostępne źródła danych**.\
+[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+
+Mateusz Tyl:
+*   **Wyszukanie źródła danych**: Użytkownik **może wyszukiwać konkretne źródła danych**, rozszerzając funkcjonalność przeglądania listy źródeł.\
+[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Wyświetlenie informacji o źródle danych**: Użytkownik **może zobaczyć szczegółowe informacje na temat wybranego źródła**.\
+[(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+*   **Zwizualizowanie danych na mapie**: Użytkownik **może zobaczyć dane przedstawione na mapie**, co umożliwia ich przestrzenną analizę.\
+[(CF0006) Wizualizacja danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0006.md)
+
+Michał Janaszewski: 
+ **Wyświetlenie listy zgłoszeń użytkowników**: Administrator **może przeglądać zgłoszenia problemów przesłane przez użytkowników**.\
+[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+*   **Generowanie raportów o zgłoszeniach użytkowników**: Administrator **może wygenerować raporty na podstawie zgłoszeń**.\
+[(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
+*   **Wyświetlenie listy zarchiwizowanych raportów**: Administrator **może przeglądać wcześniejsze raporty dotyczące zgłoszeń**.\
+[(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
+
+Mikołaj Pątkowski:
+**Wyświetlenie informacji o zgłoszeniu**: Administrator **może zobaczyć szczegóły konkretnego zgłoszenia użytkownika**.\
+[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+*   **Odrzucenie zgłoszenia użytkownika**: Administrator **może odrzucić zgłoszenie, jeśli uzna je za nieistotne**.\
+[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+*   **Przyjęcie zgłoszenia użytkownika**: Administrator **może zaakceptować zgłoszenie i podjąć działania naprawcze**.\
+[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+
+Wojciech Grot:
+**Przegląd ocen jakości źródła danych**: Użytkownik **może sprawdzić ocenę jakości źródła danych**.\
+[(CF0007) Możliwość oceny danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0007.md)
+*   **Zgłaszanie błędów i problemów z metadanymi**: Użytkownik **może zgłosić błędy dotyczące metadanych wybranego źródła**.\
+[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+*   **Nadanie oceny jakości źródła metadanych**: Użytkownik **może ocenić jakość metadanych danego źródła**.\
+[(CF0007) Możliwość oceny danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0007.md)
