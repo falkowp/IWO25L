@@ -108,12 +108,25 @@ Maciej Przybylski:
     [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
 
 Marcin Komza:
-*    **Sprawdzanie kompletności danych w źródle**: Weryfikacja, czy dane są **pełne i nie brakuje istotnych elementów**.\
+- **Sprawdzanie kompletności danych w źródle**: Weryfikacja, czy dane są **pełne i nie brakuje istotnych elementów**.\
     [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
-*   **Identyfikacja nieaktualnych metadanych**: System **może wskazać metadane, które straciły aktualność**.\
+    - Jakie konkretnie elementy danych są uważane za istotne i których brak będzie wskazywał na niekompletność źródła?
+    - Czy istnieją jakieś ustalone standardy lub normy, względem których będzie oceniana kompletność danych w źródle? Jeśli tak, jakie to są standardy?
+    - W jaki sposób system będzie informował pracownika o braku istotnych elementów w danych źródłowych? Czy będzie generowany jakiś raport lub komunikat?
+
+- **Identyfikacja nieaktualnych metadanych**: System **może wskazać metadane, które straciły aktualność**.\
     [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
-*   **Weryfikacja zgodności źródła z systemem CKAN**: Sprawdzenie **czy dane są zgodne z platformą CKAN**.\
+
+    - Jakie kryteria będą decydowały o tym, że metadane zostaną uznane za nieaktualne? Czy będzie to związane z datą ich ostatniej modyfikacji, brakiem powiązania z aktualnymi danymi, czy innymi czynnikami?
+    - W jaki sposób system będzie wskazywał, które metadane straciły aktualność? Czy będzie to wizualne oznaczenie, generowanie powiadomień, czy inne metody?
+    - Czy system będzie sugerował jakieś akcje w związku z identyfikacją nieaktualnych metadanych (np. aktualizację, weryfikację)?
+  
+- **Weryfikacja zgodności źródła z systemem CKAN**: Sprawdzenie **czy dane są zgodne z platformą CKAN**.\
     [(CF0008) Integracja z CKAN](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0008.md)
+    
+    - Jakie aspekty danych będą weryfikowane pod kątem zgodności z platformą CKAN (np. format danych, schemat metadanych, struktura plików)?
+    - Czy istnieją jakieś konkretne standardy CKAN, z którymi źródło musi być zgodne? Jeśli tak, jakie to są standardy?
+    - Co się stanie, jeśli źródło danych nie będzie zgodne z systemem CKAN? Czy system zablokuje wprowadzenie danych, wygeneruje raport o błędach, czy podejmie inne działania?
 
 Marta Stankievich:
 *    **Weryfikacja organizacji chcącej dodawać źródła**: Administrator **sprawdza organizację**, zanim ta uzyska możliwość dodawania nowych źródeł danych.\
