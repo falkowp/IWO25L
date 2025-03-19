@@ -85,10 +85,19 @@ Jan Gębal:
 Kamil Mądrzyk:
 *    **Usunięcie źródła danych**: Administrator **może usunąć wybrane źródło danych**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - Jakie są wymagania dotyczące usunięcia źródła danych? Czy administrator musi spełnić określone warunki przed usunięciem?
+    - Czy po usunięciu źródła dane powinny być trwale usuwane czy jedynie oznaczane jako archiwalne?
+    - Czy system powinien rejestrować historię usuniętych źródeł i umożliwiać ich odzyskanie?
 *   **Wyświetlenie informacji o źródle danych**: Administrator **może zobaczyć szczegółowe informacje o danym źródle**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - Jakie informacje o źródle danych powinny być dostępne dla administratora?
+    - Czy wyświetlane informacje powinny obejmować historię zmian i operacji na danym źródle?
+    - Czy istnieją ograniczenia dotyczące dostępu do szczegółowych informacji o źródle danych w zależności od ról użytkowników?
 *   **Pobranie szczegółowych informacji o źródle danych**: Możliwość uzyskania rozszerzonych informacji o danym źródle.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - W jakich formatach administrator powinien móc pobierać szczegółowe informacje o źródle danych?
+    - Czy eksportowane dane powinny zawierać pełną historię zmian źródła?
+    - Czy dostęp do pobierania szczegółowych informacji powinien być ograniczony na podstawie ról i uprawnień użytkowników?
 
 Maciej Przybylski:
 *    **Edycja metadanych**: Administrator **może edytować metadane** przypisane do źródła danych.\
