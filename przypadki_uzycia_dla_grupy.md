@@ -163,7 +163,27 @@ Mikołaj Pątkowski:
 Wojciech Grot:
 **Przegląd ocen jakości źródła danych**: Użytkownik **może sprawdzić ocenę jakości źródła danych**.\
 [(CF0007) Możliwość oceny danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0007.md)
+- Jakie informacje użytkownik otrzymuje w ramach oceny jakości źródła danych?
+- Jakie kryteria są brane pod uwagę przy ocenie jakości źródła danych?
+- Czy ocena jakości źródła danych jest prezentowana w formie liczbowej, opisowej czy obu?
+- Czy użytkownik może zobaczyć historię ocen jakości danego źródła?
+- Czy dostęp do oceny jakości źródła danych wymaga dodatkowych uprawnień (załozenia konta)?
+
+
+
 *   **Zgłaszanie błędów i problemów z metadanymi**: Użytkownik **może zgłosić błędy dotyczące metadanych wybranego źródła**.\
 [(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+
+-Jakie rodzaje błędów dotyczących metadanych użytkownik może zgłosić?
+-Czy użytkownik może dodać szczegółowy opis problemu z metadanymi?
+-Czy użytkownik otrzymuje informację zwrotną o statusie swojego zgłoszenia?
+-Czy istnieje możliwość dołączania załączników (np. zrzutów ekranu) do zgłoszeń błędów?
+
 *   **Nadanie oceny jakości źródła metadanych**: Użytkownik **może ocenić jakość metadanych danego źródła**.\
 [(CF0007) Możliwość oceny danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0007.md)
+
+- Na jakiej podstawie użytkownik może ocenić jakość metadanych?
+- Czy ocena jakości metadanych jest w jakiś sposób ustandaryzowana (np. skala liczbowa, ocena opisowa)?
+- Czy użytkownik może dodać komentarz do swojej oceny?
+- Czy oceny jakości metadanych mogą być edytowane lub usuwane przez użytkownika?
+- Czy system przechowuje historię ocen jakości metadanych dla danego źródła?
