@@ -175,14 +175,26 @@ Mateusz Tyl:
     - Czy użytkownik może eksportować lub zapisywać zestaw wizualizowanych danych (np. zrzut ekranu, plik)?
 
 Michał Janaszewski: 
- **Wyświetlenie listy zgłoszeń użytkowników**: Administrator **może przeglądać zgłoszenia problemów przesłane przez użytkowników**.\
-[(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
-*   **Generowanie raportów o zgłoszeniach użytkowników**: Administrator **może wygenerować raporty na podstawie zgłoszeń**.\
-[(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
-*   **Wyświetlenie listy zarchiwizowanych raportów**: Administrator **może przeglądać wcześniejsze raporty dotyczące zgłoszeń**.\
-[(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
+- **Wyświetlenie listy zgłoszeń użytkowników**: Administrator **może przeglądać zgłoszenia problemów przesłane przez użytkowników**.\
+    [(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
+    - Jakie informacje są dostępne dla administratora w widoku zgłoszenia (np. status, kategoria, priorytet, opis problemu)?
+    - Czy użytkownicy otrzymują powiadomienia o zmianach statusu ich zgłoszenia?
+    - Jak długo przechowywane są zamknięte zgłoszenia w systemie?
+    - Czy system generuje statystyki dotyczące liczby zgłoszeń według kategorii i statusu?
+- **Generowanie raportów o zgłoszeniach użytkowników**: Administrator **może wygenerować raporty na podstawie zgłoszeń**.\
+    [(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
+    - Jakie metryki i dane są uwzględniane w raportach dotyczących zgłoszeń?
+    - Czy raporty mogą być generowane według określonych filtrów (np. zgłoszenia z ostatniego miesiąca, tylko nierozwiązane zgłoszenia)?
+    - Czy administrator może wyeksportować raporty do różnych formatów (np. PDF, CSV, Excel)?
+    - Czy raporty mogą być generowane w formie wykresów lub wizualizacji danych?
+    - Jak długo przechowywane są wygenerowane raporty?
+- **Wyświetlenie listy zarchiwizowanych raportów**: Administrator **może przeglądać wcześniejsze raporty dotyczące zgłoszeń**.\
+    [(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
+    - Jakie kryteria decydują o archiwizacji raportu?
+    - Jakie metadane są dostępne dla raportów archiwalnych (np. data utworzenia, autor, okres raportowania)?
+    - Jak długo przechowywane są raporty w archiwum i czy istnieje mechanizm ich automatycznego usuwania?
+    - Czy system pozwala na eksportowanie zarchiwizowanych raportów?
 
-Mikołaj Pątkowski:
 Mikołaj Pątkowski:
 - **Wyświetlenie informacji o zgłoszeniu**: Administrator **może zobaczyć szczegóły konkretnego zgłoszenia użytkownika**.  
     [(CF0013) Zgłaszanie problemów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0013.md)
