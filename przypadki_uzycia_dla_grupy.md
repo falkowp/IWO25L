@@ -58,11 +58,20 @@ Usunięcie konta
 
 Jakub Wypych:
 *    **Eksport listy źródeł do pliku**: Administrator **może zapisać listę źródeł do pliku**, co pozwala na dalszą analizę.\
-    [(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)
+    [(CF0004) Generowanie raportów i backupów](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0004.md)  
+    - W jakim formacie plik ma być generowany (CSV, XLSX, JSON, XML)?  
+    - Czy plik ma być szyfrowany lub zabezpieczony hasłem?  
+    - Czy eksportowana lista ma zawierać wszystkie szczegóły źródeł danych czy tylko wybrane pola?
 *   **Rejestracja nowego źródła danych**: Administrator **może dodać nowe źródło danych**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - Jakie informacje są wymagane podczas rejestracji źródła (np. nazwa, typ, lokalizacja, właściciel)?
+    - Czy źródło danych może mieć przypisane kategorie lub tagi?
+    - Czy rejestracja źródła powinna inicjować jakiś workflow np. akceptacyjny?
+    - Czy system powinien walidować poprawność danych podczas rejestracji? Jakie reguły walidacji?
 *   **Dodanie nowego zestawu metadanych**: Po rejestracji źródła administrator **może dodać zestaw metadanych**.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
+    - Czy administrator może definiować nowe typy metadanych?
+    - Jakie pola powinny być obowiązkowe w metadanych?
 
 Jan Gębal: 
 *   **Wyszukanie źródła danych**: Administrator **może przeszukiwać istniejące źródła danych**.\
