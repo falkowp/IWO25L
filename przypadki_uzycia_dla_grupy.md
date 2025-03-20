@@ -111,20 +111,20 @@ Kamil Mądrzyk:
 Maciej Przybylski:
 *    **Edycja metadanych**: Administrator **może edytować metadane** przypisane do źródła danych.\
     [(CF0003) Rejestracja i aktualizacja informacji o źródłach danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0003.md)
-    -Jakie kryteria uprawniają administratora do edycji metadanych przypisanych do źródła danych?
-     -Które elementy informacji o źródle danych są aktualizowane i jak często powinno się je weryfikować?
-     -Czy istnieją specyficzne procedury lub narzędzia wspomagające rejestrację oraz aktualizację tych informacji?
+    - Jakie kryteria uprawniają administratora do edycji metadanych przypisanych do źródła danych?
+     - Które elementy informacji o źródle danych są aktualizowane i jak często powinno się je weryfikować?
+     - Czy istnieją specyficzne procedury lub narzędzia wspomagające rejestrację oraz aktualizację tych informacji?
 *   **Zagregowanie metadanych**: Możliwość **scalenia i analizy metadanych** z różnych źródeł.\
     [(CF0001) Agregacja danych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0001.md)
-    -Z jakich rodzajów źródeł danych zbierane są metadane do agregacji?
-    -Jakie narzędzia lub technologie są wykorzystywane do scalenia i analizy metadanych z różnych źródeł?
-    -Czy istnieją standardy lub kryteria, które muszą być spełnione przy łączeniu metadanych z wielu systemów?
+    - Z jakich rodzajów źródeł danych zbierane są metadane do agregacji?
+    - Jakie narzędzia lub technologie są wykorzystywane do scalenia i analizy metadanych z różnych źródeł?
+    - Czy istnieją standardy lub kryteria, które muszą być spełnione przy łączeniu metadanych z wielu systemów?
 
 *   **Walidacja poprawności metadanych**: Sprawdzenie **czy metadane spełniają wymagane kryteria jakości**.\
     [(CF0002) Automatyczna weryfikacja metadanych](../../3.wizja.systemu/3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0002.md)
-    -Jakie kryteria jakości są stosowane podczas automatycznej weryfikacji poprawności metadanych?
-    -Jakie mechanizmy są używane do identyfikacji i zgłaszania potencjalnych błędów w metadanych?
-    -Czy istnieje procedura eskalacji problemów wykrytych w czasie automatycznej walidacji, a jeśli tak – jak wygląda jej przebieg?
+    - Jakie kryteria jakości są stosowane podczas automatycznej weryfikacji poprawności metadanych?
+    - Jakie mechanizmy są używane do identyfikacji i zgłaszania potencjalnych błędów w metadanych?
+    - Czy istnieje procedura eskalacji problemów wykrytych w czasie automatycznej walidacji, a jeśli tak – jak wygląda jej przebieg?
 
 Marcin Komza:
 - **Sprawdzanie kompletności danych w źródle**: Weryfikacja, czy dane są **pełne i nie brakuje istotnych elementów**.\
