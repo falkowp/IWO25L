@@ -11,15 +11,20 @@ usecase "Logowanie do systemu" as UC5
 usecase "Nadanie hasła" as UC6
 usecase "Zmiana hasła" as UC7
 usecase "Usunięcie konta" as UC8
+usecase "Utworzenie konta" as UC9
+usecase "Wylogowanie z systemu" as UC10
 
 Admin -- UC1
 UC1 <-- UC6 : extend
 UC1 <-- UC2 : extend
 UC2 <-- UC3 : extend
 UC1 <-- UC8 : extend
+UC1 <-- UC9 : extend
 
 User -- UC4
 User -- UC5
-User -- UC7  
+User -- UC7
+User -- UC10  
 
 @enduml
+
