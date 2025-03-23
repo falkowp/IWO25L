@@ -1,0 +1,136 @@
+@startuml
+class Uzytkownik {
+    -id : int
+    -imie : String
+    -nazwisko : String
+    -email : String
+    -login : String
+    -haslo : String
+    -rola : String
+    -uprawnienia : String
+    +zarejestruj()
+    +zaloguj()
+    +wyloguj()
+    +zmienHaslo()
+    +przegladajZrodla()
+    +zglosProblem()
+    +ocenDane()
+    +wyszukajZrodla()
+}
+
+class Administrator {
+    +przypiszRole()
+    +utworzUzytkownika()
+    +usunUzytkownika()
+    +nadajHasloUzytkownikowi()
+    +zweryfikujOrganizacje()
+    +edytujMetadane()
+    +eksportujListeZrodel()
+    +utworzKopieZapasowa()
+    +zarchiwizujZrodlo()
+    +rozwiazZgloszenie()
+    +generujRaportZgloszen()
+    +eksportujRaport()
+    +monitorujStanSystemu()
+}
+
+class Organizacja {
+    -id : int
+    -nazwa : String
+    -email : String
+    -opis : String
+    -status : String
+    -dataWeryfikacji : Date
+    -zweryfikowanePrzez : String
+    +zlozDoWeryfikacji()
+    +zlozZrodloDoWeryfikacji()
+}
+
+class ZrodloDanych {
+    -id : int
+    -nazwa : String
+    -opis : String
+    -tagi : String[]
+    -wlasciciel : Organizacja
+    -dataUtworzenia : Date
+    -dataAktualizacji : Date
+    -status : String
+    -czyZarchiwizowane : boolean
+    +edytujDane()
+    +aktualizujDane()
+    +sprawdzKompletnosc()
+    +eksportujDoRDF()
+}
+
+class Metadane {
+    -id : int
+    -idZrodla : int
+    -dataUtworzenia : Date
+    -dataAktualizacji : Date
+    -osobaKontaktowa : String
+    -emailKontaktowy : String
+    -licencja : String
+    +walidujMetadane()
+    +aktualizujMetadane()
+    +generujRaportWalidacji()
+    +eksportujMetadane()
+}
+
+class Zgloszenie {
+    -id : int
+    -komentarz : String
+    -zalacznik : String
+    -autor : String
+    -status : String
+    -czasRozpatrzenia : String
+    -dataUtworzenia : Date
+    -dataModyfikacji : Date
+    +generujZgloszenie()
+    +wyswietlListeZgloszen()
+    +wyswietlSzczegolyZgloszenia()
+    +zaktualizujStatus()
+}
+
+class Ocena {
+    -id : int
+    -ocena : int
+    -komentarz : String
+    -autor : String
+    -dataOceny : Date
+    +ocen()
+}
+
+class KopiaZapasowa {
+    -id : int
+    -data : Date
+    -typ : String
+    -status : String
+    -rozmiar : long
+    +utworzKopie()
+    +zweryfikujKopie()
+}
+
+class RaportZgloszen {
+    -id : int
+    -status : String
+    -czasRozpatrzenia : String
+    -dataUtworzenia : Date
+    +generuj()
+    +eksportujDoPDF()
+    +eksportujDoCSV()
+    +zarchiwizujRaport()
+}
+
+Uzytkownik <|-- Administrator
+Uzytkownik "1" -- "0..*" Zgloszenie : "zgłasza"
+Uzytkownik "1" -- "0..*" Ocena : "ocenia"
+Uzytkownik "1" -- "0..*" ZrodloDanych : "ma dostęp"
+Organizacja "1" -- "0..*" ZrodloDanych : "dodaje"
+Administrator "1" -- "0..*" KopiaZapasowa : "tworzy"
+Administrator "1" -- "0..*" Zgloszenie : "rozpatruje"
+Administrator "1" -- "0..*" RaportZgloszen : "generuje"
+ZrodloDanych "1" -- "0..*" Zgloszenie : "dotyczy"
+ZrodloDanych "1" -- "0..*" Ocena : "oceniana"
+ZrodloDanych "1" -- "1" Metadane : "posiada"
+RaportZgloszen "1" -- "0..*" Zgloszenie : "zawiera"
+@enduml
