@@ -4,5 +4,4 @@
 
 Kopia zapasowa tdanych tworzona na wypadek awarii
 
-##### Przykłady użycia
 

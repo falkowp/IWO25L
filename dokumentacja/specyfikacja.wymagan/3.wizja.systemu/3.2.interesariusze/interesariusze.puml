@@ -1,10 +1,9 @@
 @startuml
-
-:Mieszkaniec:
-:Lokalny przedsiębiorca:
-:Twórca aplikacji:
-:Deweloper:
-:Pracownik jednostki samorządowej:
-:Administrator:
+actor Mieszkaniec
+actor "Lokalny przedsiębiorca"
+actor "Twórca aplikacji"
+actor Deweloper
+actor "Pracownik jednostki samorządowej"
+actor Administrator
 
 @enduml

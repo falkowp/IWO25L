@@ -4,5 +4,5 @@
 
 Wiarygodnośc i dokładność danych
 
-##### Przykłady użycia
+
 

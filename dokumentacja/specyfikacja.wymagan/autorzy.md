@@ -1,0 +1,14 @@
+- Patrycja Falkowska
+- Bartosz Cylwik
+- Jan Gębal
+- Wojciech Grot
+- Marcin Komza
+- Kamil Mądrzyk
+- Artem Omelchenko
+- Mikołaj Pątkowski
+- Maciej Przybylski
+- Michał Janaszewski
+- Adrian Rybaczuk
+- Marta Stankevich
+- Mateusz Tyl
+- Jakub Wypych
