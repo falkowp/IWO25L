@@ -24,6 +24,7 @@ UC1 <-- UC9 : extend
 User -- UC4
 User -- UC5
 User -- UC7
-User -- UC10   
+User -- UC10  
 
 @enduml
+
