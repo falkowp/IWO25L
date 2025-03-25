@@ -1,14 +1,15 @@
-#### Interesariusze
-:[Mieszkaniec](interesariusze/mieszkaniec.md)
+1. :[Mieszkaniec](interesariusze/mieszkaniec.md)
 
-:[Twórca aplikacji](interesariusze/tworca_aplikacji.md)
+2. :[Twórca aplikacji](interesariusze/tworca_aplikacji.md)
 
-:[Deweloper](interesariusze/deweloper.md)
+3. :[Deweloper](interesariusze/deweloper.md)
 
-:[Lokalny przedsiębiorca](interesariusze/lokalny_przedsiebiorca.md)
+4. :[Lokalny przedsiębiorca](interesariusze/lokalny_przedsiebiorca.md)
 
-:[Pracownik jednostki samorządowej](interesariusze/pracownik_jednostki_samorzadowej.md)
+5. :[Pracownik jednostki samorządowej](interesariusze/pracownik_jednostki_samorzadowej.md)
 
-:[Administrator](interesariusze/administrator.md)
+6. :[Administrator](interesariusze/administrator.md)
 
-![Interesariusze](interesariusze.png)
+#### 7. Interscenariusze
+
+:[Interesariusze](interesariusze.puml)

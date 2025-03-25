@@ -6,5 +6,5 @@ Osoba w systemie, wykorzystująca go w celach biznesowych związanych z jej dzia
 
 ##### Przykłady użycia
 
-- [CF0012](../../3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0012.md)
+- :[CF0012](../../3.3.cechy.funkcjonalne/cechy.funkcjonalne/CF0012.md)
 

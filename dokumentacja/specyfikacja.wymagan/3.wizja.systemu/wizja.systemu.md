@@ -1,9 +1,6 @@
-#### Motto
+### 3. Motto systemu
 
----
-*Motto dla tego systemu*
----
----
+(Miejsce na motto systemu - uzupełnić wkrótce)
 
 ### 3.1 Opisy problemów
 

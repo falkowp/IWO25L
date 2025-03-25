@@ -1,0 +1,1 @@
+:[4.1.wymagania.funkcjonalne](4.1.wymagania.funkcjonalne/wymagania.funkcjonalne.md)

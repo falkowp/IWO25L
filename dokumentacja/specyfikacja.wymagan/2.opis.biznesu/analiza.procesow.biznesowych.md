@@ -297,11 +297,11 @@ edycji lub dodawania nowych informacji, co zostało już wcześniej opisane.
 
 ## III. Dla kogo ten system?
 
-- **Programiści:**
-- **Pracownicy administracji:**
-- **Administratorzy i kierownictwo:**
-- **Mieszkańcy:**
-- **Użytkownicy zewnętrzni:**
+- **Programiści**
+- **Pracownicy administracji**
+- **Administratorzy i kierownictwo**
+- **Mieszkańcy**
+- **Użytkownicy zewnętrzni**
 
 ## IV. Zweryfikowanie problemów które procesy opisuj
 
