@@ -23,3 +23,19 @@
 12. :[J0012](wymagania.jakosciowe.i.ograniczenia/J0012.md)
 
 13. :[J0013](wymagania.jakosciowe.i.ograniczenia/J0013.md)
+
+14. :[J0014](wymagania.jakosciowe.i.ograniczenia/J0014.md) 
+
+15. :[J0015](wymagania.jakosciowe.i.ograniczenia/J0015.md)
+   
+16. :[J0016](wymagania.jakosciowe.i.ograniczenia/J0016.md)
+   
+17. :[J0017](wymagania.jakosciowe.i.ograniczenia/J0017.md)
+   
+18. :[J0018](wymagania.jakosciowe.i.ograniczenia/J0018.md)
+   
+19. :[J0019](wymagania.jakosciowe.i.ograniczenia/J0019.md)
+   
+20. :[J0020](wymagania.jakosciowe.i.ograniczenia/J0020.md)
+   
+21. :[J0021](wymagania.jakosciowe.i.ograniczenia/J0021.md)
