@@ -1,4 +1,4 @@
-### Słownik dziedziny
+### 4.3.2. Słownik dziedziny
 
 ##### Diagram
 

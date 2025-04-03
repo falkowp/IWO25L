@@ -1,3 +1,5 @@
+### 4.1. Wymagania funkcjonalne
+
 Opisy przypadków użycia:
 - :[(PU0001) Zarządzanie użytkownikami i dostępem](PU0001.md)
 - :[(PU0002) Zarządzanie źródłami danych i metadanymi](PU0002.md)

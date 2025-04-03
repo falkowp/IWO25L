@@ -1,6 +1,6 @@
 ### 3. Motto systemu
 
-(Miejsce na motto systemu - uzupełnić wkrótce)
+*Twoje miasto w Twoich rękach – dzięki otwartym danym*
 
 ### 3.1 Opisy problemów
 

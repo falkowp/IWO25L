@@ -1,12 +1,8 @@
-# System (nazwa)
+# Internetowy System Otwartych Danych 
 
 ## Specyfikacja wymagań
 
-(na koniec)
-
 ### Informacje podstawowe
-
-(na koniec)
 
 #### Autorzy
 
@@ -41,3 +37,9 @@
 ## 4. Wymagania użytkownika
 
 :[Wymagania użytkownika](4.wymagania.uzytkownika/wymagania.uzytkownika.md)
+
+## 5. Wycena Use Case Points
+
+:[Wymagania użytkownika](iteracje.md)
+
+

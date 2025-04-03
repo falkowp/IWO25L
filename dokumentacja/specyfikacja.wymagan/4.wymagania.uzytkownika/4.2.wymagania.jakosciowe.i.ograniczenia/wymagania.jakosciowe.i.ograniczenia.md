@@ -1,3 +1,5 @@
+### 4.2. Wymagania jakościowe
+
 1. :[J0001](wymagania.jakosciowe.i.ograniczenia/J0001.md) 
 
 2. :[J0002](wymagania.jakosciowe.i.ograniczenia/J0002.md)

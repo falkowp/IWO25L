@@ -1,6 +1,6 @@
-# Sekcja 1: Pytania i Odpowiedzi
+### Sekcja 1: Pytania i Odpowiedzi
 
-## 1. Cele i wymagania biznesowe
+#### 1. Cele i wymagania biznesowe
 
 **Pytanie 1:**  
 _Jakie problemy biznesowe ma rozwiązać system?_  
@@ -37,7 +37,7 @@ _Jaka jest grupa docelowa użytkowników i jakie są ich główne potrzeby?_
 - **Użytkownicy zewnętrzni:** obejmujący zarówno podmioty korzystające z danych,
   jak i osoby udostępniające informacje o własnych źródłach.
 
-## 2. Funkcjonalności systemu
+#### 2. Funkcjonalności systemu
 
 **Pytanie 4:**  
 _Jakie są główne cechy i funkcje systemu?_  
@@ -85,7 +85,7 @@ _Jakie powinny być opcje wyszukiwania i dostosowywania wyświetlania danych
 System powinien umożliwiać zaawansowane wyszukiwanie oraz filtrowanie informacji
 o źródłach, co ułatwi użytkownikom odnalezienie interesujących ich danych.
 
-## 3. Obsługa i zarządzanie danymi
+#### 3. Obsługa i zarządzanie danymi
 
 **Pytanie 9:**  
 _Jakie typy źródeł danych może obsługiwać system?_  
@@ -120,7 +120,7 @@ Aktualnie zadania te wykonują administratorzy manualnie. W przyszłości warto
 opracować procesy automatyzujące archiwizację, przechowywanie oraz usuwanie
 informacji o źródłach danych, aby usprawnić operacje i zmniejszyć ryzyko błędów.
 
-## 4. Jakość i spójność danych
+#### 4. Jakość i spójność danych
 
 **Pytanie 13:**  
 _Jak system będzie monitorował jakość danych (aktualność, dokładność,
@@ -148,7 +148,7 @@ System powinien umożliwiać ustalanie priorytetów aktualizacji, definiując, k
 źródła wymagają częstszej kontroli oraz szybszej reakcji w przypadku awarii lub
 niespójności.
 
-## 5. Zarządzanie użytkownikami i interakcje
+#### 5. Zarządzanie użytkownikami i interakcje
 
 **Pytanie 16:**  
 _W jaki sposób użytkownicy będą mogli zgłaszać uwagi i poprawki do danych? Jak
@@ -169,7 +169,7 @@ wdrożenie modułu automatycznej translacji, który pozwoli na prezentowanie
 informacji o źródłach danych w innych językach, choć wprowadzanie danych przez
 pracowników pozostanie w języku polskim.
 
-## 6. Bezpieczeństwo i dostęp do danych
+#### 6. Bezpieczeństwo i dostęp do danych
 
 **Pytanie 18:**  
 _Jakie są wymagania dotyczące bezpieczeństwa danych w systemie, szczególnie w
@@ -188,7 +188,7 @@ Nasz system nie zawiera danych, które wymagałyby ograniczenia dostępu ze wzgl
 na przepisy – wszystkie informacje o źródłach danych są udostępniane publicznie,
 a kwestie ograniczeń regulowane są przez obowiązujące dyrektywy i przepisy.
 
-## 7. Wydajność i skalowalność
+#### 7. Wydajność i skalowalność
 
 **Pytanie 20:**  
 _Jakie są wymagania dotyczące skalowalności oraz ograniczenia techniczne
@@ -198,7 +198,7 @@ Choć obecnie nie określono szczegółowych wymagań, system musi być elastycz
 skalowalny, aby sprostać rosnącej liczbie rejestrowanych źródeł informacji oraz
 potencjalnie zwiększonej liczbie użytkowników korzystających z otwartych danych.
 
-## 8. Zarządzanie awariami i błędami
+#### 8. Zarządzanie awariami i błędami
 
 **Pytanie 21:**  
 _W jaki sposób system powinien obsługiwać sytuacje awaryjne, takie jak przerwy w
@@ -209,7 +209,7 @@ będzie opracowanie procedur awaryjnych – obejmujących automatyczne
 powiadomienia, backupy i procedury reagowania – aby szybko identyfikować
 problemy oraz minimalizować ryzyko długotrwałych zakłóceń.
 
-## 9. Analiza i raportowanie
+#### 9. Analiza i raportowanie
 
 **Pytanie 22:**  
 _Czy istnieją wymagania dotyczące raportowania i analizy wykorzystania
@@ -220,7 +220,7 @@ Wdrożenie automatycznych mechanizmów raportowania, zgodnych z normami unijnymi
 krajowymi, pozwoli na lepsze monitorowanie stanu systemu i dostosowanie działań
 do wymagań instytucjonalnych.
 
-## 10. Weryfikacja danych
+#### 10. Weryfikacja danych
 
 **Pytanie 23:**  
 _Czy system weryfikuje dane przy ich wprowadzaniu i czy kontrola odbywa się
@@ -239,9 +239,9 @@ Dostęp do informacji o źródłach danych jest otwarty i nie wymaga specjalnych
 uprawnień. Specjalne uprawnienia są natomiast wymagane jedynie w przypadku
 edycji lub dodawania nowych informacji, co zostało już wcześniej opisane.
 
-# Sekcja 2: Procesy biznesowe – Analiza obecnego systemu oraz nowe usprawnienia
+### Sekcja 2: Procesy biznesowe – Analiza obecnego systemu oraz nowe usprawnienia
 
-## I. Obecne procesy biznesowe w systemie
+#### I. Obecne procesy biznesowe w systemie
 
 - **Rejestracja i wprowadzanie danych źródłowych**  
   Pracownicy ręcznie wprowadzają informacje o źródłach danych do systemu.
@@ -262,7 +262,7 @@ edycji lub dodawania nowych informacji, co zostało już wcześniej opisane.
   Obecny system nie wspiera automatycznej synchronizacji czy wymiany informacji
   z platformami takimi jak CKAN lub innymi systemami zewnętrznymi.
 
-## II. Procesy wymagające poprawy
+#### II. Procesy wymagające poprawy
 
 - **Wprowadzanie danych** Wdrożenie systemu pozwajacego dodanie danych poprzez
   jednostke samorządu w tym z odpowiednim podziałem na role (pracownik,
@@ -295,7 +295,7 @@ edycji lub dodawania nowych informacji, co zostało już wcześniej opisane.
   Wdrożenie automatycznej integracji z platformami krajowymi i europejskimi
   (m.in. CKAN) oraz udostępnienie interfejsów API.
 
-## III. Dla kogo ten system?
+#### III. Dla kogo ten system?
 
 - **Programiści**
 - **Pracownicy administracji**
@@ -303,9 +303,9 @@ edycji lub dodawania nowych informacji, co zostało już wcześniej opisane.
 - **Mieszkańcy**
 - **Użytkownicy zewnętrzni**
 
-## IV. Zweryfikowanie problemów które procesy opisuj
+#### IV. Zweryfikowanie problemów które procesy opisuj
 
-- Powinna być funkcjonalnośc, aby mieszkańcy albo firma wewnetrzna oceniala czy
+- Powinna być funkcjonalność, aby mieszkańcy albo firma wewnetrzna oceniala czy
   system zbiór danych jest przydatny.
 - Nie ma procesu dla usunięcia konta. np, dla systemu, której działalnosć jest
   zakonczona, lub zfałszfowana a została wczesniej zarejestrowana

@@ -8,3 +8,5 @@
 | 1.3.0  | 19.3.2025 | Kamil Mądrzyk | Wymagania funkcjonalne |
 | 1.3.1  | 24.3.2025 | Jan Gębal | Poprawki |
 | 1.4.0  | 28.3.2025 | Jakub Wypych | Wymagania jakościowe |
+| 1.5.0  | 1.4.2025 | Patrycja Falkowska | Poprawki stylistyczne |
+| 1.6.0  | 2.4.2025 | Patrycja Falkowska | Tabela z wyceną przypadków użycia |

@@ -1,0 +1,5 @@
+Niniejszy dokument przedstawia założenia i cele planowanego systemu, którego głównym zadaniem jest zapewnienie otwartego dostępu do publicznych informacji o źródłach danych. Określa on zakres projektu oraz jego podstawy biznesowe, wskazując kluczowe problemy, które system ma rozwiązać.
+
+Celem systemu jest zebranie i ujednolicenie danych dotyczących lokalizacji, charakterystyki oraz specyfiki źródeł informacji. Dzięki temu mieszkańcy, instytucje oraz inne podmioty będą mogły w prosty sposób pozyskać niezbędne informacje. Ponadto, zewnętrzni użytkownicy – zarówno programiści, jak i osoby udostępniające własne źródła danych – będą mieli możliwość ich wykorzystania zgodnie z obowiązującymi standardami i regulacjami.
+
+Dokument ten stanowi wstępne opracowanie skierowane do wszystkich interesariuszy. Jego rolą jest również ustanowienie wspólnego zrozumienia założeń oraz korzyści wynikających z wdrożenia systemu, co pozwoli na skuteczniejsze opracowanie dalszej dokumentacji technicznej.

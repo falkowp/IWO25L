@@ -1,6 +1,6 @@
 :[Analiza procesów biznesowych](analiza.procesow.biznesowych.md)
 
-# Procesy biznesowe
+## 2.1. Procesy biznesowe
 
 1. :[PB0001](procesy.biznesowe/PB0001.md) 
 

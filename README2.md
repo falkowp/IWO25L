@@ -1,0 +1,1 @@
+:[Specyfikacja Wymagań](dokumentacja/specyfikacja.wymagan/specyfikacja2.md)
