@@ -8,7 +8,7 @@
 
 ## Warunki wstępne
 - Administrator jest zalogowany do systemu.
-- Administraotr znajduje się na liście zgłoszeń użytkownika [(PU030)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0005.md) w panelu admninistratora
+- Administrator znajduje się na liście zgłoszeń użytkownika [(PU030)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0005.md) w panelu admninistratora
 
 ## Scenariusz podstawowy
 1. Administrator naciska przycisk "Wyświetl szczególy" przy wybranym zgłoszeniu.
