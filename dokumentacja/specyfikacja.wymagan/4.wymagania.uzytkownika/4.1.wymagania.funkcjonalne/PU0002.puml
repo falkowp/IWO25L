@@ -4,7 +4,7 @@ actor "Administrator" as Admin
 
 usecase "PU011: Wyświetlenie listy metadanych" as UC1
 usecase "PU012: Eksport listy metadanych do pliku" as UC2
-usecase "PU013: Rejestracja nowego metadanych" as UC3
+usecase "PU013: Rejestracja nowych metadanych" as UC3
 usecase "PU014: Dodanie nowego zestawu metadanych" as UC3a
 usecase "PU015: Wyszukanie metadanych" as UC4
 usecase "PU016: Archiwizacja metadanych" as UC5

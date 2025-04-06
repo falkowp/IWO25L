@@ -2,8 +2,8 @@
 
 actor "Administrator" as Admin
 
-usecase "PU027: Weryfikacja organizacji chcącej dodawać źródła" as UC1
-usecase "PU028: Weryfikacja konkretnego źródła danych z organizacji" as UC2
+usecase "PU027: Weryfikacja organizacji chcącej dodawać metadane" as UC1
+usecase "PU028: Weryfikacja konkretnych metadanych z organizacji" as UC2
 
 Admin -- UC1
 Admin -- UC2
