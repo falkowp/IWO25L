@@ -3,18 +3,18 @@
 actor "Administrator" as Admin
 actor "Użytkownik" as User
 
-usecase "Wyświetlenie listy zgłoszeń użytkowników" as UC1
-usecase "Generowanie raportów o zgłoszeniach użytkowników" as UC2
-usecase "Wyświetlenie listy zarchiwizowanych raportów" as UC3
-usecase "Wyświetlenie informacji o zgłoszeniu" as UC4
-usecase "Odrzucenie zgłoszenia użytkownika" as UC5
-usecase "Przyjęcie zgłoszenia użytkownika" as UC6
-usecase "Wyświetlenie listy źródeł" as UC7
-usecase "Wyszukanie źródła danych" as UC8
-usecase "Wyświetlenie informacji o źródle danych" as UC9
-usecase "Przegląd ocen jakości źródła danych" as UC10
-usecase "Zgłaszanie błędów i problemów z metadanymi" as UC11
-usecase "Nadanie oceny jakości źródła metadanych" as UC12
+usecase "PU030: Wyświetlenie listy zgłoszeń użytkowników" as UC1
+usecase "PU031: Generowanie raportów o zgłoszeniach użytkowników" as UC2
+usecase "PU032: Wyświetlenie listy zarchiwizowanych raportów" as UC3
+usecase "PU033: Wyświetlenie informacji o zgłoszeniu" as UC4
+usecase "PU034: Odrzucenie zgłoszenia użytkownika" as UC5
+usecase "PU035: Przyjęcie zgłoszenia użytkownika" as UC6
+usecase "PU011: Wyświetlenie listy metadanych" as UC7
+usecase "PU015: Wyszukanie metadanych" as UC8
+usecase "PU019: Wyświetlenie informacji o metadanych" as UC9
+usecase "PU036: Przegląd ocen jakości metadanych" as UC10
+usecase "PU037: Zgłaszanie błędów i problemów z metadanymi" as UC11
+usecase "PU038: Nadanie oceny jakości metadanymh" as UC12
 
 Admin -- UC1
 UC1 <-- UC2 : extend

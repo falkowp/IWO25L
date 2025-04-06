@@ -2,22 +2,22 @@
 
 actor "Administrator" as Admin
 
-usecase "Wyświetlenie listy źródeł" as UC1
-usecase "Eksport listy źródeł do pliku" as UC2
-usecase "Rejestracja nowego źródła danych" as UC3
-usecase "Dodanie nowego zestawu metadanych" as UC3a
-usecase "Wyszukanie źródła danych" as UC4
-usecase "Archiwizacja źródeł danych" as UC5
-usecase "Zlecenie automatycznej kontroli poprawności źródła danych" as UC6
-usecase "Usunięcie źródła danych" as UC7
-usecase "Wyświetlenie informacji o źródle danych" as UC8
-usecase "Pobranie szczegółowych informacji o źródle danych" as UC9
-usecase "Edycja metadanych" as UC10
-usecase "Zagregowanie metadanych" as UC11
-usecase "Walidacja poprawności metadanych" as UC12
-usecase "Sprawdzanie kompletności danych w źródle" as UC13
-usecase "Identyfikacja nieaktualnych metadanych" as UC14
-usecase "Weryfikacja zgodności źródła z systemem CKAN" as UC15
+usecase "PU011: Wyświetlenie listy metadanych" as UC1
+usecase "PU012: Eksport listy metadanych do pliku" as UC2
+usecase "PU013: Rejestracja nowych metadanych" as UC3
+usecase "PU014: Dodanie nowego zestawu metadanych" as UC3a
+usecase "PU015: Wyszukanie metadanych" as UC4
+usecase "PU016: Archiwizacja metadanych" as UC5
+usecase "PU017: Zlecenie automatycznej kontroli poprawności metadanych" as UC6
+usecase "PU018: Usunięcie metadanych" as UC7
+usecase "PU019: Wyświetlenie informacji o metadanych" as UC8
+usecase "PU020: Pobranie szczegółowych informacji o metadanych" as UC9
+usecase "PU021: Edycja metadanych" as UC10
+usecase "PU022: Zagregowanie metadanych" as UC11
+usecase "PU023: Walidacja poprawności metadanych" as UC12
+usecase "PU024: Sprawdzanie kompletności danych w źródle" as UC13
+usecase "PU025: Identyfikacja nieaktualnych metadanych" as UC14
+usecase "PU026: Weryfikacja zgodności metadanych z systemem CKAN" as UC15
 
 Admin -- UC1
 UC1 <-- UC2 : extend
