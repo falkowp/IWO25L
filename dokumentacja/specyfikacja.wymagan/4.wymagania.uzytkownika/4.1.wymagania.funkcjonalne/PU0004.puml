@@ -2,10 +2,10 @@
 
 actor "Użytkownik" as User
 
-usecase "Wyświetlenie listy źródeł" as UC1
-usecase "Wyszukanie źródła danych" as UC2
-usecase "Wyświetlenie informacji o źródle danych" as UC3
-usecase "Zwizualizowanie danych na mapie" as UC4
+usecase "PU011: Wyświetlenie listy metadanych" as UC1
+usecase "PU015: Wyszukanie metadanych" as UC2
+usecase "PU019: Wyświetlenie informacji o metadanych" as UC3
+usecase "PU029: Zwizualizowanie danych na mapie" as UC4
 
 User -- UC1
 UC1 <-- UC2 : extend 
