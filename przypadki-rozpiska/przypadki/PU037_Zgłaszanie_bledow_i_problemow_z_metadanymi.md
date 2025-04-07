@@ -1,45 +1,56 @@
-# Przypadek użycia: PU037: Zgłaszanie błędów i problemów z metadanymi
+# PU037: Zgłaszanie błędów i problemów z metadanymi
 
-**Autor:** Artem Omelchenko\
-**Cel:** Użytkownik może zgłosić błędy dotyczące wybranych metadanych.
+#### Autor: Artem Omelchenko
 
-## Aktorzy
+## 1. Cel przypadku użycia  
+Użytkownik może zgłosić błędy dotyczące wybranych metadanych.
+
+## 2. Aktorzy  
 - Użytkownik
 
-## Warunki wstępne
-- Użytkownik jest zalogowany do systemu
-- Użytkownik znajduje się na stronie szczegółów metadanych [(PU019)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0005.md)
+## 3. Przebieg główny  
+1. Użytkownik znajduje się na stronie szczegółów metadanych (PU019)
+2. Użytkownik naciska przycisk „Zgłoś problem” przy wybranych metadanych.  
+3. System wyświetla formularz zgłoszenia zawierający:  
+   - Pole opisu problemu  
+   - Kategorię problemu (np. błędne dane, nieaktualne informacje, problemy techniczne)  
+   - Możliwość dodania załącznika (np. zrzut ekranu)  
+4. Użytkownik wypełnia formularz zgłoszenia.  
+5. Użytkownik zatwierdza zgłoszenie przyciskiem „Wyślij”.  
+6. System waliduje wprowadzone dane.  
+7. System zapisuje zgłoszenie i przypisuje mu unikalny identyfikator.  
+8. System wyświetla potwierdzenie przyjęcia zgłoszenia.
 
-## Scenariusz podstawowy
-1. Użytkownik naciska przycisk "Zgłoś problem" przy wybranych metadanych
-2. System wyświetla formularz zgłoszenia zawierający:
-   - Pole opisu problemu
-   - Kategorię problemu (np. błędne dane, nieaktualne informacje, problemy techniczne)
-   - Możliwość dodania załącznika (np. zrzut ekranu)
-3. Użytkownik wypełnia formularz zgłoszenia
-4. Użytkownik zatwierdza zgłoszenie przyciskiem "Wyślij"
-5. System waliduje wprowadzone dane
-6. System zapisuje zgłoszenie i przypisuje mu unikalny identyfikator
-7. System wyświetla potwierdzenie przyjęcia zgłoszenia
+## 4. Przebiegi alternatywne  
 
-## Scenariusze alternatywne
-**5a.** Formularz zawiera błędy\
-**5a.1.** System wyświetla komunikat o błędach\
-**5a.2.** Użytkownik poprawia błędy\
-**5a.3.** Powrót do kroku 4
+### 4.1. Błędy walidacji formularza  
+1. System wykrywa błędy we wprowadzonych danych.  
+2. System wyświetla komunikaty o błędach (np. puste pole opisu).  
+3. Użytkownik poprawia dane i ponownie wysyła zgłoszenie (powrót do kroku 5 przebiegu głównego).
 
-## Warunki końcowe
-- Zgłoszenie zostało zapisane w systemie
-- Użytkownik otrzymał potwierdzenie przyjęcia zgłoszenia
-- Administrator zostaje powiadomiony o nowym zgłoszeniu
+## 5. Warunki początkowe  
+- Użytkownik jest zalogowany do systemu.  
+- Użytkownik przegląda szczegóły konkretnego zestawu metadanych.
 
-## Wyjątki
-- **W przypadku błędów walidacji**: Jeśli wprowadzone dane nie spełniają wymagań (np. pole opisu jest puste), system wyświetla komunikat o błędzie i prosi użytkownika o poprawienie danych.
+## 6. Warunki końcowe  
+- Zgłoszenie zostało poprawnie zapisane w systemie.  
+- Użytkownik otrzymał potwierdzenie przyjęcia zgłoszenia.  
+- Administrator został powiadomiony o nowym zgłoszeniu.
 
-- **W przypadku problemów z zapisem do bazy danych**: Jeśli wystąpi błąd podczas zapisywania zgłoszenia (np. problem z serwerem), system informuje użytkownika o błędzie i sugeruje ponowną próbę wysłania zgłoszenia.
+## 7. Wymagania specjalne  
+*Nie określono.*
 
-## Słownik pojęć
-- **Metadane** – dane opisujące inne dane, zawierające informacje o ich strukturze, pochodzeniu i sposobie wykorzystania.
-[(Metadane)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.3.slownik/4.3.2.slownik.dziedziny/slownik.dziedziny.md)
-- **Zgłoszenie** – w systemie, wpis zawierający informacje o zaobserwowanym problemie, potrzebie lub incydencie zgłoszonym przez użytkownika.
-[(Zgłoszenie)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.3.slownik/4.3.2.slownik.dziedziny/slownik.dziedziny.md)
+## 8. Wyjątki  
+- **Błąd walidacji danych**  
+  - System informuje o nieprawidłowych lub brakujących danych i uniemożliwia wysłanie formularza do momentu ich poprawienia.  
+
+- **Błąd zapisu do bazy danych**  
+  - System informuje użytkownika o problemie z zapisaniem zgłoszenia (np. problemy z serwerem) i sugeruje ponowną próbę.
+
+## 9. Słownik pojęć  
+
+### Metadane  
+- Dane opisujące inne dane, zawierające informacje o ich strukturze, pochodzeniu i sposobie wykorzystania.  
+
+### Zgłoszenie  
+- Wpis zawierający informacje o zaobserwowanym problemie, potrzebie lub incydencie zgłoszonym przez użytkownika.  

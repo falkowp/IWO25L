@@ -1,57 +1,62 @@
-**Przypadek użycia: PU016: Archiwizacja metadanych**  
-**Autor:** Mateusz Tyl 325520 \
-**Cel:** Administrator może oznaczyć wybrane metadane jako archiwalne, co pozwala wykluczyć je z bieżącej edycji i eksploatacji, a jednocześnie zachować je w systemie dla celów historycznych i audytowych.
+# PU016: Archiwizacja metadanych
 
----
+#### Autor: Mateusz Tyl
 
-### Aktorzy  
-- **Administrator**  
+## 1. Cel przypadku użycia  
+Administrator może oznaczyć wybrane metadane jako archiwalne, co pozwala wykluczyć je z bieżącej edycji i eksploatacji, a jednocześnie zachować je w systemie dla celów historycznych i audytowych.
 
----
+## 2. Aktorzy  
+- Administrator
 
-### Warunki wstępne  
-1. Administrator jest zalogowany do systemu.  
-2. Administrator posiada uprawnienia do zarządzania metadanymi (w tym do ich archiwizacji).  
-3. Administrator znajduje się na liście metadanych lub w widoku szczegółów konkretnego zestawu metadanych (np. w panelu administratora, gdzie może przeglądać i edytować metadane).
+## 3. Przebieg główny  
+1. Administrator otwiera widok listy metadanych lub widok szczegółów konkretnego zestawu metadanych.  
+2. Administrator wybiera zestaw metadanych do archiwizacji.  
+3. System prezentuje opcję „Oznacz jako archiwalne” (lub „Archiwizuj”).  
+4. Administrator klika opcję archiwizacji.  
+5. System wyświetla komunikat z prośbą o potwierdzenie operacji (opcjonalnie z informacją o konsekwencjach archiwizacji).  
+6. Administrator potwierdza decyzję.  
+7. System oznacza wybrane metadane jako zarchiwizowane.  
+8. System wyświetla komunikat o pomyślnej archiwizacji.
 
----
+## 4. Przebiegi alternatywne  
 
-### Scenariusz podstawowy  
-1. Administrator otwiera widok listy metadanych (lub widok szczegółów konkretnego zestawu metadanych).  
-2. Administrator wybiera zestaw metadanych, który chce zarchiwizować.  
-3. System prezentuje przycisk lub opcję „Oznacz jako archiwalne” (lub „Archiwizuj”).  
-4. Administrator klika przycisk „Archiwizuj” przy wybranych metadanych.  
-5. System wyświetla komunikat z prośbą o potwierdzenie operacji archiwizacji (opcjonalnie może wyświetlić informacje o konsekwencjach – np. brak możliwości dalszej edycji tych metadanych).  
-6. Administrator potwierdza decyzję o archiwizacji metadanych.  
-7. System oznacza wybrane metadane jako archiwalne (zmienia ich status na „zarchiwizowane”).  
-8. System wyświetla komunikat o pomyślnej archiwizacji.  
+### 4.1. Metadane już zarchiwizowane lub usunięte  
+1. Administrator wybiera metadane do archiwizacji.  
+2. System wykrywa, że metadane są już zarchiwizowane lub usunięte.  
+3. System informuje administratora o stanie metadanych.  
+4. System powraca do listy metadanych lub widoku szczegółów.
 
----
+### 4.2. Rezygnacja z archiwizacji  
+1. Administrator anuluje operację archiwizacji.  
+2. System anuluje procedurę i pozostawia metadane bez zmian.  
+3. System powraca do widoku listy lub szczegółów metadanych.
 
-### Scenariusze alternatywne  
-**2a. Metadane, które Administrator próbuje zarchiwizować, zostały już wcześniej zarchiwizowane lub usunięte.**  
-2a.1. System informuje Administratora, że dane metadane są już w stanie archiwalnym bądź nie istnieją (np. zostały usunięte).  
-2a.2. System powraca do listy metadanych lub widoku szczegółów bez wykonywania dalszych czynności.  
+## 5. Warunki początkowe  
+- Administrator jest zalogowany do systemu.  
+- Administrator posiada uprawnienia do archiwizacji metadanych.  
+- Administrator znajduje się na liście metadanych lub w widoku szczegółów danego zestawu metadanych.
 
-**5a. Administrator rezygnuje z archiwizacji metadanych.**  
-5a.1. System anuluje procedurę archiwizacji i pozostawia metadane w dotychczasowym stanie.  
-5a.2. System wyświetla listę metadanych lub widok szczegółów, dając możliwość wykonania innych operacji.  
+## 6. Warunki końcowe  
+- Metadane posiadają status „zarchiwizowane”.  
+- Nie są dostępne do dalszej edycji.  
+- Administrator otrzymał potwierdzenie archiwizacji.
 
----
+## 7. Wymagania specjalne  
+*Nie określono.*
 
-### Warunki końcowe  
-- Metadane zostały zarchiwizowane i posiadają status „zarchiwizowane”, nie są już dostępne do bieżącej edycji.  
-- Administrator otrzymał informację o pomyślnej archiwizacji.  
+## 8. Rozszerzenia  
+*Nie określono.*
 
----
+## 9. Słownik pojęć dla PU016  
 
-### Wyjątki  
-- **Błąd komunikacji z serwerem lub bazy danych.**  
-  - System wyświetla odpowiedni komunikat o błędzie i umożliwia Administratorowi ponowienie operacji lub powrót do listy metadanych.  
+### Metadane  
+- **Definicja**: Informacje opisujące i charakteryzujące źródło danych lub inny zasób w systemie.  
+- **Użycie**: Metadane mogą być przeglądane, edytowane lub archiwizowane przez administratora.
 
----
+### Archiwizacja metadanych  
+- **Definicja**: Proces zmiany statusu metadanych na „zarchiwizowane” — dane te nie są edytowalne, ale pozostają w systemie.  
+- **Użycie**: Archiwizowane metadane są wyłączone z bieżącej eksploatacji.
 
-### Słownik pojęć  
-- **Metadane** – informacje opisujące i charakteryzujące źródło danych lub inny zasób w systemie; zawierają takie informacje jak nazwa, opis, format, datę aktualizacji itp.  
-- **Archiwizacja metadanych** – proces zmiany statusu metadanych w systemie tak, aby nie były aktywnie wykorzystywane i edytowane, ale wciąż możliwe do wglądu w razie potrzeby historycznej lub audytowej.  
-- **Panel administracyjny** – specjalny interfejs systemu, dostępny wyłącznie dla Administratorów, służący do zarządzania zasobami i konfiguracją systemu.
+### Panel administracyjny  
+- **Definicja**: Interfejs dostępny dla administratora do zarządzania metadanymi i konfiguracją systemu.  
+- **Użycie**: Panel pozwala m.in. na wykonanie operacji archiwizacji.]

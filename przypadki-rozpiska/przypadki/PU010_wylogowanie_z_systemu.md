@@ -1,33 +1,57 @@
-Autor: Kamil Mądrzyk
+# PU0002: Wylogowanie użytkownika
 
-**Cel:**
+#### Autor: Kamil Mądrzyk
+
+## 1. Cel przypadku użycia  
 Umożliwienie użytkownikowi bezpiecznego zakończenia sesji pracy z systemem.
 
-**Aktorzy:**
+## 2. Aktorzy  
 - Użytkownik
 
-**Warunki wstępne:**
-- Użytkownik jest zalogowany do systemu i posiada aktywną sesję.
-
-**Scenariusz podstawowy:**
-1. Użytkownik wybiera opcję „Wyloguj się” z menu użytkownika.
-2. System prezentuje użytkownikowi komunikat potwierdzający zamiar wylogowania.
-3. Użytkownik potwierdza operację wylogowania.
-4. System kończy aktywną sesję użytkownika.
+## 3. Przebieg główny  
+1. Użytkownik wybiera opcję „Wyloguj się” z menu użytkownika.  
+2. System prezentuje użytkownikowi komunikat potwierdzający zamiar wylogowania.  
+3. Użytkownik potwierdza operację wylogowania.  
+4. System kończy aktywną sesję użytkownika.  
 5. System prezentuje ekran potwierdzający pomyślne wylogowanie wraz z opcją ponownego zalogowania się.
 
-**Scenariusze alternatywne:**
-3a. Użytkownik anuluje operację wylogowania.
-3a.1 System pozostawia aktywną sesję i powraca do ekranu, na którym użytkownik przebywał przed wybraniem opcji wylogowania.
+## 4. Przebiegi alternatywne  
 
-**Warunki końcowe:**
-W przypadku udanego wylogowania użytkownik nie ma dostępu do wystawiania ocen metadanych, ani ponownego wylogowania się. Może się jednak ponownie zalogować oraz przeglądać metadane.
+### 4.1. Użytkownik anuluje operację wylogowania  
+1. Użytkownik anuluje operację wylogowania.  
+2. System pozostawia aktywną sesję i powraca do ekranu, na którym użytkownik przebywał przed wybraniem opcji wylogowania.
 
-**Wyjątki:**
-Jeśli sesja wygaśnie automatycznie (np. w wyniku braku aktywności), system automatycznie wykonuje procedurę wylogowania.
+## 5. Warunki początkowe  
+- Użytkownik jest zalogowany do systemu i posiada aktywną sesję.
 
-**Słownik pojęć:**
-- Sesja użytkownika – okres, w którym użytkownik jest aktywnie zalogowany do systemu i posiada dostęp do jego funkcjonalności.
-- Wylogowanie – proces bezpiecznego zakończenia sesji użytkownika, w wyniku którego dostęp do akcji dostępnych tylko po zalogowaniu jest blokowany do czasu ponownego zalogowania.
-- Ekran potwierdzający – interfejs użytkownika informujący o pomyślnym zakończeniu danej operacji.
-- Automatyczne wygaśnięcie sesji – mechanizm bezpieczeństwa, który po określonym czasie bez aktywności użytkownika automatycznie kończy sesję w celu ochrony danych.
+## 6. Warunki końcowe  
+- W przypadku udanego wylogowania użytkownik nie ma dostępu do wystawiania ocen metadanych, ani ponownego wylogowania się.  
+- Może się jednak ponownie zalogować oraz przeglądać metadane.
+
+## 7. Wymagania specjalne  
+*Nie określono.*
+
+## 8. Rozszerzenia  
+- Automatyczne wylogowanie przy braku aktywności użytkownika
+
+## 9. Słownik pojęć dla PU0002  
+
+### Sesja użytkownika  
+- **Definicja**: Okres, w którym użytkownik jest aktywnie zalogowany do systemu i posiada dostęp do jego funkcjonalności  
+- **Synonim**: Sesja  
+- **Użycie**: Sesja użytkownika trwa od momentu zalogowania do wylogowania lub wygaśnięcia
+
+### Wylogowanie  
+- **Definicja**: Proces bezpiecznego zakończenia sesji użytkownika, w wyniku którego dostęp do akcji dostępnych tylko po zalogowaniu jest blokowany do czasu ponownego zalogowania  
+- **Synonim**: Zamknięcie sesji, Zakończenie pracy  
+- **Użycie**: Użytkownik wylogowuje się z systemu w celu zakończenia pracy
+
+### Ekran potwierdzający  
+- **Definicja**: Interfejs użytkownika informujący o pomyślnym zakończeniu danej operacji  
+- **Synonim**: Komunikat końcowy  
+- **Użycie**: Po wylogowaniu użytkownik widzi ekran potwierdzający
+
+### Automatyczne wygaśnięcie sesji  
+- **Definicja**: Mechanizm bezpieczeństwa, który po określonym czasie bez aktywności użytkownika automatycznie kończy sesję w celu ochrony danych  
+- **Synonim**: Auto-wylogowanie  
+- **Użycie**: Jeśli użytkownik nie wykonuje żadnych działań, system automatycznie kończy sesję

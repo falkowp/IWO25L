@@ -21,6 +21,7 @@ Umożliwienie administratorowi systemu przeglądania listy wszystkich użytkowni
    - Przypisane role i uprawnienia
 
 ## 4. Przebiegi alternatywne
+
 ### 4.1. Brak użytkowników w systemie
 1. System wyświetla komunikat "Brak zarejestrowanych użytkowników"
 2. Administrator może utworzyć nowe konto użytkownika (PU009)
@@ -43,17 +44,17 @@ Umożliwienie administratorowi systemu przeglądania listy wszystkich użytkowni
 - Dane wrażliwe użytkowników (np. hasła) nie powinny być wyświetlane
 
 ## 8. Rozszerzenia
-- Przypisanie uprawnień/roli użytkownikowi do metadanych [(PU002)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0001.md)
-- Nadanie hasła [(PU006)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0001.md)
-- Usunięcie konta [(PU008)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0001.md)
-- Utworzenie konta [(PU009)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0001.md)
+- Przypisanie uprawnień/roli użytkownikowi do metadanych (PU002)
+- Nadanie hasła (PU006)
+- Usunięcie konta (PU008)
+- Utworzenie konta (PU009)
 
 ## 9. Słownik pojęć dla PU0001
+
 ### Administrator systemu
 - **Definicja**: Osoba uprawniona do zarządzania użytkownikami i ich uprawnieniami w systemie
 - **Synonim**: Admin, Administrator
 - **Użycie**: Administrator może przeglądać listę użytkowników i zarządzać ich uprawnieniami
-- [(Administrator)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.3.slownik/4.3.1.aktorzy/aktorzy/administrator.md)
 
 ### Użytkownik systemu
 - **Definicja**: Osoba posiadająca konto w systemie

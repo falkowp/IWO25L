@@ -1,4 +1,4 @@
-# Przypadek użycia: PU013: Rejestreacja nowego zestawu metadanych
+# PU013: Rejestreacja nowego zestawu metadanych
 **Autor:** Wojciech Grot
 **ID:** PU013        **Nazwa:** Rejestracja nowego zestawu metadanych 
 **Wersja:** 1.0      **Waga** 10      **UCP:** 9,46  
