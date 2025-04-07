@@ -1,10 +1,5 @@
-### 5.1. Tabelka wartości
-
 | ID | Przypadek Użycia | Złożoność | Liczba kroków (szac.) | Waga (Unadjusted) | Złożoność aktora | Waga aktora | Adjusted UCP |
 |----|------------------|-----------|----------------------|-------------------|------------------|------------|--------------|
-| 1  | Wyświetlenie listy użytkowników | Prosta | 1-3 | 5 | Złożony | 3 | 4,73 |
-| 2  | Przypisanie uprawnień/roli użytkownikowi do źródła danych | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
-| 3  | Zmiana uprawnień | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
 | 4  | Rejestracja w systemie | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
 | 5  | Logowanie do systemu | Prosta | 1-3 | 5 | Złożony | 3 | 4,73 |
 | 6  | Nadanie hasła | Prosta | 1-3 | 5 | Złożony | 3 | 4,73 |
@@ -48,6 +43,25 @@
 | 44 | Tworzenie backupu systemu | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
 | 45 | Odtwarzanie danych z backupu | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
 | 46 | Wyświetlenie historii zmian dokonanych w metadanych i ich źródłach | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
+
+### **Podsumowanie analizy wysiłku w projekcie**
+
+**Kluczowe wartości:**
+- **Suma wag przypadków użycia:** 480  
+- **Suma wag aktorów:** 164  
+- **Łączna złożoność systemu (UUCP):** 644  
+- **Suma UCP:** 454,08
+
+**Obliczenia współczynników:**
+- **Współczynnik złożoności technicznej (TCF):** 0,9  
+- **Współczynnik środowiskowy (EF):** 0,99  
+- **UCP (Use Case Points):** 0,68  
+
+**Szacowany wysiłek:**
+- Na podstawie wskaźnika UCP oraz przyjętej normy 20 roboczogodzin na jednostkę UCP, oszacowany nakład pracy wynosi **około 12,12 roboczogodzin**.
+
+**Wnioski:**  
+Analiza pokazuje, że system charakteryzuje się umiarkowaną złożonością, co przekłada się na stosunkowo niski szacowany wysiłek wdrożeniowy. Wskaźniki TCF i EF sugerują, że zarówno czynniki techniczne, jak i środowiskowe mają niewielki wpływ na końcowy wynik.
 
 ### 5.2. Przypadki użycia do iteracji
 
