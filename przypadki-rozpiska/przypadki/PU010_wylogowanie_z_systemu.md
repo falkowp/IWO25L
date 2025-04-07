@@ -1,4 +1,4 @@
-# PU0002: Wylogowanie użytkownika
+# PU010: Wylogowanie użytkownika
 
 #### Autor: Kamil Mądrzyk
 
