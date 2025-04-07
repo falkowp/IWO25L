@@ -53,8 +53,7 @@ Umożliwić administratorowi systemu zapis listy metadanych do pliku, co pozwala
 - Proces generowania pliku nie powinien znacząco obciążać systemu ani wpływać na działanie innych usług.
 
 ## 8. Rozszerzenia
-- PU011: Wyświetlenie listy metadanych – umożliwia przeglądanie danych przez administratora.
-- PU012: Eksport listy metadanych do pliku – pozwala na zapisanie metadanych do pliku, co stanowi bazę dla dalszych operacji eksportowych.
+- Wyświetlenie listy metadanych (PU011)
 
 ## 9. Słownik pojęć dla PU012
 

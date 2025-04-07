@@ -1,6 +1,7 @@
-# Przypadek użycia: PU002: Przypisanie uprawnień/roli użytkownikowi do źródła danych
+# PU002: Przypisanie uprawnień/roli użytkownikowi do źródła danych
 
 #### Autor: Michał Janaszewski
+
 ## 1. Cel: 
 Administrator może przypisywać użytkownikom role i uprawnienia do różnych zasobów.
 
@@ -12,6 +13,7 @@ Administrator może przypisywać użytkownikom role i uprawnienia do różnych z
 2. Administrator wybierą rolę i potwierdza jest wybranie
 
 ## 4. Przebiegi alternatywne
+
 ### 4.1. Administrator rezygnuje z przypisania roli
 1. Administrator otwiera formularz przypisania roli, ale zamyka go bez zapisania zmian
 2. System anuluje operację i wraca do listy użytkowników
@@ -29,13 +31,13 @@ Administrator może przypisywać użytkownikom role i uprawnienia do różnych z
 - Lista użytkowników nie może być pusta
 
 ## 8. Rozszerzenia
-- Zmiana uprawnień [(PU003)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.1.wymagania.funkcjonalne/PU0003.md)
+- Zmiana uprawnień (PU003)
 
 ## 9. Słownik pojęć dla PU0001
+
 ### Administrator systemu
 - **Definicja**: Osoba uprawniona do zarządzania użytkownikami i ich uprawnieniami w systemie
 - **Synonim**: Admin, Administrator
-- [(Administrator)](../../dokumentacja/specyfikacja.wymagan/4.wymagania.uzytkownika/4.3.slownik/4.3.1.aktorzy/aktorzy/administrator.md)
 
 ### Uprawnienia
 - **Definicja**: Zbiór praw i możliwości przypisanych do konta użytkownika
