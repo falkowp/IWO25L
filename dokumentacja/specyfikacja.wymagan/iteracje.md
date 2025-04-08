@@ -15,7 +15,7 @@
 | PU013 | Rejestracja nowych metadanych | Administrator | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
 | PU014 | Dodanie nowego zestawu metadanych | Administrator | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
 | PU015 | Wyszukanie metadanych | Administrator | Prosta | 1-3 | 5 | Złożony | 3 | 4,73 |
-| PU016 | Archiwizacja źródeł danych | Administrator | Średnia | 4-7 | 10 | Prosty | 1 | 9,46 |
+| PU016 | Archiwizacja metadanych | Administrator | Średnia | 4-7 | 10 | Prosty | 1 | 9,46 |
 | PU017 | Zlecenie automatycznej kontroli poprawności metadanych | Administrator | Złożona | 8+ | 15 | Średni | 2 | 14,19 |
 | PU018 | Usunięcie metadanych | Administrator | Średnia | 4-7 | 10 | Złożony | 3 | 9,46 |
 | PU019 | Wyświetlenie informacji o metadanych | Administrator | Prosta | 1-3 | 5 | Złożony | 3 | 4,73 |
