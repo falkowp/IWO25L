@@ -1,4 +1,4 @@
-# PU0001: Wyświetlenie listy użytkowników
+# PU001: Wyświetlenie listy użytkowników
 
 #### Autor: Marta Stankevich
 
