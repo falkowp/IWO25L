@@ -27,14 +27,14 @@ POST: Administrator zapoznał się z atrybutami zgłoszenia i moze wykonać dals
 FINAL: Failiure
 POST: Administrator nie zapoznał się z atrybutami zgłoszenia.
 
-### 2.1. SCENARIUSZ ALTERNATYWNY 2 - Zgłoszenie zostało przeniesione do archiwum  
+### 2.2. SCENARIUSZ ALTERNATYWNY 2 - Zgłoszenie zostało przeniesione do archiwum  
 
 1. Tak samo, jak w SCENARIUSZU GŁÓWNYM
 [ DANE NIEPOPRAWNE ]
-2a. System wykrywa przeniesienie zgłoszenia do archiwum.
-3a. System wyświetla komunikat o przeniesieniu zgłoszenia do archiwum.
-4a. Administrator wybiera opcję "OK".
-5a. System zamyka atrybuty zgłoszenia.
+2b. System wykrywa przeniesienie zgłoszenia do archiwum.
+3b. System wyświetla komunikat o przeniesieniu zgłoszenia do archiwum.
+4b. Administrator wybiera opcję "OK".
+5b. System zamyka atrybuty zgłoszenia.
 
 FINAL: Failiure
 POST: Administrator nie zapoznał się z atrybutami zgłoszenia.
