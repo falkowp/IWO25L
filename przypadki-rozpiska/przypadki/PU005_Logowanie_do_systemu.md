@@ -1,4 +1,4 @@
-# PU005: Rejestracja w systemie
+# PU005: Logowanie w systemie
 
 #### Autor: Bartosz Cylwik
 

@@ -1,4 +1,4 @@
-# PU019: Wyświetlenie informacji o źródle danych
+# PU019: Wyświetlenie informacji o źródle danych 
 
 #### Autor: Adrian Rybaczuk
 
@@ -76,4 +76,4 @@ Umożliwienie użytkownikowi systemu przeglądania szczegółowych informacji o 
 ### Dokumentacja źródła
 - **Definicja**: Zbiór dokumentów opisujących źródło danych
 - **Synonim**: Dokumenty źródła, Materiały źródłowe
-- **Użycie**: Dokumentacja zawiera szczegółowe informacje o strukturze i wykorzystaniu źródła danych
+- **Użycie**: Dokumentacja zawiera szczegółowe informacje o strukturze i wykorzystaniu źródła danyc
