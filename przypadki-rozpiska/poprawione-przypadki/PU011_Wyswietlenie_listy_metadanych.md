@@ -9,7 +9,7 @@
 PRE: Adminsitrator jest zalogowany do systemu
 
 1. Administrator wybiera opcję "Wyświetl metadane".
-2. System wyświetla liste dostępnych metadanych.
+2. System wyświetla liste dostępnych metadanych.\
 << invoke >> Wyświetlenie szczegółow metadanej  
 
 FINAL: Success
