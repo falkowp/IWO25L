@@ -1,6 +1,6 @@
 # PU012: Eksport listy metadanych do pliku
 
-#### Autor: [Maciej Przybylski]
+#### Autor: [Mikołaj Pątkowski]
 
 ## 1. SCENARIUSZ GŁÓWNY PRZYPADKU UŻYCIA PU012
 
