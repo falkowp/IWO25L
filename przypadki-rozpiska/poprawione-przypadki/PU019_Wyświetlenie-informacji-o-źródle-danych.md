@@ -1,5 +1,6 @@
 PU019. Wyswietlenie informacj o źródle danych
-Wyświetlenie listy użytkowników
+Autor: Adrian Rybaczuk
+
 
 Scenariusz główny:
 PRE: 1. Użytkownik jest zalogowany 2. Użytkownik posiada rolę "Administratora"
