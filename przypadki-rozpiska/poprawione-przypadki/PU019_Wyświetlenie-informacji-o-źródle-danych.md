@@ -4,11 +4,15 @@ Autor: Adrian Rybaczuk
 
 
 Scenariusz główny:
+
 PRE: 1. Użytkownik jest zalogowany 2. Użytkownik posiada rolę "Administratora"
 
 1. Administrator wybiera opcję "Lista użytkowników"
 2. System wyświetla okno "Lista użytkowników"
-   final: success POST: Wyświetlono listę użytkowników
+
+final: success 
+
+POST: Wyświetlono listę użytkowników
 
 Scenariusze alternatywne
 
@@ -17,15 +21,11 @@ Scenariusz alternatywny 1:
 1. Tak jak w scenariuszu głównym
 2. System wyświetla okno z komunikatem
    "Brak użytkowników"
-   final: success
-   POST: Wyświetlono pustą listę użytkowników
 
-Słownik pojęć:
-Administrator - [definicja znajduje się w słowniku nr. 1]
+final: success
 
-Lista użytkowników -
+POST: Wyświetlono pustą listę użytkowników
 
-[Page 2]
 Scenariusz Alternatywny 2:
 
 1. Tak jak w scenariuszu głównym
@@ -35,6 +35,7 @@ Scenariusz Alternatywny 2:
    o braku możliwości pobrania danych
 
 Słownik pojęć:
+
 Lista użytkowników - lista zawierająca
 informacje o użytkownikach systemu
 
