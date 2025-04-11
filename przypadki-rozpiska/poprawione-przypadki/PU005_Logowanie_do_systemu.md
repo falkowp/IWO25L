@@ -1,7 +1,7 @@
 # PU005: Logowanie w systemie
 
 
-#### Autor: Bartosz Cylwik
+#### Autor: Jakub Wypych
 
 ## 1. SCENARIUSZ GŁÓWNY PRZYPADKU UŻYCIA PU005
 
