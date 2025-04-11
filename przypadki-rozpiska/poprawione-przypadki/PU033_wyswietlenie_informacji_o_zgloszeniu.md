@@ -19,10 +19,10 @@ POST: Administrator zapoznał się z atrybutami zgłoszenia i moze wykonać dals
 
 1. Tak samo, jak w SCENARIUSZU GŁÓWNYM
 [ DANE NIEPOPRAWNE ]
-2. System wykrywa brak zgłoszenia.
-3. System wyświetla komunikat o usunięciu zgłoszenia.
-4. Administrator wybiera opcję "OK".
-5. System zamyka atrybuty zgłoszenia.
+2. a. System wykrywa brak zgłoszenia.
+3. a. System wyświetla komunikat o usunięciu zgłoszenia.
+4. a. Administrator wybiera opcję "OK".
+5. a. System zamyka atrybuty zgłoszenia.
 
 FINAL: Failiure
 POST: Administrator nie zapoznał się z atrybutami zgłoszenia.
@@ -31,10 +31,10 @@ POST: Administrator nie zapoznał się z atrybutami zgłoszenia.
 
 1. Tak samo, jak w SCENARIUSZU GŁÓWNYM
 [ DANE NIEPOPRAWNE ]
-2. System wykrywa przeniesienie zgłoszenia do archiwum.
-3. System wyświetla komunikat o przeniesieniu zgłoszenia do archiwum.
-4. Administrator wybiera opcję "OK".
-5. System zamyka atrybuty zgłoszenia.
+2. b. System wykrywa przeniesienie zgłoszenia do archiwum.
+3. b. System wyświetla komunikat o przeniesieniu zgłoszenia do archiwum.
+4. b. Administrator wybiera opcję "OK".
+5. b. System zamyka atrybuty zgłoszenia.
 
 FINAL: Failiure
 POST: Administrator nie zapoznał się z atrybutami zgłoszenia.
