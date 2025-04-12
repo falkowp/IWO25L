@@ -37,6 +37,6 @@ POST: Sesja użytkownika dalej znajduje się w bazie danych.
 
 ### Komunikat zamiaru wylogowania
 - **Definicja**: Komunikat pytający użytkownika, czy na pewno chce się wylogować. 
-- **Metody**: 
+- **Operacje**: 
   - Tak()
   - Nie()
