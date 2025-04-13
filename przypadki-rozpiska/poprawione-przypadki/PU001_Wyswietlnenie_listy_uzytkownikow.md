@@ -1,51 +1,52 @@
-PU0001. Wyświetlenie listy użytkowników
+# PU0001: Wyświetlenie listy użytkowników
 
-Autor: Adrian Rybaczuk
+#### Autor: Patrycja Falkowska
+##### Część merytoryczna: Adrian Rybaczuk
 
+## 1. SCENARIUSZ GŁÓWNY PRZYPADKU UŻYCIA PU0001
 
-Scenariusz główny:
+PRE: Użytkownik jest zalogowany do systemu i posiada rolę „Administratora”.
 
-PRE: 
+1. Administrator wybiera opcję „Lista użytkowników”.  
+[ DANE POPRAWNE ]  
+2. System wyświetla okno „Lista użytkowników”.
 
-1. Użytkownik jest zalogowany 
-2. Użytkownik posiada rolę "Administratora"
----
+POST: Wyświetlono listę użytkowników.
 
+## 2. PRZEBIEGI ALTERNATYWNE
 
-1. Administrator wybiera opcję "Lista użytkowników"
-2. System wyświetla okno "Lista użytkowników"
+### 2.1. SCENARIUSZ ALTERNATYWNY 1 – Brak użytkowników
 
-final: success 
+1. Tak samo, jak w SCENARIUSZU GŁÓWNYM  
+[ DANE NIEPOPRAWNE ]  
+2. a. System wyświetla okno z komunikatem: „Brak użytkowników”.
 
-POST: Wyświetlono listę użytkowników
+FINAL: Success  
+POST: Wyświetlono pustą listę użytkowników.
 
-Scenariusze alternatywne
+### 2.2. SCENARIUSZ ALTERNATYWNY 2 – Błąd połączenia z bazą danych
 
-Scenariusz alternatywny 1:
+1. Tak samo, jak w SCENARIUSZU GŁÓWNYM  
+[ DANE NIEPOPRAWNE ]  
+2. b. System wyświetla komunikat: „Błąd połączenia z bazą danych”.
 
-1. Tak jak w scenariuszu głównym \
-2. a. System wyświetla okno z komunikatem
-   "Brak użytkowników"
+FINAL: Failure  
+POST: Wyświetlono komunikat o braku możliwości pobrania danych.
 
-final: success
+## 3. SŁOWNIK POJĘĆ
 
-POST: Wyświetlono pustą listę użytkowników
+### Lista użytkowników  
+- **Definicja**: Lista zawierająca informacje o użytkownikach systemu.
 
-Scenariusz Alternatywny 2:
+### Okno listy użytkowników  
+- **Definicja**: Okno wyświetlające dane z „listy użytkowników”.  
 
-1. Tak jak w scenariuszu głównym
-2. b. Wyświetlenie okno komunikatu
-   "Błąd połączenia z bazą danych"
-   final: fail POST: Wyświetlenie komunikatu
-   o braku możliwości pobrania danych
-
-Słownik pojęć:
-
-Lista użytkowników - lista zawierająca
-informacje o użytkownikach systemu
-
-Okno listy użytkowników - okno
-wyświetlające dane z "listy użytkowników"
-
-Użytkownik - osoba korzystająca z systemu
-Atrybuty id[numer], imię[tekst], nazwa[string], hasło[string], uprawnienia[enum], role[enum]
+### Użytkownik  
+- **Definicja**: Osoba korzystająca z systemu.  
+- **Atrybuty**:  
+  - ID: numer  
+  - Imię: tekst  
+  - Nazwa: string  
+  - Hasło: string  
+  - Uprawnienia: enum  
+  - Role: enum
