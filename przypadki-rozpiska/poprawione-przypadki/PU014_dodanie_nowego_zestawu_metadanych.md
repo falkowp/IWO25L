@@ -1,7 +1,6 @@
 # PU014: Dodanie nowego zestawu metadanych
 
-#### Na podstawie: Mikołaj Pątkowski
-#### Poprawił: Artem Omelchenko
+#### Autor: Artem Omelchenko
 
 ## 1. SCENARIUSZ GŁÓWNY PRZYPADKU UŻYCIA PU014
 
