@@ -9,6 +9,8 @@ PRE:
 
 1. Użytkownik jest zalogowany 
 2. Użytkownik posiada rolę "Administratora"
+---
+
 
 1. Administrator wybiera opcję "Lista użytkowników"
 2. System wyświetla okno "Lista użytkowników"
