@@ -14,6 +14,7 @@ PRE: Admin jest zalogowany, posiada uprawnienia do archiwizacji metadanych. Admi
 6. System wyświetla komunikat o pomyślnej archiwizacji.
 
 FINAL: success
+
 POST: Wybrany zesraw metadanych posiada status "zarchiwizowane", nie jest dostępny do edycji.
 
 ## 2. PRZEBIEGI ALTERNATYWNE
@@ -21,25 +22,36 @@ POST: Wybrany zesraw metadanych posiada status "zarchiwizowane", nie jest dostę
 ### 2.1. SCENARIUSZ ALTERNATYWNY 1 - Metadane już zarchiwizowane lub usunięte
 
 1a. Tak samo, jak w SCENARIUSZU GŁÓWNYM
+
 2a. Tak samo, jak w SCENARIUSZU GŁÓWNYM
+
 3a. System wykrywa, że metadane posiadają status "zarchiwizowane".
+
 4a. System informuje administratora o statusie metadanych.  
+
 5a. System powraca do listy metadanych.
 
 FINAL: Failiure
+
 POST: Żadne metadane otrzymały status "zarchiwizowane".
 
 
 ### 2.2. SCENARIUSZ ALTERNATYWNY 2 - Rezygnacja z archiwizacji  
 
 1b. Tak samo, jak w SCENARIUSZU GŁÓWNYM
+
 2b. Tak samo, jak w SCENARIUSZU GŁÓWNYM
+
 3b. Tak samo, jak w SCENARIUSZU GŁÓWNYM
+
 4b. Administrator klika opcję "anuluj"  
-5b. System anuluje procedurę i pozostawia metadane bez zmian.  
+
+5b. System anuluje procedurę i pozostawia metadane bez zmian.
+
 6b. System powraca do widoku listy lub metadanych.
 
 FINAL: Failiure
+
 POST: Żadne metadane otrzymały status "zarchiwizowane".
 
 
