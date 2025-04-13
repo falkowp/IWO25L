@@ -24,7 +24,7 @@ Scenariusze alternatywne
 Scenariusz alternatywny 1:
 
 1. Tak jak w scenariuszu głównym \
-2a. System wyświetla okno z komunikatem
+2. a. System wyświetla okno z komunikatem
    "Brak użytkowników"
 
 final: success
@@ -33,8 +33,8 @@ POST: Wyświetlono pustą listę użytkowników
 
 Scenariusz Alternatywny 2:
 
-1. Tak jak w scenariuszu głównym \
-2b. Wyświetlenie okno komunikatu
+1. Tak jak w scenariuszu głównym
+2. b. Wyświetlenie okno komunikatu
    "Błąd połączenia z bazą danych"
    final: fail POST: Wyświetlenie komunikatu
    o braku możliwości pobrania danych
