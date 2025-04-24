@@ -1,0 +1,54 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> main menu
+02: User <invoke> Find metadata
+-> rejoin 01
+
+Use case Find metadata Main scenario
+00: User <select> find metadata
+01: System <show> metadata search form
+02: User <enter> filter
+03: User <select> search
+04: System <check> filter
+[filter ? valid]
+05: System <read> metadata
+06: System <show> metadata window
+07: User <invoke> Archive, Verify, View details
+-> end ! OK
+
+Scenario
+
+02: -"-
+C1: User <select> cancel
+-> end ! CANCEL
+
+Scenario
+
+02: -"-
+B1: User <select> reset
+B2: System <show> filter reset message
+B3: User <select> ok
+-> rejoin 01
+
+Scenario
+
+04: -"-
+[filter ? invalid]
+A1: System <show> filter error message
+A2: User <select> close
+-> end ! notOK
+
+Data metadata {
+	ID : integer,
+	nazwa: text,
+	opis: text,
+	wlasciciel : text,
+	data_utworzenia : date,
+	data_aktualizacji : date,
+	status : integer,
+	czy_zarchizowane : boolean
+}
+
+Data filter {
+	kryteria_filtru : metadata
+}
