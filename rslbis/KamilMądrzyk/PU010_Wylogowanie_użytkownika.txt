@@ -1,0 +1,21 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> main menu
+02: User <invoke> Log out uc
+-> rejoin 01
+
+
+
+Use case Log out uc Main scenario
+00: Cashier <select> Wyloguj
+01: System <show> Confirmation screen
+02: Cashier <select> anuluj
+-> end ! CANCEL
+
+Scenario
+01: -"-
+A1: Cashier <select> potwierdz
+A2: System <show> logout screen
+A3: Cashier <enter> wylogowano
+A4: Cashier <select> ok
+-> end ! OK
