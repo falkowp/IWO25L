@@ -1,0 +1,28 @@
+Use case Start Main scenario
+00: User <select> application  
+01: System <show> main menu  
+02: User <invoke> Show metadata list  
+-> rejoin 01
+
+Use case Show metadata list Main scenario
+00: User <select> show metadata list  
+01: System <read> metadata list  
+02: System <show> metadata list view  
+03: User <select> show metadata details  
+-> invoke Show metadata details  
+04: User <select> close  
+-> end ! OK
+
+Scenario
+
+02: -"-  
+A1: User <select> back  
+-> rejoin 01
+
+Use case Show metadata details Main scenario
+{metadata item}
+00: User <select> show metadata details  
+01: System <read> metadata details  
+02: System <show> metadata details view  
+03: User <select> back  
+-> rejoin Show metadata list
