@@ -1,0 +1,54 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> AddMetadataSet
+-> rejoin 01
+
+Use case AddMetadataSet Main scenario
+00: Administrator <select> addMetadataSet
+01: System <show> metadataSetForm
+02: Administrator <enter> metadataSet
+03: Administrator <select> save
+04: System <check> metadataSet
+[metadataSet ? valid]
+05: System <update> metadataSet
+06: System <show> successMessage
+07: Administrator <select> ok
+-> end ! OK
+
+Scenario
+02: -"-
+A1: Administrator <select> cancel
+-> end ! CANCEL
+
+Scenario
+04: -"-
+[metadataSet ? invalid]
+B1: System <show> errorMessage
+B2: Administrator <select> ok
+-> rejoin 01
+
+Scenario
+04: -"-
+[metadataSet ? duplicate]
+C1: System <show> errorDuplicateMessage
+C2: Administrator <select> ok
+-> rejoin 01
+
+Data metadata {
+    ID: integer,
+    nazwa: text,
+    opis: text,
+    wlasciciel: text,
+    dataUtworzenia: date,
+    dataAktualizacji: date,
+    status: integer,
+    czyZarchizowane: boolean
+}
+
+Data metadataSet {
+    nazwa: text,
+    opis: text,
+    dataUtworzenia: date,
+    metadane: [metadata]
+}
