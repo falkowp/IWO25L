@@ -1,0 +1,39 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> main menu
+02: User <invoke> Show ticket list
+-> rejoin 01
+
+Use case Show ticket list Main scenario
+00: User <select> show ticket list
+01: System <read> ticket list
+02: System <show> ticket list form
+03: User <invoke> Show ticket details
+-> rejoin 01
+
+Scenario
+02: -"-
+A1: User <select> close
+-> end ! CANCEL
+
+Use case Show ticket details Main scenario
+00: User <select> view details
+01: System <read> ticket
+02: System <show> ticket details
+03: User <select> close
+-> end ! OK
+
+
+Data ticket {
+    id: integer,
+    author: text,
+    description: text,
+    date: text
+}
+
+Data ticket list {
+    tickets: [ticket]
+}
+
+Trigger *button* close {Close}
+Trigger *button* view details {Show Details}
