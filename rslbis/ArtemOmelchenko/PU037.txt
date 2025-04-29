@@ -1,0 +1,124 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> main menu
+02: User <invoke> Login, Show metadata list
+-> rejoin 01
+
+Use case Login Main scenario
+00: User <select> login
+01: System <show> loginform
+02: User <enter> logindata
+03: User <select> submit
+04: System <check> logindata
+[logindata ? valid]
+05: System <authenticate> user
+06: System <show> successmessage
+07: User <select> ok
+-> end ! OK
+
+Scenario
+02: -"-
+A1: User <select> cancel
+-> end ! CANCEL
+
+Scenario
+04: -"-
+[logindata ? invalid]
+B1: System <show> errormessage
+B2: User <select> ok
+-> rejoin 01
+
+Use case Show metadata list Main scenario
+00: User <select> showmetadatalist
+01: System <read> metadatalist
+02: System <show> metadatalistform
+03: User <invoke> Show metadata details
+-> rejoin 02
+
+Scenario
+02: -"-
+A1: User <select> close
+-> end ! CANCEL
+
+Use case Show metadata details Main scenario
+00: User <select> viewdetails
+01: System <read> metadata
+02: System <show> metadatadetails
+03: User <invoke> Report metadata issue
+-> rejoin 02
+
+Scenario
+02: -"-
+A1: User <select> close
+-> end ! OK
+
+Use case Report metadata issue Main scenario
+00: User <select> reportissue
+01: System <show> issuereportform
+02: User <enter> issuereport
+03: User <select> submit
+04: System <check> issuereport
+[issuereport ? valid]
+05: System <update> issuereport
+06: System <show> confirmationmessage
+07: User <select> ok
+-> end ! OK
+
+Scenario
+02: -"-
+A1: User <select> cancel
+-> end ! CANCEL
+
+Scenario
+04: -"-
+[issuereport ? invalid]
+B1: System <show> validationerrormessage
+B2: User <select> ok
+-> rejoin 01
+
+Data user {
+    id: integer,
+    firstname: text,
+    lastname: text,
+    email: text,
+    login: text,
+    password: text,
+    role: text,
+    permissions: text
+}
+
+Data logindata {
+    username: text,
+    password: text
+}
+
+Data metadata {
+    id: integer,
+    sourceid: integer,
+    creationdate: text,
+    updatedate: text,
+    contactperson: text,
+    contactemail: text,
+    license: text
+}
+
+Data metadatalist {
+    metadataitems: [metadata]
+}
+
+Data issuereport {
+    id: integer,
+    comment: text,
+    attachment: text,
+    author: text,
+    status: text,
+    resolutiontime: text,
+    creationdate: text,
+    modificationdate: text,
+    metadataid: integer
+}
+
+View loginform {Login}, metadatalistform {Metadata List}, metadatadetails {Metadata Details}, issuereportform {Report an Issue}
+View successmessage {Success}, errormessage {Error}, confirmationmessage {Confirmation}, validationerrormessage {Validation Error}
+
+Trigger login {Login}, submit {Submit}, ok {OK}, cancel {Cancel}, close {Close}, showmetadatalist {Show Metadata List}, viewdetails {View Details}, reportissue {Report Issue}
