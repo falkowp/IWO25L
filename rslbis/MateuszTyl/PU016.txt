@@ -1,0 +1,52 @@
+Use case Start
+Main scenario
+00: Admin <select> Uruchom
+01: System <show> MetadaneList
+02: Admin <select> Odswiez
+03: System <read> MetadaneList
+04: Admin <enter> Metadane
+05: Admin <invoke> ArchiwizacjaMetadanych
+-> rejoin 01
+
+
+Use case ArchiwizacjaMetadanych
+Main scenario
+{Metadane}
+00: Admin <select> Archiwizuj
+01: System <check> Metadane
+[Metadane?AKTYWNE]
+02: System <show> PotwierdzArchiwizacje
+03: Admin <select> Potwierdzam
+04: System <update> Metadane
+05: System <execute> OznaczJakoZarchiwizowane
+06: System <show> KomunikatOPoprawnejArchiwizacji
+07: Admin <select> Zamknij
+-> end ! success
+
+Scenario
+01: -"-
+[Metadane?ZAARCHIWIZOWANE]
+A1: System <show> InfomacjaZeJuzZaarchiwizowane
+A2: Admin <select> Zamknij
+-> end ! failure
+
+Scenario
+02: -"-
+B1: Admin <select> Anuluj
+B2: System <show> KomunikatAnulowanieOperacji
+B3: Admin <select> Zamknij
+-> end ! failure
+
+Data Administrator {
+  Zalogowany     : boolean,
+  MaUprawnienia  : boolean
+}
+
+Data Metadane {
+  id     : integer,
+  status : text
+}
+
+Data MetadaneList {
+  metadane : [Metadane]
+}
