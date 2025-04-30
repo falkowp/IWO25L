@@ -1,0 +1,47 @@
+Use case Start Main scenario
+00: Administrator <select> ZarejestrujMetadane
+01: System <show> formularzRejestracjiMetadanych
+02: Administrator <invoke> DodanieNowegoZestawuMetadanych
+03: Administrator <enter> metadane
+04: Administrator <select> zarejestruj
+05: System <check> metadane
+[metadane ? poprawne]
+06: System <update> metadane
+07: System <show> komunikatSukces
+08: Administrator <select> ok
+-> end ! SUCCESS
+
+Scenario
+05: -"-
+[metadane ? niepoprawne]
+A1: System <show> komunikatBlad
+A2: Administrator <select> powrot
+-> rejoin 01
+
+Scenario
+03: -"-
+B1: Administrator <select> anuluj
+B2: System <close> formularzRejestracjiMetadanych
+-> end ! FAILURE
+
+
+
+Data metadane {
+  id: integer,
+  nazwa: text,
+  opis: text,
+  wlasciciel: text,
+  dataUtworzenia: text,
+  dataAktualizacji: text,
+  status: text,
+  czyZarchiwizowane: boolean
+}
+
+View *form* formularzRejestracjiMetadanych {Formularz rejestracji metadanych}
+
+
+Trigger *button* zarejestruj {Zarejestruj}
+Trigger *button* anuluj {Anuluj}
+Trigger *button* ok {OK}
+Trigger *button* powrot {Powrot}
+
