@@ -1,0 +1,34 @@
+Use case Start Main scenario 
+00: User <select> application 
+01: System <show> main menu 
+02: User <invoke> Add role 
+-> rejoin 01
+
+Use case Add role Main scenario
+00: Admin <select> showorderlist
+01: System <read> permisionlist
+02: System <read> rolelist
+03: System <show> roleselectionform
+04: Admin <enter> save
+05: Admin <select> save
+06: System <show> permision success message
+07: Admin <select> ok 
+-> end ! OK
+
+Scenario 
+04: -"- 
+A1: Admin <select> cancel 
+-> end ! CANCEL
+
+Scenario 
+06: -"- 
+A1: Admin <select> cancel 
+-> end ! CANCEL
+
+Data permision { 
+ name : text 
+} 
+
+Data permision list { 
+ permisions: [permision] 
+}
