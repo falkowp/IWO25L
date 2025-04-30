@@ -16,3 +16,12 @@ Scenario
 02: -"-  
 A1: User <select> back  
 -> rejoin 01
+
+Data user {
+    id: integer,
+    firstname: text,
+    login:text,
+    password: text,
+    role: text,
+    permissions: text
+}
