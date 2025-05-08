@@ -4,8 +4,6 @@ Use case Start Main scenario
 02: User <invoke> RegisterMetadata
 -> rejoin 01
 
-
-
 Use case RegisterMetadata Main scenario
 00: Administrator <select> ZarejestrujMetadane
 01: System <show> formularzRejestracjiMetadanych
@@ -31,8 +29,6 @@ Scenario
 B1: Administrator <select> anuluj
 B2: System <close> formularzRejestracjiMetadanych
 -> end ! FAILURE
-
-
 
 Data metadane {
   id: integer,
