@@ -1,4 +1,12 @@
 Use case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> RegisterMetadata
+-> rejoin 01
+
+
+
+Use case RegisterMetadata Main scenario
 00: Administrator <select> ZarejestrujMetadane
 01: System <show> formularzRejestracjiMetadanych
 02: Administrator <invoke> DodanieNowegoZestawuMetadanych
@@ -9,7 +17,7 @@ Use case Start Main scenario
 06: System <update> metadane
 07: System <show> komunikatSukces
 08: Administrator <select> ok
--> end ! SUCCESS
+-> end ! OK
 
 Scenario
 05: -"-
@@ -44,4 +52,3 @@ Trigger *button* zarejestruj {Zarejestruj}
 Trigger *button* anuluj {Anuluj}
 Trigger *button* ok {OK}
 Trigger *button* powrot {Powrot}
-
