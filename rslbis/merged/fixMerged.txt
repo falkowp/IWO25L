@@ -1,7 +1,7 @@
 Use case Start Main scenario
 00: User <select> application
 01: System <show> mainMenu
-02: User <invoke> Login, Show metadata list, Find metadata, Show ticket list, Log out uc, Show users list, Add role, AddMetadataSet, RegisterMetadata  
+02: User <invoke> Login, Show metadata list, Find metadata, Show ticket list, Log out uc, Show users list, Add role, AddMetadataSet, RegisterMetadata, Register  
 -> rejoin 01
 
 Use case Add role Main scenario
@@ -229,7 +229,54 @@ B1: Administrator <select> anuluj
 B2: System <close> formularzRejestracjiMetadanych
 -> end ! FAILURE
 
+Use case Register Main scenario
+00: Uzytkownik <select> zarejestruj sie
+01: System <show> formularz rejestracji
+02: Uzytkownik <enter> dane rejestracji
+03: Uzytkownik <select> zarejestruj
+04: System <check> dane rejestracji
+[dane rejestracji ? VALID]
+05: Uzytkownik <invoke> Wyslanie kodu rejestracyjnego
+06: System <show> formularz kodu rejestracyjnego
+07: Uzytkownik <enter> kod rejestracyjny
+08: Uzytkownik <select> zatwierdz
+09: System <check> kod rejestracyjny
+[kod rejestracyjny ? VALID]
+10: Uzytkownik <invoke> Zapisanie uzytkownika w bazie danych
+11: System <show> komunikat pomyslna rejestacja
+08: Uzytkownik <select> ok
+-> end ! OK
 
+Scenario
+01: -"-
+A1: Uzytkownik <select> anuluj
+-> end ! FAIL
+
+Scenario
+04: -"-
+[dane rejestracji ? INVALID]
+B1: System <invoke> Anulowanie rejestracji
+-> end ! FAIL
+
+Scenario
+09: -"- 
+[kod rejestracyjny ? INVALID]
+C1: System <invoke> Anulowanie rejestracji
+-> end ! FAIL
+
+
+
+Data dane rejestracji{
+  nazwaUzytkownika: text,
+  imie: text,
+  nazwisko: text,
+  haslo: text,
+  powtorzHaslo: text
+}
+
+Data kod rejestracyjny{
+  kodRejestracyjny: text
+}
 
 Data metadane {
   id: integer,
@@ -327,6 +374,8 @@ View *form* successmessage {Success}
 View *form* addDataSetSuccessMessage {Success}
 View *form* validationerrormessage {Validation Error}
 View *form* formularzRejestracjiMetadanych {Formularz rejestracji metadanych}
+View *form* formularz rejestracji {Rejestracja}
+View *form* formularz kodu rejestracyjnego {Kod rejestracyjny}
 
 Trigger addMetadataSet {Add Metadata Set}
 Trigger cancel {Cancel}
@@ -340,6 +389,7 @@ Trigger showmetadatalist {Show Metadata List}
 Trigger submit {Submit}
 Trigger view details {ViewDetails}
 Trigger *button* zarejestruj {Zarejestruj}
+Trigger *button* zatwierdz {Zatwierdz}
 Trigger *button* anuluj {Anuluj}
 Trigger *button* ok {OK}
 Trigger *button* powrot {Powrot}
