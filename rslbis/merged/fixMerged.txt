@@ -1,7 +1,7 @@
 Use case Start Main scenario
 00: User <select> application
 01: System <show> mainMenu
-02: User <invoke> Login, Show metadata list, Find metadata, Show ticket list, Log out uc, Show users list, Add role, AddMetadataSet, RegisterMetadata, Register  
+02: User <invoke> Login, Show metadata list, Find metadata, Show ticket list, Log out uc, Show users list, Add role, AddMetadataSet, RegisterMetadata, Register, ArchiwizacjaMetadanych 
 -> rejoin 01
 
 Use case Add role Main scenario
@@ -264,7 +264,20 @@ Scenario
 C1: System <invoke> Anulowanie rejestracji
 -> end ! FAIL
 
+Use case ArchiwizacjaMetadanych Main scenario
+00: Administrator <select> ArchiwizujMetadane
+01: System <show> metadataArchiveForm
+02: Administrator <enter> metadataArchiveInfo
+03: Administrator <select> save
+04: System <update> metadataArchiveInfo
+05: System <show> metadataArchived
+06: Administrator <select> ok
+-> end ! OK
 
+Scenario
+02: -"- 
+A1: Administrator <select> cancel 
+-> end ! CANCEL
 
 Data dane rejestracji{
   nazwaUzytkownika: text,
@@ -362,6 +375,12 @@ Data appUser {
     role: text,
     permissions: text
 }
+Data metadataArchiveInfo {
+    metadataId: integer,        
+    comment: text,              
+    requestedBy: text,           
+    requestDate: date 
+}         
 
 View *form* confirmationmessage {Confirmation}
 View *form* errormessage {Error}
