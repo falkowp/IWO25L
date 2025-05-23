@@ -19,7 +19,7 @@ POST: Lista zgłoszeń została poprawnie wyświetlona
 ### 2.1. SCENARIUSZ ALTERNATYWNY 1 - Brak zgłoszeń w systemie  
 
 1.-2. Tak samo, jak w SCENARIUSZU GŁÓWNYM\
-    [ Brak zgłoszeń ]
+    [ Brak zgłoszeń ]\
 3. a System wyświetla komunikat o braku zgłoszeń z przyciskiem "Powrót do Panelu Administracyjnego"
 4. a Administrator klika przycisk "Powrót do Panelu Administracyjnego"
 
