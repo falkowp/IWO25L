@@ -1,4 +1,4 @@
-# **PU0021: Odrzucenie_zgłoszenia_uźytkownika**
+# **PU0034: Odrzucenie_zgłoszenia_uźytkownika**
 
 #### Autor: Michał Janaszewski
 
