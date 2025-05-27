@@ -1,4 +1,4 @@
-# **PU0036: Przegląd jakości ocen
+# PU0036: Przegląd jakości ocen
 
 #### Autor: Maciej Przybylski
 

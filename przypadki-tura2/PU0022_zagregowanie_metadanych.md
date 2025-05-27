@@ -2,10 +2,6 @@
 
 #### **Autor:** Artem Omelchenko
 
-#### **Opis:** Możliwość scalania i analizy metadanych z różnych źródeł.
-
----
-
 ## **1. SCENARIUSZ GŁÓWNY PU0022**
 
 **PRE:**
