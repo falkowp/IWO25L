@@ -1,0 +1,46 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> main menu
+02: User <invoke> Change password
+-> rejoin 01
+
+Use case Change password Main scenario
+
+00: User <select> change password
+01: System <show> change password form
+02: User <enter> password change form
+03: User <select> confirm
+04: System <check> password change form
+[password change form ? VALID]
+05: System <show> password change success
+06: User <select> close
+-> end ! OK
+
+Scenario
+04: -"-
+[password change form ? invalidCurrentPassword]
+A1: System <show> invalid current password message
+A2: User <select> close
+-> end ! Fail
+
+Scenario
+04: -"-
+[password change form ? newPasswordMismatch]
+B1: System <show> new password mismatch message
+B2: User <select> close
+-> end ! Fail
+
+Data password change form {
+    current password: text,
+    new password: text,
+    repeat new password: text
+}
+
+View *form* change password form {Zmiana hasla}
+View *message* password change success {Haslo zostalo zmienione poprawnie}
+View *message* invalid current password message {Niepoprawne obecne haslo}
+View *message* new password mismatch message {Nowe hasla się roznia}
+
+Trigger *button* change password {Zmien haslo}
+Trigger *button* confirm {Potwierdz}
+Trigger *button* close {Zamknij}
