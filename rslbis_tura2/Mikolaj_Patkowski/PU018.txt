@@ -1,0 +1,47 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> DeleteMetadata
+-> rejoin 01
+
+Use case DeleteMetadata Main scenario
+00: User <select> deleteMetadata
+01: System <show> metadataListView
+02: User <select> metadata
+03: User <select> delete
+04: System <show> confirmationDialog
+05: User <select> ok
+06: System <delete> metadata
+07: System <show> successMessage
+08: User <select> ok
+-> end ! OK
+
+Scenario
+05: -"-
+A1: User <select> cancel
+-> rejoin 01
+
+Scenario
+06: -"-
+[error ? serverError]
+B1: System <show> errorMessage
+B2: User <select> backToMetadataList
+-> rejoin 01
+
+Data metadata {
+    id: integer,
+    idZrodla: integer,
+    dataUtworzenia: date,
+    dataAktualizacji: date,
+    osobaKontaktowa: text,
+    emailKontaktowy: text,
+    licencja: text
+}
+
+Data metadataList {
+    nazwa: text,
+    opis: text,
+    dataUtworzenia: date,
+    zawartosc: [metadata]
+}
+
