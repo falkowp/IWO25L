@@ -153,19 +153,24 @@ Use case Show metadata details Main scenario
 01: System <read> metadata
 02: System <show> metadatadetails
 03: User <invoke> Report metadata issue
--> rejoin 02
+-> end ! OK
 
 Scenario
 02: -"- 
 A1: User <select> close
 -> end ! OK
 
+Scenario
+02: -"- 
+B1: User <invoke> AddReview
+-> rejoin 01
+
 Use case Show metadata list Main scenario
 00: User <select> showmetadatalist
 01: System <read> metadatalist
 02: System <show> metadatalistform
 03: User <invoke> Show metadata details
--> rejoin 02
+-> end ! OK
 
 Scenario
 02: -"- 
@@ -279,6 +284,21 @@ Scenario
 A1: Administrator <select> cancel 
 -> end ! CANCEL
 
+Use case AddReview Main scenario
+00: User <select> addReview
+01: System <show> reviewForm
+02: User <enter> review
+03: User <select> saveReview
+04: System <show> reviewSaved
+05: User <select> okReview
+06: System <close> reviewForm
+-> end ! OK
+
+Scenario
+01: -"- 
+A1: User <select> cancelReview 
+-> end ! CANCEL
+
 Data dane rejestracji{
   nazwaUzytkownika: text,
   imie: text,
@@ -382,6 +402,11 @@ Data metadataArchiveInfo {
     requestDate: date 
 }         
 
+Data review {
+  stars: integer,
+  comment: text 
+}
+
 View *form* confirmationmessage {Confirmation}
 View *form* errormessage {Error}
 View *form* addDataSeterrorMessage {Error}
@@ -395,6 +420,8 @@ View *form* validationerrormessage {Validation Error}
 View *form* formularzRejestracjiMetadanych {Formularz rejestracji metadanych}
 View *form* formularz rejestracji {Rejestracja}
 View *form* formularz kodu rejestracyjnego {Kod rejestracyjny}
+View *form* reviewForm {Review Form}
+View *form* reviewSaved {Review Saved}
 
 Trigger addMetadataSet {Add Metadata Set}
 Trigger cancel {Cancel}
@@ -412,3 +439,7 @@ Trigger *button* zatwierdz {Zatwierdz}
 Trigger *button* anuluj {Anuluj}
 Trigger *button* ok {OK}
 Trigger *button* powrot {Powrot}
+Trigger *button* addReview {Add Review}
+Trigger *button* saveReview {Save}
+Trigger *button* cancelReview {Cancel}
+Trigger *button* okReview {OK}

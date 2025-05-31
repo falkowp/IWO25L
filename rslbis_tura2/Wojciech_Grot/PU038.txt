@@ -1,0 +1,27 @@
+Use case AddReview Main scenario
+00: User <select> addReview
+01: System <show> reviewForm
+02: User <enter> review
+03: User <select> saveReview
+04: System <show> reviewSaved
+05: User <select> ok
+06: System <close> reviewForm
+-> end ! OK
+
+Scenario
+01: -"- 
+A1: User <select> cancelRevie 
+-> end ! CANCEL
+
+Data review {
+  stars: integer,
+  comment: text 
+}
+
+View *form* reviewForm {Review Form}
+View *form* reviewSaved {Review Saved}
+
+Trigger *button* addReview {Add Review}
+Trigger *button* saveReview {Save Review}
+Trigger *button* cancelReview {Cancel Review}
+Trigger *button* ok {OK}
