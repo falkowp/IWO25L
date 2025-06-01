@@ -1,0 +1,24 @@
+Use case Start Main scenario
+00: User <select> application  
+01: System <show> main menu  
+02: User <invoke> Show reports list  
+-> rejoin 01
+
+Use case Show reports list Main scenario
+00: User <select> show reports list  
+01: System <read> reports list  
+02: System <show> reports list view    
+03: User <select> close  
+-> end ! OK
+
+
+Scenario
+
+02: -"-  
+A1: User <select> brakraportow
+A2: System <show> errormessage
+A3: User <select> back
+-> end ! OK
+
+
+errormessage {Error
