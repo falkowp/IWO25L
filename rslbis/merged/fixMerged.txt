@@ -200,13 +200,27 @@ Use case Show users list Main scenario
 00: User <select> show users list  
 01: System <read> users list  
 02: System <show> users list view    
-03: User <select> close  
--> end ! OK
+03: User <invoke> deleteUser 
+-> rejoin 01
 
 Scenario
 02: -"-  
 A1: User <select> back  
--> rejoin 01
+-> end ! CANCEL
+
+Use case deleteUser Main scenario
+00: Administrator <select> usun   
+01: System <show> potwierdzenie usuniecia
+02: Administrator <select> tak
+03: System <execute> usuniecie konta uzytkownika
+04: System <show> poprawne usuniecie konta
+05: Administrator <select> ok 
+-> end ! OK
+
+Scenario
+01: -"-  
+A1: User <select> nie  
+-> end ! CANCEL
 
 Use case RegisterMetadata Main scenario
 00: Administrator <select> ZarejestrujMetadane
@@ -395,6 +409,11 @@ Data appUser {
     role: text,
     permissions: text
 }
+
+Data users list {
+    users: [appUser]
+}
+
 Data metadataArchiveInfo {
     metadataId: integer,        
     comment: text,              
@@ -420,6 +439,8 @@ View *form* validationerrormessage {Validation Error}
 View *form* formularzRejestracjiMetadanych {Formularz rejestracji metadanych}
 View *form* formularz rejestracji {Rejestracja}
 View *form* formularz kodu rejestracyjnego {Kod rejestracyjny}
+View *form* potwierdzenie usuniecia {Potwierdzenie usuniecia konta}
+View *form* poprawne usuniecie konta {Poprawne usuniecia konta}
 View *form* reviewForm {Review Form}
 View *form* reviewSaved {Review Saved}
 
@@ -434,6 +455,8 @@ Trigger save {Save}
 Trigger showmetadatalist {Show Metadata List}
 Trigger submit {Submit}
 Trigger view details {ViewDetails}
+Trigger *button* tak {Tak}
+Trigger *button* nie {Nie}
 Trigger *button* zarejestruj {Zarejestruj}
 Trigger *button* zatwierdz {Zatwierdz}
 Trigger *button* anuluj {Anuluj}
