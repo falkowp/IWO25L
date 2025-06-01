@@ -1,0 +1,25 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> ShowReviewList
+-> rejoin 01
+
+Use case ShowReviewList Main scenario
+00: User <select> showReviewList
+01: System <read> reviewList
+02: System <show> reviewListForm
+03: User <select> cancel
+-> end ! success
+
+Data review {
+  id: integer,
+  title: text,
+  creationDate: date,
+  status: text
+}
+
+Data reviewList {
+  reviews: [review]
+}
+
+View form reviewListForm {Lista zgloszonych uwag}
