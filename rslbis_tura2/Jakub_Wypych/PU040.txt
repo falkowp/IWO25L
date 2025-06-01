@@ -1,0 +1,29 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> main menu
+02: User <invoke> Archive raport
+-> rejoin 01
+
+Use case Archive raport Main scenario
+00: User <select> archive
+01: System <show> archive confirmation window
+02: User <select> yes
+03: System <invoke> archive raport in database
+04: System <show> succesful archivization
+05: User <select> ok
+-> end ! OK
+
+Scenario
+
+01: -"-
+C1: User <select> cancel
+-> end ! CANCEL
+
+Data raport {
+	ID : integer,
+	typ: integer,
+	adresUrl : text,
+	data_archiwizacji : date
+}
+
+View *form* archive confirmation window {Okno archivizacji raportu}
