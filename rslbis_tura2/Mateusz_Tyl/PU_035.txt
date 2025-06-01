@@ -1,0 +1,43 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> Przyjecie zgloszenia uzytkownika
+-> rejoin 01
+
+Use case Przyjecie zgloszenia uzytkownika Main scenario
+
+00: Administrator <select> userSubmissions
+01: System <show> userSubmissionsPage
+02: Administrator <enter> userSubmission
+03: Administrator <select> confirm
+04: System <check> userSubmission
+[userSubmission ? VALID]
+05: System <show> User submition success
+06: Administrator <select> close
+-> end ! OK
+
+Scenario
+04: -"- 
+[userSubmission ? empty]
+A1: System <show> noSubmissionsMessage
+A2: Administrator <select> ok
+-> end ! notOK
+
+Scenario
+04: -"- 
+[userSubmission ? processed]
+B1: System <show> submissionProcessedMessage
+B2: Administrator <select> ok
+-> end ! notOK
+
+Data submissionList {
+  submissions : [userSubmission]
+}
+
+Data userSubmission {
+  id             : integer,
+  userId         : integer,
+  content        : text,
+  status         : text,
+  submissionDate : date
+}
