@@ -49,5 +49,5 @@ View *form* potwierdzenie usuniecia {Potwierdzenie usuniecia konta}
 View *form* poprawne usuniecie konta {Poprawne usuniecia konta}
 
 Trigger ok {OK}
-Trigger tak {Tak}
-Trigger nie {Nie}
+Trigger *button* tak {Tak}
+Trigger *button* nie {Nie}
