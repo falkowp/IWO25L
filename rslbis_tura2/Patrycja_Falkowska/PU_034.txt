@@ -1,0 +1,40 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> RejectUserRequest
+-> rejoin 01
+
+Use case RejectUserRequest Main scenario
+00: User <select> rejectUserRequest
+01: System <show> userRequestView
+02: User <select> reject
+03: System <show> confirmationDialog
+04: User <select> confirmDelete
+05: System <delete> userRequest
+06: System <show> successMessage
+07: User <select> ok
+-> end ! OK
+
+Scenario
+04: -"- 
+A1: User <select> cancel
+A2: System <close> confirmationDialog
+-> end ! CANCELLED
+
+Scenario
+05: -"- 
+[error ? deleteError]
+B1: System <show> errorMessage
+-> end ! ERROR
+
+Data userRequest {
+    id: integer,
+    userId: integer,
+    dataZgloszenia: date,
+    trescZgloszenia: text,
+    status: text
+}
+
+Data confirmationDialog {
+    message: text
+}
