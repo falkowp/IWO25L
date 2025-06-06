@@ -1,0 +1,1 @@
+zrobilem wam jako tako przypadki 32, 40, 07, 36, 30. Powodzenia z reszta misiaczki <3

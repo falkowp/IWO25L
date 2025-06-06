@@ -1,0 +1,1052 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> Login, Show metadata list, Find metadata, Show ticket list, Log out uc, Show users list, Add role, AddMetadataSet, RegisterMetadata, Register, ArchiwizacjaMetadanych 
+-> rejoin 01
+
+Use case Add role Main scenario
+00: Admin <select> showorderlist
+01: System <read> permisionlist
+02: System <read> rolelistUse case Start Main scenario
+00: User <select> application
+01: System <show> mainMenu
+02: User <invoke> Login, Show metadata list, Find metadata, Show ticket list, Log out uc, Show users list, Add role, AddMetadataSet, RegisterMetadata, Register, ArchiwizacjaMetadanych, Show reports list, Archive raport, Change password, ShowReviewList
+-> rejoin 01
+
+Use case Show requests list Main scenario
+00: User <select> show requests list  
+01: System <read> requests list  
+02: System <show> requests list view    
+03: User <select> close  
+-> end ! OK
+
+
+Scenario
+02: -"-  
+A1: User <select> brakzgloszen
+A2: System <show> errormessage
+A3: User <select> back
+-> end ! OK
+
+
+Use case ShowReviewList Main scenario
+00: User <select> showReviewList
+01: System <read> reviewList
+02: System <show> reviewListForm
+03: User <select> cancel
+-> end ! success
+
+Use case Change password Main scenario
+00: User <select> change password
+01: System <show> change password form
+02: User <enter> password change form
+03: User <select> confirm
+04: System <check> password change form
+[password change form ? VALID]
+05: System <show> password change success
+06: User <select> close
+-> end ! OK
+
+Scenario
+04: -"-
+[password change form ? invalidCurrentPassword]
+A1: System <show> invalid current password message
+A2: User <select> close
+-> end ! Fail
+
+Scenario
+04: -"-
+[password change form ? newPasswordMismatch]
+B1: System <show> new password mismatch message
+B2: User <select> close
+-> end ! Fail
+
+
+Use case Archive raport Main scenario
+00: User <select> archive
+01: System <show> archive confirmation window
+02: User <select> yes
+03: System <invoke> archive raport in database
+04: System <show> succesful archivization
+05: User <select> ok
+-> end ! OK
+
+Scenario
+01: -"-
+C1: User <select> cancel
+-> end ! CANCEL
+
+Use case Show reports list Main scenario
+00: User <select> show reports list  
+01: System <read> reports list  
+02: System <show> reports list view    
+03: User <select> close  
+-> end ! OK
+
+Use case Add role Main scenario
+00: Admin <select> showorderlist
+01: System <read> permisionlist
+02: System <read> rolelist
+03: System <show> roleselectionform
+04: Admin <enter> save
+05: Admin <select> save
+06: System <show> permision success message
+07: Admin <select> ok 
+-> end ! OK
+
+Scenario 
+04: -"- 
+A1: Admin <select> cancel 
+-> end ! CANCEL
+
+Scenario 
+06: -"- 
+A1: Admin <select> cancel 
+-> end ! CANCEL
+
+Use case AddMetadataSet Main scenario
+00: Administrator <select> addMetadataSet
+01: System <show> metadataSetForm
+02: Administrator <enter> metadataSet
+03: Administrator <select> save
+04: System <check> metadataSet
+[metadataSet ? valid]
+05: System <update> metadataSet
+06: System <show> addDataSetSuccessMessage
+07: Administrator <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: Administrator <select> cancel 
+-> end ! CANCEL
+
+Scenario
+04: -"- 
+[metadataSet ? invalid]
+B1: System <show> addDataSeterrorMessage
+B2: Administrator <select> ok
+-> rejoin 01
+
+Scenario
+04: -"- 
+[metadataSet ? duplicate]
+C1: System <show> errorDuplicateMessage
+C2: Administrator <select> ok
+-> rejoin 01
+
+Use case Find metadata Main scenario
+00: User <select> find metadata
+01: System <show> metadata search form
+02: User <enter> filter
+03: User <select> search
+04: System <check> filter
+[filter ? valid]
+05: System <read> metadata
+06: System <show> metadata window
+07: User <invoke> Archive, Verify, view details
+-> end ! OK
+
+Scenario
+02: -"- 
+C1: User <select> cancel 
+-> end ! CANCEL
+
+Scenario
+02: -"- 
+B1: User <select> reset
+B2: System <show> filter reset message
+B3: User <select> ok
+-> rejoin 01
+
+Scenario
+04: -"- 
+[filter ? invalid]
+A1: System <show> filter error message
+A2: User <select> close
+-> end ! notOK
+
+Use case Log out uc Main scenario
+00: Cashier <select> Wyloguj
+01: System <show> Confirmation screen
+02: Cashier <select> anuluj
+-> end ! CANCEL
+
+Scenario
+01: -"- 
+A1: Cashier <select> potwierdz
+A2: System <show> logout screen
+A3: Cashier <enter> wylogowano
+A4: Cashier <select> ok
+-> end ! OK
+
+Use case Login Main scenario
+00: User <select> login
+01: System <show> loginform
+02: User <enter> logindata
+03: User <select> submit
+04: System <check> logindata
+[logindata ? valid]
+05: System <show> successmessage
+06: User <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> cancel
+-> end ! CANCEL
+
+Scenario
+04: -"- 
+[logindata ? invalid]
+B1: System <show> errormessage
+B2: User <select> ok
+-> rejoin 01
+
+Use case Report metadata issue Main scenario
+00: User <select> reportissue
+01: System <show> issuereportform
+02: User <enter> issuereport
+03: User <select> submit
+04: System <check> issuereport
+[issuereport ? valid]
+05: System <update> issuereport
+06: System <show> confirmationmessage
+07: User <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> cancel
+-> end ! CANCEL
+
+Scenario
+04: -"- 
+[issuereport ? invalid]
+B1: System <show> validationerrormessage
+B2: User <select> ok
+-> rejoin 01
+
+Use case Show metadata details Main scenario
+00: User <select> viewdetails
+01: System <read> metadata
+02: System <show> metadatadetails
+03: User <invoke> Report metadata issue
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> close
+-> end ! OK
+
+Scenario
+02: -"- 
+B1: User <invoke> AddReview
+-> rejoin 01
+
+Use case Show metadata list Main scenario
+00: User <select> showmetadatalist
+01: System <read> metadatalist
+02: System <show> metadatalistform
+03: User <invoke> Show metadata details
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> close
+-> end ! CANCEL
+
+Use case Show ticket details Main scenario
+00: User <select> view details
+01: System <read> ticket
+02: System <show> ticket details
+03: User <select> close
+-> end ! OK
+
+Use case Show ticket list Main scenario
+00: User <select> show ticket list
+01: System <read> ticket list
+02: System <show> ticket list form
+03: User <invoke> Show ticket details
+-> rejoin 01
+
+Scenario
+02: -"- 
+A1: User <select> close
+-> end ! CANCEL
+
+Use case Show users list Main scenario
+00: User <select> show users list  
+01: System <read> users list  
+02: System <show> users list view    
+03: User <invoke> deleteUser 
+-> rejoin 01
+
+Scenario
+02: -"-  
+A1: User <select> back  
+-> end ! CANCEL
+
+Use case deleteUser Main scenario
+00: Administrator <select> usun   
+01: System <show> potwierdzenie usuniecia
+02: Administrator <select> tak
+03: System <execute> usuniecie konta uzytkownika
+04: System <show> poprawne usuniecie konta
+05: Administrator <select> ok 
+-> end ! OK
+
+Scenario
+01: -"-  
+A1: User <select> nie  
+-> end ! CANCEL
+
+Use case RegisterMetadata Main scenario
+00: Administrator <select> ZarejestrujMetadane
+01: System <show> formularzRejestracjiMetadanych
+02: Administrator <invoke> DodanieNowegoZestawuMetadanych
+03: Administrator <enter> metadane
+04: Administrator <select> zarejestruj
+05: System <check> metadane
+[metadane ? poprawne]
+06: System <update> metadane
+07: System <show> komunikatSukces
+08: Administrator <select> ok
+-> end ! OK
+
+Scenario
+05: -"-
+[metadane ? niepoprawne]
+A1: System <show> komunikatBlad
+A2: Administrator <select> powrot
+-> rejoin 01
+
+Scenario
+03: -"-
+B1: Administrator <select> anuluj
+B2: System <close> formularzRejestracjiMetadanych
+-> end ! FAILURE
+
+Use case Register Main scenario
+00: Uzytkownik <select> zarejestruj sie
+01: System <show> formularz rejestracji
+02: Uzytkownik <enter> dane rejestracji
+03: Uzytkownik <select> zarejestruj
+04: System <check> dane rejestracji
+[dane rejestracji ? VALID]
+05: Uzytkownik <invoke> Wyslanie kodu rejestracyjnego
+06: System <show> formularz kodu rejestracyjnego
+07: Uzytkownik <enter> kod rejestracyjny
+08: Uzytkownik <select> zatwierdz
+09: System <check> kod rejestracyjny
+[kod rejestracyjny ? VALID]
+10: Uzytkownik <invoke> Zapisanie uzytkownika w bazie danych
+11: System <show> komunikat pomyslna rejestacja
+08: Uzytkownik <select> ok
+-> end ! OK
+
+Scenario
+01: -"-
+A1: Uzytkownik <select> anuluj
+-> end ! FAIL
+
+Scenario
+04: -"-
+[dane rejestracji ? INVALID]
+B1: System <invoke> Anulowanie rejestracji
+-> end ! FAIL
+
+Scenario
+09: -"- 
+[kod rejestracyjny ? INVALID]
+C1: System <invoke> Anulowanie rejestracji
+-> end ! FAIL
+
+Use case ArchiwizacjaMetadanych Main scenario
+00: Administrator <select> ArchiwizujMetadane
+01: System <show> metadataArchiveForm
+02: Administrator <enter> metadataArchiveInfo
+03: Administrator <select> save
+04: System <update> metadataArchiveInfo
+05: System <show> metadataArchived
+06: Administrator <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: Administrator <select> cancel 
+-> end ! CANCEL
+
+Use case AddReview Main scenario
+00: User <select> addReview
+01: System <show> reviewForm
+02: User <enter> review
+03: User <select> saveReview
+04: System <show> reviewSaved
+05: User <select> okReview
+06: System <close> reviewForm
+-> end ! OK
+
+Scenario
+01: -"- 
+A1: User <select> cancelReview 
+-> end ! CANCEL
+
+Data dane rejestracji{
+  nazwaUzytkownika: text,
+  imie: text,
+  nazwisko: text,
+  haslo: text,
+  powtorzHaslo: text
+}
+
+Data kod rejestracyjny{
+  kodRejestracyjny: text
+}
+
+Data metadane {
+  id: integer,
+  nazwa: text,
+  opis: text,
+  wlasciciel: text,
+  dataUtworzenia: text,
+  dataAktualizacji: text,
+  status: text,
+  czyZarchiwizowane: boolean
+}
+
+
+Data filter {
+    kryteriaFiltru : metadata
+}
+
+Data issuereport {
+    id: integer,
+    comment: text,
+    attachment: text,
+    author: text,
+    status: text,
+    resolutiontime: text,
+    creationdate: text,
+    modificationdate: text,
+    metadataid: integer
+}
+
+Data logindata {
+    username: text,
+    password: text
+}
+
+Data metadata {
+    ID: integer,
+    nazwa: text,
+    opis: text,
+    wlasciciel: text,
+    dataUtworzenia: date,
+    dataAktualizacji: date,
+    status: integer,
+    czyZarchizowane: boolean
+}
+
+Data metadataSet {
+    nazwa: text,
+    opis: text,
+    dataUtworzenia: date,
+    metadane: [metadata]
+}
+
+Data metadatalist {
+    metadataitems: [metadata]
+}
+
+Data permision {
+    name: text
+}
+
+Data permision list {
+    permisions: [permision]
+}
+
+Data ticket {
+    id: integer,
+    author: text,
+    description: text,
+    creationDate: date
+}
+
+Data ticket list {
+    tickets: [ticket]
+}
+
+Data appUser {
+    id: integer,
+    firstname: text,
+    lastname: text,
+    email: text,
+    login: text,
+    password: text,
+    role: text,
+    permissions: text
+}
+
+Data users list {
+    users: [appUser]
+}
+
+Data metadataArchiveInfo {
+    metadataId: integer,        
+    comment: text,              
+    requestedBy: text,           
+    requestDate: date 
+}         
+
+Data raport {
+	ID : integer,
+	typ: integer,
+	adresUrl : text,
+	data_archiwizacji : date
+}
+
+Data appUser {
+    id: integer,
+    firstname: text,
+    lastname: text,
+    email: text,
+    login: text,
+    password: text,
+    role: text,
+    permissions: text
+}
+
+Data users list {
+    users: [appUser]
+}
+
+Data password change form {
+    current password: text,
+    new password: text,
+    repeat new password: text
+}
+
+Data review {
+  id: integer,
+  title: text,
+  creationDate: date,
+  status: text
+}
+
+Data reviewList {
+  reviews: [review]
+}
+
+View *form* change password form {Zmiana hasla}
+View *message* password change success {Haslo zostalo zmienione poprawnie}
+View *message* invalid current password message {Niepoprawne obecne haslo}
+View *message* new password mismatch message {Nowe hasla się roznia}
+View *form* archive confirmation window {Okno archivizacji raportu}
+View *form* confirmationmessage {Confirmation}
+View *form* errormessage {Error}
+View *form* addDataSeterrorMessage {Error}
+View *form* loginform {Login}
+View *form* metadatadetails {Metadata Details}
+View *form* metadatalistform {Metadata List}
+View *form* issuereportform {Report an Issue}
+View *form* successmessage {Success}
+View *form* addDataSetSuccessMessage {Success}
+View *form* validationerrormessage {Validation Error}
+View *form* formularzRejestracjiMetadanych {Formularz rejestracji metadanych}
+View *form* formularz rejestracji {Rejestracja}
+View *form* formularz kodu rejestracyjnego {Kod rejestracyjny}
+View *form* potwierdzenie usuniecia {Potwierdzenie usuniecia konta}
+View *form* poprawne usuniecie konta {Poprawne usuniecia konta}
+View *form* reviewForm {Review Form}
+View *form* reviewSaved {Review Saved}
+View form reviewListForm {Lista zgloszonych uwag}
+View *form* potwierdzenie usuniecia {Potwierdzenie usuniecia konta}
+View *form* poprawne usuniecie konta {Poprawne usuniecia konta}
+
+Trigger addMetadataSet {Add Metadata Set}
+Trigger cancel {Cancel}
+Trigger close {Close}
+Trigger find metadata {Find Metadata}
+Trigger login {Login}
+Trigger ok {OK}
+Trigger reportissue {Report Issue}
+Trigger save {Save}
+Trigger showmetadatalist {Show Metadata List}
+Trigger submit {Submit}
+Trigger view details {ViewDetails}
+Trigger *button* tak {Tak}
+Trigger *button* nie {Nie}
+Trigger *button* zarejestruj {Zarejestruj}
+Trigger *button* zatwierdz {Zatwierdz}
+Trigger *button* anuluj {Anuluj}
+Trigger *button* powrot {Powrot}
+Trigger *button* addReview {Add Review}
+Trigger *button* saveReview {Save}
+Trigger *button* cancelReview {Cancel}
+Trigger *button* okReview {OK}
+Trigger *button* change password {Zmien haslo}
+Trigger *button* confirm {Potwierdz}
+Trigger *button* close {Zamknij}
+Trigger *button* tak {Tak}
+Trigger *button* nie {Nie}
+
+03: System <show> roleselectionform
+04: Admin <enter> save
+05: Admin <select> save
+06: System <show> permision success message
+07: Admin <select> ok 
+-> end ! OK
+
+Scenario 
+04: -"- 
+A1: Admin <select> cancel 
+-> end ! CANCEL
+
+Scenario 
+06: -"- 
+A1: Admin <select> cancel 
+-> end ! CANCEL
+
+Use case AddMetadataSet Main scenario
+00: Administrator <select> addMetadataSet
+01: System <show> metadataSetForm
+02: Administrator <enter> metadataSet
+03: Administrator <select> save
+04: System <check> metadataSet
+[metadataSet ? valid]
+05: System <update> metadataSet
+06: System <show> addDataSetSuccessMessage
+07: Administrator <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: Administrator <select> cancel 
+-> end ! CANCEL
+
+Scenario
+04: -"- 
+[metadataSet ? invalid]
+B1: System <show> addDataSeterrorMessage
+B2: Administrator <select> ok
+-> rejoin 01
+
+Scenario
+04: -"- 
+[metadataSet ? duplicate]
+C1: System <show> errorDuplicateMessage
+C2: Administrator <select> ok
+-> rejoin 01
+
+Use case Find metadata Main scenario
+00: User <select> find metadata
+01: System <show> metadata search form
+02: User <enter> filter
+03: User <select> search
+04: System <check> filter
+[filter ? valid]
+05: System <read> metadata
+06: System <show> metadata window
+07: User <invoke> Archive, Verify, view details
+-> end ! OK
+
+Scenario
+02: -"- 
+C1: User <select> cancel 
+-> end ! CANCEL
+
+Scenario
+02: -"- 
+B1: User <select> reset
+B2: System <show> filter reset message
+B3: User <select> ok
+-> rejoin 01
+
+Scenario
+04: -"- 
+[filter ? invalid]
+A1: System <show> filter error message
+A2: User <select> close
+-> end ! notOK
+
+Use case Log out uc Main scenario
+00: Cashier <select> Wyloguj
+01: System <show> Confirmation screen
+02: Cashier <select> anuluj
+-> end ! CANCEL
+
+Scenario
+01: -"- 
+A1: Cashier <select> potwierdz
+A2: System <show> logout screen
+A3: Cashier <enter> wylogowano
+A4: Cashier <select> ok
+-> end ! OK
+
+Use case Login Main scenario
+00: User <select> login
+01: System <show> loginform
+02: User <enter> logindata
+03: User <select> submit
+04: System <check> logindata
+[logindata ? valid]
+05: System <show> successmessage
+06: User <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> cancel
+-> end ! CANCEL
+
+Scenario
+04: -"- 
+[logindata ? invalid]
+B1: System <show> errormessage
+B2: User <select> ok
+-> rejoin 01
+
+Use case Report metadata issue Main scenario
+00: User <select> reportissue
+01: System <show> issuereportform
+02: User <enter> issuereport
+03: User <select> submit
+04: System <check> issuereport
+[issuereport ? valid]
+05: System <update> issuereport
+06: System <show> confirmationmessage
+07: User <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> cancel
+-> end ! CANCEL
+
+Scenario
+04: -"- 
+[issuereport ? invalid]
+B1: System <show> validationerrormessage
+B2: User <select> ok
+-> rejoin 01
+
+Use case Show metadata details Main scenario
+00: User <select> viewdetails
+01: System <read> metadata
+02: System <show> metadatadetails
+03: User <invoke> Report metadata issue
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> close
+-> end ! OK
+
+Scenario
+02: -"- 
+B1: User <invoke> AddReview
+-> rejoin 01
+
+Use case Show metadata list Main scenario
+00: User <select> showmetadatalist
+01: System <read> metadatalist
+02: System <show> metadatalistform
+03: User <invoke> Show metadata details
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> close
+-> end ! CANCEL
+
+Use case Show ticket details Main scenario
+00: User <select> view details
+01: System <read> ticket
+02: System <show> ticket details
+03: User <select> close
+-> end ! OK
+
+Use case Show ticket list Main scenario
+00: User <select> show ticket list
+01: System <read> ticket list
+02: System <show> ticket list form
+03: User <invoke> Show ticket details
+-> rejoin 01
+
+Scenario
+02: -"- 
+A1: User <select> close
+-> end ! CANCEL
+
+Use case Show users list Main scenario
+00: User <select> show users list  
+01: System <read> users list  
+02: System <show> users list view    
+03: User <invoke> deleteUser 
+-> rejoin 01
+
+Scenario
+02: -"-  
+A1: User <select> back  
+-> end ! CANCEL
+
+Use case deleteUser Main scenario
+00: Administrator <select> usun   
+01: System <show> potwierdzenie usuniecia
+02: Administrator <select> tak
+03: System <execute> usuniecie konta uzytkownika
+04: System <show> poprawne usuniecie konta
+05: Administrator <select> ok 
+-> end ! OK
+
+Scenario
+01: -"-  
+A1: User <select> nie  
+-> end ! CANCEL
+
+Use case RegisterMetadata Main scenario
+00: Administrator <select> ZarejestrujMetadane
+01: System <show> formularzRejestracjiMetadanych
+02: Administrator <invoke> DodanieNowegoZestawuMetadanych
+03: Administrator <enter> metadane
+04: Administrator <select> zarejestruj
+05: System <check> metadane
+[metadane ? poprawne]
+06: System <update> metadane
+07: System <show> komunikatSukces
+08: Administrator <select> ok
+-> end ! OK
+
+Scenario
+05: -"-
+[metadane ? niepoprawne]
+A1: System <show> komunikatBlad
+A2: Administrator <select> powrot
+-> rejoin 01
+
+Scenario
+03: -"-
+B1: Administrator <select> anuluj
+B2: System <close> formularzRejestracjiMetadanych
+-> end ! FAILURE
+
+Use case Register Main scenario
+00: Uzytkownik <select> zarejestruj sie
+01: System <show> formularz rejestracji
+02: Uzytkownik <enter> dane rejestracji
+03: Uzytkownik <select> zarejestruj
+04: System <check> dane rejestracji
+[dane rejestracji ? VALID]
+05: Uzytkownik <invoke> Wyslanie kodu rejestracyjnego
+06: System <show> formularz kodu rejestracyjnego
+07: Uzytkownik <enter> kod rejestracyjny
+08: Uzytkownik <select> zatwierdz
+09: System <check> kod rejestracyjny
+[kod rejestracyjny ? VALID]
+10: Uzytkownik <invoke> Zapisanie uzytkownika w bazie danych
+11: System <show> komunikat pomyslna rejestacja
+08: Uzytkownik <select> ok
+-> end ! OK
+
+Scenario
+01: -"-
+A1: Uzytkownik <select> anuluj
+-> end ! FAIL
+
+Scenario
+04: -"-
+[dane rejestracji ? INVALID]
+B1: System <invoke> Anulowanie rejestracji
+-> end ! FAIL
+
+Scenario
+09: -"- 
+[kod rejestracyjny ? INVALID]
+C1: System <invoke> Anulowanie rejestracji
+-> end ! FAIL
+
+Use case ArchiwizacjaMetadanych Main scenario
+00: Administrator <select> ArchiwizujMetadane
+01: System <show> metadataArchiveForm
+02: Administrator <enter> metadataArchiveInfo
+03: Administrator <select> save
+04: System <update> metadataArchiveInfo
+05: System <show> metadataArchived
+06: Administrator <select> ok
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: Administrator <select> cancel 
+-> end ! CANCEL
+
+Use case AddReview Main scenario
+00: User <select> addReview
+01: System <show> reviewForm
+02: User <enter> review
+03: User <select> saveReview
+04: System <show> reviewSaved
+05: User <select> okReview
+06: System <close> reviewForm
+-> end ! OK
+
+Scenario
+01: -"- 
+A1: User <select> cancelReview 
+-> end ! CANCEL
+
+Data dane rejestracji{
+  nazwaUzytkownika: text,
+  imie: text,
+  nazwisko: text,
+  haslo: text,
+  powtorzHaslo: text
+}
+
+Data kod rejestracyjny{
+  kodRejestracyjny: text
+}
+
+Data metadane {
+  id: integer,
+  nazwa: text,
+  opis: text,
+  wlasciciel: text,
+  dataUtworzenia: text,
+  dataAktualizacji: text,
+  status: text,
+  czyZarchiwizowane: boolean
+}
+
+
+Data filter {
+    kryteriaFiltru : metadata
+}
+
+Data issuereport {
+    id: integer,
+    comment: text,
+    attachment: text,
+    author: text,
+    status: text,
+    resolutiontime: text,
+    creationdate: text,
+    modificationdate: text,
+    metadataid: integer
+}
+
+Data logindata {
+    username: text,
+    password: text
+}
+
+Data metadata {
+    ID: integer,
+    nazwa: text,
+    opis: text,
+    wlasciciel: text,
+    dataUtworzenia: date,
+    dataAktualizacji: date,
+    status: integer,
+    czyZarchizowane: boolean
+}
+
+Data metadataSet {
+    nazwa: text,
+    opis: text,
+    dataUtworzenia: date,
+    metadane: [metadata]
+}
+
+Data metadatalist {
+    metadataitems: [metadata]
+}
+
+Data permision {
+    name: text
+}
+
+Data permision list {
+    permisions: [permision]
+}
+
+Data ticket {
+    id: integer,
+    author: text,
+    description: text,
+    creationDate: date
+}
+
+Data ticket list {
+    tickets: [ticket]
+}
+
+Data appUser {
+    id: integer,
+    firstname: text,
+    lastname: text,
+    email: text,
+    login: text,
+    password: text,
+    role: text,
+    permissions: text
+}
+
+Data users list {
+    users: [appUser]
+}
+
+Data metadataArchiveInfo {
+    metadataId: integer,        
+    comment: text,              
+    requestedBy: text,           
+    requestDate: date 
+}         
+
+Data review {
+  stars: integer,
+  comment: text 
+}
+
+View *form* confirmationmessage {Confirmation}
+View *form* errormessage {Error}
+View *form* addDataSeterrorMessage {Error}
+View *form* loginform {Login}
+View *form* metadatadetails {Metadata Details}
+View *form* metadatalistform {Metadata List}
+View *form* issuereportform {Report an Issue}
+View *form* successmessage {Success}
+View *form* addDataSetSuccessMessage {Success}
+View *form* validationerrormessage {Validation Error}
+View *form* formularzRejestracjiMetadanych {Formularz rejestracji metadanych}
+View *form* formularz rejestracji {Rejestracja}
+View *form* formularz kodu rejestracyjnego {Kod rejestracyjny}
+View *form* potwierdzenie usuniecia {Potwierdzenie usuniecia konta}
+View *form* poprawne usuniecie konta {Poprawne usuniecia konta}
+View *form* reviewForm {Review Form}
+View *form* reviewSaved {Review Saved}
+
+Trigger addMetadataSet {Add Metadata Set}
+Trigger cancel {Cancel}
+Trigger close {Close}
+Trigger find metadata {Find Metadata}
+Trigger login {Login}
+Trigger ok {OK}
+Trigger reportissue {Report Issue}
+Trigger save {Save}
+Trigger showmetadatalist {Show Metadata List}
+Trigger submit {Submit}
+Trigger view details {ViewDetails}
+Trigger *button* tak {Tak}
+Trigger *button* nie {Nie}
+Trigger *button* zarejestruj {Zarejestruj}
+Trigger *button* zatwierdz {Zatwierdz}
+Trigger *button* anuluj {Anuluj}
+Trigger *button* ok {OK}
+Trigger *button* powrot {Powrot}
+Trigger *button* addReview {Add Review}
+Trigger *button* saveReview {Save}
+Trigger *button* cancelReview {Cancel}
+Trigger *button* okReview {OK}
