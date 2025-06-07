@@ -20,5 +20,20 @@ A2: System <show> errormessage
 A3: User <select> back
 -> end ! OK
 
+Data report {
+	id: integer,
+	status: text,
+	czasRozpatrzenia: text,
+	dataUtworzenia: text
+}
 
-errormessage {Error
+Data reports list {
+    reports: [report]
+}
+
+
+View *table* reports list view {Lista raportow}
+
+View *message* errormessage {Brak raportow}
+
+Trigger *button* close {Zamknij}, brakraportow {Brak raportow}, back {Powrót}
