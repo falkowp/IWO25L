@@ -1,0 +1,36 @@
+Use case Start Main scenario
+00: User <select> application
+01: System <show> main menu
+02: User <invoke> Show requests list
+-> rejoin 01
+
+Use case Show requests list Main scenario
+00: User <select> show requests list
+01: System <read> requests list
+02: System <show> requests list view
+03: User <select> close
+-> end ! OK
+
+Scenario
+02: -"- 
+A1: User <select> brakzgloszen
+A2: System <show> errormessage
+A3: User <select> back
+-> end ! OK
+
+Data request {
+    id: integer,
+    author: text,
+    description: text,
+    date: text
+}
+
+Data requests list {
+    requests: [request]
+}
+
+View *table* requests list view {Lista zgłoszeń}
+
+View *message* errormessage {Brak zgłoszeń w systemie}
+
+Trigger *button* close {Zamknij}, brakzgloszen {Brak zgłoszeń}, back {Powrót}
