@@ -66,5 +66,4 @@
 **Wnioski:**  
 Analiza pokazuje, że system charakteryzuje się umiarkowaną złożonością, co przekłada się na stosunkowo niski szacowany wysiłek wdrożeniowy. Wskaźniki TCF i EF sugerują, że zarówno czynniki techniczne, jak i środowiskowe mają niewielki wpływ na końcowy wynik.
 
-### 5.2. Przypadki użycia do iteracji
 

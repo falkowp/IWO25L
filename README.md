@@ -1,3 +1,3 @@
 # Dokumentacja
 
-:[Specyfikacja Wymagań](dokumentacja/specyfikacja.wymagan/specyfikacja.wymagan.md)
+:[Specyfikacja Wymagań](dokumentacja/specyfikacja.wymagan.md)
